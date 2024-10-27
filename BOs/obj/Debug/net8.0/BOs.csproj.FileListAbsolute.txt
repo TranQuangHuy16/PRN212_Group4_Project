@@ -1,0 +1,15 @@
+D:\FPT_PRN212\src\PRN212_Group4_Project\BOs\obj\Debug\net8.0\BOs.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT_PRN212\src\PRN212_Group4_Project\BOs\obj\Debug\net8.0\BOs.AssemblyInfoInputs.cache
+D:\FPT_PRN212\src\PRN212_Group4_Project\BOs\obj\Debug\net8.0\BOs.AssemblyInfo.cs
+D:\FPT_PRN212\src\PRN212_Group4_Project\BOs\obj\Debug\net8.0\BOs.csproj.CoreCompileInputs.cache
+D:\FPT_PRN212\src\PRN212_Group4_Project\BOs\obj\Debug\net8.0\BOs.sourcelink.json
+D:\FPT_PRN212\src\PRN212_Group4_Project\BOs\bin\Debug\net8.0\BOs.deps.json
+D:\FPT_PRN212\src\PRN212_Group4_Project\BOs\bin\Debug\net8.0\BOs.runtimeconfig.json
+D:\FPT_PRN212\src\PRN212_Group4_Project\BOs\bin\Debug\net8.0\BOs.dll
+D:\FPT_PRN212\src\PRN212_Group4_Project\BOs\bin\Debug\net8.0\BOs.pdb
+D:\FPT_PRN212\src\PRN212_Group4_Project\BOs\obj\Debug\net8.0\BOs.csproj.AssemblyReference.cache
+D:\FPT_PRN212\src\PRN212_Group4_Project\BOs\obj\Debug\net8.0\BOs.dll
+D:\FPT_PRN212\src\PRN212_Group4_Project\BOs\obj\Debug\net8.0\refint\BOs.dll
+D:\FPT_PRN212\src\PRN212_Group4_Project\BOs\obj\Debug\net8.0\BOs.pdb
+D:\FPT_PRN212\src\PRN212_Group4_Project\BOs\obj\Debug\net8.0\BOs.genruntimeconfig.cache
+D:\FPT_PRN212\src\PRN212_Group4_Project\BOs\obj\Debug\net8.0\ref\BOs.dll
