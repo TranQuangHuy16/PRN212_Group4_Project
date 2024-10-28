@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp.ProfileUpdateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5"
+        Title="ProfileUpdateWindow" Height="500" Width="800">
+    <Grid>
+        <Label Content="Update Profile" HorizontalAlignment="Center" Height="53" Margin="0,10,0,0" VerticalAlignment="Top" Width="428" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
+        HorizontalAlignment="Left" VerticalAlignment="Top" 
+        Width="546" Height="46" Background="White" Margin="200,78,0,0">
+            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+        </Border>
+        <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
+        HorizontalAlignment="Left" VerticalAlignment="Top" 
+        Width="546" Height="46" Background="White" Margin="200,178,0,0">
+            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+        </Border>
+        <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
+        HorizontalAlignment="Left" VerticalAlignment="Top" 
+        Width="546" Height="46" Background="White" Margin="200,278,0,0">
+            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+        </Border>
+        <Label Content="Name" HorizontalAlignment="Left" Height="46" Margin="36,78,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <Label Content="Email" HorizontalAlignment="Left" Height="46" Margin="36,178,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <Label Content="Telephone" HorizontalAlignment="Left" Height="46" Margin="36,278,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <Button BorderBrush="Transparent" BorderThickness="0" Content="Update" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
+            Margin="200,350,0,0" VerticalAlignment="Top" 
+            FontWeight="Bold" />
+        <Button BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
+            Margin="500,350,0,0" VerticalAlignment="Top" 
+            FontWeight="Bold" />
+    </Grid>
+</Window>

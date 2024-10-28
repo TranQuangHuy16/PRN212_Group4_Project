@@ -1,12 +1,34 @@
-﻿<Window x:Class="Group4WPF.MainWindow"
+﻿<Window x:Class="WpfApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Group4WPF"
+        xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5"
+        Title="Login" Height="400" Width="500">
     <Grid>
-
+        <Label Content="Exam Registration and Scheduling" HorizontalAlignment="Center" Height="52" Margin="0,26,0,0" VerticalAlignment="Top" Width="428" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label Content="Email" HorizontalAlignment="Left" Height="46" Margin="36,118,0,0" VerticalAlignment="Top" Width="62" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <Label Content="Password" HorizontalAlignment="Left" Height="46" Margin="36,192,0,0" VerticalAlignment="Top" Width="100" FontSize="18" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
+        HorizontalAlignment="Left" VerticalAlignment="Top" 
+        Width="316" Height="46" Background="White" Margin="148,118,0,0">
+            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" 
+             VerticalContentAlignment="Center" Background="Transparent"/>
+        </Border>
+        <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
+        HorizontalAlignment="Left" VerticalAlignment="Top" 
+        Width="316" Height="46" Background="White" Margin="148,192,0,0">
+            <PasswordBox Padding="10,0,10,0" BorderThickness="0" FontSize="16" 
+                 VerticalContentAlignment="Center" Background="Transparent"/>
+        </Border>
+        <Button BorderBrush="Transparent" BorderThickness="0" Content="Login" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
+        Margin="107,280,0,0" VerticalAlignment="Top" 
+        FontWeight="Bold" />
+        <Button BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
+            Margin="275,280,0,0" VerticalAlignment="Top" 
+            FontWeight="Bold" />
     </Grid>
 </Window>

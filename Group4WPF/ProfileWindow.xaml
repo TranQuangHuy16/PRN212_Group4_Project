@@ -1,0 +1,56 @@
+﻿<Window x:Class="WpfApp.ProfileWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        Background="#F5F5F5"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="ProfileWindow" Height="900" Width="800">
+    <Grid>
+        <Label x:Name="txtWelcome" Content="" HorizontalAlignment="Center" Height="53" Margin="0,33,0,0" VerticalAlignment="Top" Width="428" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Width="546" Height="46" Background="White" Margin="200,118,0,0">
+            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+        </Border>
+        <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Width="546" Height="46" Background="White" Margin="200,218,0,0">
+            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+        </Border>
+        <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Width="546" Height="46" Background="White" Margin="200,318,0,0">
+            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+        </Border>
+        <Label Content="Name" HorizontalAlignment="Left" Height="46" Margin="36,118,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <Label Content="Email" HorizontalAlignment="Left" Height="46" Margin="36,218,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <Label Content="Telephone" HorizontalAlignment="Left" Height="46" Margin="36,318,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <DataGrid AutoGenerateColumns="False" Margin="36,403,36,0" Height="350" VerticalAlignment="Top">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Course Name" Binding="{Binding CourseName}" Width="*"/>
+                <DataGridTextColumn Header="RoomNo" Binding="{Binding RoomName}" Width="*"/>
+                <DataGridTextColumn Header="Slot" Binding="{Binding SlotName}" Width="*"/>
+                <DataGridTextColumn Header="Schedule Date" Binding="{Binding ScheduleDate}" Width="*"/>
+                <DataGridTextColumn Header="Start Time" Binding="{Binding StartTime}" Width="*"/>
+                <DataGridTextColumn Header="End Time" Binding="{Binding EndTime}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button BorderBrush="Transparent" BorderThickness="0" Content="Update Profile" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+            Margin="100,784,0,0" VerticalAlignment="Top" 
+            FontWeight="Bold" />
+        <Button BorderBrush="Transparent" BorderThickness="0" Content="Change Password" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+            Margin="250,784,0,0" VerticalAlignment="Top" 
+            FontWeight="Bold" />
+        <Button BorderBrush="Transparent" BorderThickness="0" Content="Register" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+            Margin="400,784,0,0" VerticalAlignment="Top" 
+            FontWeight="Bold" />
+        <Button BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+            Margin="550,784,0,0" VerticalAlignment="Top" 
+            FontWeight="Bold" />
+
+
+    </Grid>
+</Window>
