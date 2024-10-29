@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\FPT_PRN212\src\PRN212_Group4_Project\Group4WPF\App.xaml
-11407045341
+81905081491
 
-6-364139613
+131232645385
 247-715536894
-MainWindow.xaml;
+MainWindow.xaml;ManagerAddExamWindow.xaml;ManagerManageExamWindow.xaml;ManagerWindow.xaml;ProfileChangePasswordWindow.xaml;ProfileRegisterWindow.xaml;ProfileUpdateWindow.xaml;ProfileWindow.xaml;
 
-True
+False
 

@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Configuration.Json;
 
 namespace BOs
 {
@@ -22,6 +21,7 @@ namespace BOs
         public virtual DbSet<Schedule> Schedules { get; set; }
         public virtual DbSet<Semester> Semesters { get; set; }
         public virtual DbSet<Slot> Slots { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

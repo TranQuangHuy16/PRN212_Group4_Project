@@ -3233,7 +3233,9 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "BLL >= 1.0.0"
+      "BLL >= 1.0.0",
+      "BOs >= 1.0.0",
+      "DAL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3271,6 +3273,12 @@
           "projectReferences": {
             "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BLL\\BLL.csproj": {
               "projectPath": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BLL\\BLL.csproj"
+            },
+            "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\BOs.csproj": {
+              "projectPath": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\BOs.csproj"
+            },
+            "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\DAL\\DAL.csproj": {
+              "projectPath": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\DAL\\DAL.csproj"
             }
           }
         }
