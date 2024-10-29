@@ -21,25 +21,7 @@ namespace WpfApp
     {
         public ManagerManageExamWindow()
         {
-            InitializeComponent(); 
-            LoadTimeOptions();
-        }
-
-        private void LoadTimeOptions()
-        {
-            List<string> timeOptions = new List<string>();
-
-            for (int hour = 7; hour <= 23; hour++)
-            {
-                for (int minute = 0; minute < 60; minute += 30)
-                {
-                    string time = $"{hour:D2}:{minute:D2}";
-                    timeOptions.Add(time);
-                }
-            }
-
-            StartTimeComboBox.ItemsSource = timeOptions;
-            EndTimeComboBox.ItemsSource = timeOptions;
+            InitializeComponent();
         }
 
         private void DatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
