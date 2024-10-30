@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\",
   "Documents": [
     {
@@ -113,6 +114,13 @@
     {
       "AbsoluteMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bos\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|solutionrelative:bos\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|c:\\users\\admin\\source\\repos\\tranquanghuy16\\prn212_group4_project\\group4wpf\\profilewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\profilewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+>>>>>>> 00d983afbfea828c10c7cd45a3cfc99ca9094d0b
     }
   ],
   "DocumentGroupContainers": [
@@ -122,6 +130,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 4,
           "Children": [
             {
@@ -474,10 +483,32 @@
         {
           "DockedWidth": 179,
           "SelectedChildIndex": -1,
+=======
+          "SelectedChildIndex": 2,
+>>>>>>> 00d983afbfea828c10c7cd45a3cfc99ca9094d0b
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+<<<<<<< HEAD
+=======
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProfileWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ProfileWindow.xaml",
+              "RelativeDocumentMoniker": "Group4WPF\\ProfileWindow.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ProfileWindow.xaml",
+              "RelativeToolTip": "Group4WPF\\ProfileWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-30T04:30:34.178Z",
+              "EditorCaption": ""
+>>>>>>> 00d983afbfea828c10c7cd45a3cfc99ca9094d0b
             }
           ]
         }
