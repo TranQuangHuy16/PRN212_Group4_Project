@@ -14,3 +14,19 @@ C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\DAL\obj\Debug\n
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\DAL\obj\Debug\net8.0\refint\DAL.dll
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\DAL\obj\Debug\net8.0\DAL.pdb
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\DAL\obj\Debug\net8.0\ref\DAL.dll
+D:\Ky 5\PRN212\Project\PRN212_Group4_Project\DAL\bin\Debug\net8.0\DAL.deps.json
+D:\Ky 5\PRN212\Project\PRN212_Group4_Project\DAL\bin\Debug\net8.0\DAL.dll
+D:\Ky 5\PRN212\Project\PRN212_Group4_Project\DAL\bin\Debug\net8.0\DAL.pdb
+D:\Ky 5\PRN212\Project\PRN212_Group4_Project\DAL\bin\Debug\net8.0\BOs.dll
+D:\Ky 5\PRN212\Project\PRN212_Group4_Project\DAL\bin\Debug\net8.0\BOs.pdb
+D:\Ky 5\PRN212\Project\PRN212_Group4_Project\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+D:\Ky 5\PRN212\Project\PRN212_Group4_Project\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ky 5\PRN212\Project\PRN212_Group4_Project\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+D:\Ky 5\PRN212\Project\PRN212_Group4_Project\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+D:\Ky 5\PRN212\Project\PRN212_Group4_Project\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+D:\Ky 5\PRN212\Project\PRN212_Group4_Project\DAL\obj\Debug\net8.0\DAL.sourcelink.json
+D:\Ky 5\PRN212\Project\PRN212_Group4_Project\DAL\obj\Debug\net8.0\DAL.csproj.Up2Date
+D:\Ky 5\PRN212\Project\PRN212_Group4_Project\DAL\obj\Debug\net8.0\DAL.dll
+D:\Ky 5\PRN212\Project\PRN212_Group4_Project\DAL\obj\Debug\net8.0\refint\DAL.dll
+D:\Ky 5\PRN212\Project\PRN212_Group4_Project\DAL\obj\Debug\net8.0\DAL.pdb
+D:\Ky 5\PRN212\Project\PRN212_Group4_Project\DAL\obj\Debug\net8.0\ref\DAL.dll
