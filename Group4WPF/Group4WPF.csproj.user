@@ -13,6 +13,18 @@
     <Compile Update="ManagerAddComponentWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ManagerComponentCourseWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ManagerComponentRoomWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ManagerComponentSemesterWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ManagerComponentSlotWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ManagerManageAccountWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -28,6 +40,18 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ManagerAddComponentWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManagerComponentCourseWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManagerComponentRoomWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManagerComponentSemesterWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManagerComponentSlotWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ManagerManageAccountWindow.xaml">
