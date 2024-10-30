@@ -1,0 +1,64 @@
+﻿<Window x:Class="Group4WPF.ManagerManageAccountWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Group4WPF"
+        mc:Ignorable="d"
+        Background="#F5F5F5"
+        WindowStartupLocation="CenterScreen"
+        Title="ManagerManageAccountWindow" Height="950" Width="800">
+    <Grid>
+        <Label Content="MANAGE ACCOUNT" HorizontalAlignment="Center" Height="53" Margin="0,30,0,0" VerticalAlignment="Top" Width="428" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Width="546" Height="46" Background="White" Margin="40,90,0,0">
+            <Grid>
+                <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" 
+                    VerticalContentAlignment="Center" Background="Transparent" 
+                    TextChanged="TextBox_TextChanged" x:Name="CourseNameTextBox"/>
+                <TextBlock x:Name="PlaceholderTextBlock" Text="Search Supervisor Name" 
+           Foreground="Gray" VerticalAlignment="Center" 
+           Margin="10,0,0,0" IsHitTestVisible="False" FontSize="16"/>
+            </Grid>
+        </Border>
+        <DataGrid AutoGenerateColumns="False" Margin="36,370,36,0" Height="423" VerticalAlignment="Top">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Supervisor Name" Binding="{Binding name}" Width="*"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding email}" Width="*"/>
+                <DataGridTextColumn Header="Telephone" Binding="{Binding telephone}" Width="*"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding status}" Width="70"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button BorderBrush="Transparent" BorderThickness="0" Content="Create Account" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+            Margin="100,830,0,0" VerticalAlignment="Top" 
+            FontWeight="Bold" />
+        <Button BorderBrush="Transparent" BorderThickness="0" Content="Update Account" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+            Margin="280,830,0,0" VerticalAlignment="Top" 
+            FontWeight="Bold" />
+        <Button BorderBrush="Transparent" BorderThickness="0" Content="Delete Account" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+            Margin="460,830,0,0" VerticalAlignment="Top" 
+            FontWeight="Bold" />
+        <Button BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+            Margin="640,830,0,0" VerticalAlignment="Top" 
+            FontWeight="Bold" />
+        <Label Content="Name" HorizontalAlignment="Left" Height="46" Margin="40,170,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Width="546" Height="46" Background="White" Margin="200,170,0,0">
+            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+        </Border>
+        <Label Content="Email" HorizontalAlignment="Left" Height="46" Margin="40,230,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Width="546" Height="46" Background="White" Margin="200,230,0,0">
+            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+        </Border>
+        <Label Content="Telephone" HorizontalAlignment="Left" Height="46" Margin="40,290,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Width="546" Height="46" Background="White" Margin="200,290,0,0">
+            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+        </Border>
+    </Grid>
+</Window>

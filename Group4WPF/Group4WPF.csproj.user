@@ -7,7 +7,13 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="ManagerAddAccountWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ManagerAddComponentWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ManagerManageAccountWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -15,7 +21,13 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="ManagerAddAccountWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="ManagerAddComponentWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManagerManageAccountWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

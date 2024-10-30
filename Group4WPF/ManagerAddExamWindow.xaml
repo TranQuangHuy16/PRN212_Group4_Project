@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Background="#F5F5F5"
-        Title="ManagerAddExamWindow" Height="450" Width="800">
+        Title="ManagerAddExamWindow" Height="550" Width="800">
     <Grid>
         <Label Content="ADD EXAM SCHEDULE" HorizontalAlignment="Center" Height="53" Margin="0,33,0,0" VerticalAlignment="Top" Width="428" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         <Label Content="Course Name" HorizontalAlignment="Left" Height="46" Margin="36,108,0,0" VerticalAlignment="Top" Width="163" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
@@ -24,11 +24,13 @@
         </Border>
         <DatePicker x:Name="ScheduleDatepicker" HorizontalAlignment="Left" Height="38" Margin="715,259,0,0" VerticalAlignment="Top" Width="31" FontSize="16" SelectedDateChanged="DatePicker_SelectedDateChanged"/>
         <Button BorderBrush="Transparent" BorderThickness="0" Content="Create" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
-     Margin="225,340,0,0" VerticalAlignment="Top" 
+     Margin="225,420,0,0" VerticalAlignment="Top" 
      FontWeight="Bold" />
         <Button BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
-            Margin="500,340,0,0" VerticalAlignment="Top" 
+            Margin="500,420,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
         <ComboBox HorizontalAlignment="Left" Margin="200,209,0,0" VerticalAlignment="Top" Width="548" Height="46" VerticalContentAlignment="Center" FontSize="16"/>
+        <Label Content="Semester" HorizontalAlignment="Left" Height="46" Margin="36,309,0,0" VerticalAlignment="Top" Width="163" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <ComboBox HorizontalAlignment="Left" Margin="200,309,0,0" VerticalAlignment="Top" Width="548" Height="46" VerticalContentAlignment="Center" FontSize="16"/>
     </Grid>
 </Window>
