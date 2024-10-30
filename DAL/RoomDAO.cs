@@ -60,7 +60,14 @@ namespace DAL
             {
                 using var db = new MyDbContext();
                 Room b = db.Rooms.SingleOrDefault(s => s.RoomId == id);
-                b.Status = (byte)0;
+                if (b != null)
+                {
+                    b.Status = (byte)0;
+                }
+                else
+                {
+                    throw new Exception("Room not found");
+                }
                 db.Entry<Room>(b).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
             }

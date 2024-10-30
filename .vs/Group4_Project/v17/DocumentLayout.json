@@ -1,7 +1,124 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bos\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|solutionrelative:bos\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bos\\semester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|solutionrelative:bos\\semester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bos\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|solutionrelative:bos\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bos\\coursesemester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|solutionrelative:bos\\coursesemester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\group4wpf\\managermanageexamwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\managermanageexamwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\group4wpf\\manageraddexamwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\manageraddexamwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\group4wpf\\manageraddcomponentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\manageraddcomponentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\group4wpf\\profileregisterwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\profileregisterwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\group4wpf\\profilechangepasswordwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\profilechangepasswordwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\group4wpf\\profileupdatewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\profileupdatewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\group4wpf\\profilewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\profilewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\group4wpf\\managerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\managerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FE683C-2FFC-4DA2-A480-8B9A9DBB9ED9}|test\\test.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\test\\test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{55FE683C-2FFC-4DA2-A480-8B9A9DBB9ED9}|test\\test.csproj|solutionrelative:test\\test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FE683C-2FFC-4DA2-A480-8B9A9DBB9ED9}|test\\test.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FE683C-2FFC-4DA2-A480-8B9A9DBB9ED9}|test\\test.csproj|solutionrelative:test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\group4wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bos\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|solutionrelative:bos\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59CAFC14-F0EC-48D9-9871-E7433594BEA7}|BLL\\BLL.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bll\\iroomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59CAFC14-F0EC-48D9-9871-E7433594BEA7}|BLL\\BLL.csproj|solutionrelative:bll\\iroomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4F5BA5C-AF1D-4265-BA1A-ECF718F6F64C}|DAL\\DAL.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\dal\\iroomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4F5BA5C-AF1D-4265-BA1A-ECF718F6F64C}|DAL\\DAL.csproj|solutionrelative:dal\\iroomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4F5BA5C-AF1D-4265-BA1A-ECF718F6F64C}|DAL\\DAL.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\dal\\slotdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4F5BA5C-AF1D-4265-BA1A-ECF718F6F64C}|DAL\\DAL.csproj|solutionrelative:dal\\slotdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59CAFC14-F0EC-48D9-9871-E7433594BEA7}|BLL\\BLL.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bll\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59CAFC14-F0EC-48D9-9871-E7433594BEA7}|BLL\\BLL.csproj|solutionrelative:bll\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59CAFC14-F0EC-48D9-9871-E7433594BEA7}|BLL\\BLL.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bll\\icourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59CAFC14-F0EC-48D9-9871-E7433594BEA7}|BLL\\BLL.csproj|solutionrelative:bll\\icourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4F5BA5C-AF1D-4265-BA1A-ECF718F6F64C}|DAL\\DAL.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\dal\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4F5BA5C-AF1D-4265-BA1A-ECF718F6F64C}|DAL\\DAL.csproj|solutionrelative:dal\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4F5BA5C-AF1D-4265-BA1A-ECF718F6F64C}|DAL\\DAL.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\dal\\coursedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4F5BA5C-AF1D-4265-BA1A-ECF718F6F64C}|DAL\\DAL.csproj|solutionrelative:dal\\coursedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4F5BA5C-AF1D-4265-BA1A-ECF718F6F64C}|DAL\\DAL.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\dal\\roomdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4F5BA5C-AF1D-4265-BA1A-ECF718F6F64C}|DAL\\DAL.csproj|solutionrelative:dal\\roomdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59CAFC14-F0EC-48D9-9871-E7433594BEA7}|BLL\\BLL.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bll\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59CAFC14-F0EC-48D9-9871-E7433594BEA7}|BLL\\BLL.csproj|solutionrelative:bll\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59CAFC14-F0EC-48D9-9871-E7433594BEA7}|BLL\\BLL.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bll\\slotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59CAFC14-F0EC-48D9-9871-E7433594BEA7}|BLL\\BLL.csproj|solutionrelative:bll\\slotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4F5BA5C-AF1D-4265-BA1A-ECF718F6F64C}|DAL\\DAL.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\dal\\islotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4F5BA5C-AF1D-4265-BA1A-ECF718F6F64C}|DAL\\DAL.csproj|solutionrelative:dal\\islotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59CAFC14-F0EC-48D9-9871-E7433594BEA7}|BLL\\BLL.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bll\\islotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59CAFC14-F0EC-48D9-9871-E7433594BEA7}|BLL\\BLL.csproj|solutionrelative:bll\\islotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bos\\slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|solutionrelative:bos\\slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +126,365 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Schedule.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\Schedule.cs",
+              "RelativeDocumentMoniker": "BOs\\Schedule.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\Schedule.cs",
+              "RelativeToolTip": "BOs\\Schedule.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T02:38:25.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ManagerAddComponentWindow.xaml",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ManagerAddComponentWindow.xaml",
+              "RelativeDocumentMoniker": "Group4WPF\\ManagerAddComponentWindow.xaml",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ManagerAddComponentWindow.xaml",
+              "RelativeToolTip": "Group4WPF\\ManagerAddComponentWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-29T13:32:31.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ManagerAddExamWindow.xaml",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ManagerAddExamWindow.xaml",
+              "RelativeDocumentMoniker": "Group4WPF\\ManagerAddExamWindow.xaml",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ManagerAddExamWindow.xaml",
+              "RelativeToolTip": "Group4WPF\\ManagerAddExamWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-28T14:21:29.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ManagerManageExamWindow.xaml",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ManagerManageExamWindow.xaml",
+              "RelativeDocumentMoniker": "Group4WPF\\ManagerManageExamWindow.xaml",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ManagerManageExamWindow.xaml",
+              "RelativeToolTip": "Group4WPF\\ManagerManageExamWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-28T14:21:38.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Course.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\Course.cs",
+              "RelativeDocumentMoniker": "BOs\\Course.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\Course.cs",
+              "RelativeToolTip": "BOs\\Course.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T09:02:56.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Semester.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\Semester.cs",
+              "RelativeDocumentMoniker": "BOs\\Semester.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\Semester.cs",
+              "RelativeToolTip": "BOs\\Semester.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T11:39:46.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProfileRegisterWindow.xaml",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ProfileRegisterWindow.xaml",
+              "RelativeDocumentMoniker": "Group4WPF\\ProfileRegisterWindow.xaml",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ProfileRegisterWindow.xaml",
+              "RelativeToolTip": "Group4WPF\\ProfileRegisterWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-28T14:22:41.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CourseSemester.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\CourseSemester.cs",
+              "RelativeDocumentMoniker": "BOs\\CourseSemester.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\CourseSemester.cs",
+              "RelativeToolTip": "BOs\\CourseSemester.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T01:53:03.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProfileChangePasswordWindow.xaml",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ProfileChangePasswordWindow.xaml",
+              "RelativeDocumentMoniker": "Group4WPF\\ProfileChangePasswordWindow.xaml",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ProfileChangePasswordWindow.xaml",
+              "RelativeToolTip": "Group4WPF\\ProfileChangePasswordWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-28T14:22:37.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProfileUpdateWindow.xaml",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ProfileUpdateWindow.xaml",
+              "RelativeDocumentMoniker": "Group4WPF\\ProfileUpdateWindow.xaml",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ProfileUpdateWindow.xaml",
+              "RelativeToolTip": "Group4WPF\\ProfileUpdateWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-28T14:22:46.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProfileWindow.xaml",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ProfileWindow.xaml",
+              "RelativeDocumentMoniker": "Group4WPF\\ProfileWindow.xaml",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ProfileWindow.xaml",
+              "RelativeToolTip": "Group4WPF\\ProfileWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-28T14:22:52.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ManagerWindow.xaml",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ManagerWindow.xaml",
+              "RelativeDocumentMoniker": "Group4WPF\\ManagerWindow.xaml",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ManagerWindow.xaml",
+              "RelativeToolTip": "Group4WPF\\ManagerWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-28T14:21:43.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "test.csproj",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\test\\test.csproj",
+              "RelativeDocumentMoniker": "test\\test.csproj",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\test\\test.csproj",
+              "RelativeToolTip": "test\\test.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-30T02:02:24.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\test\\Program.cs",
+              "RelativeDocumentMoniker": "test\\Program.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\test\\Program.cs",
+              "RelativeToolTip": "test\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T13:42:12.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Group4WPF\\MainWindow.xaml",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\MainWindow.xaml",
+              "RelativeToolTip": "Group4WPF\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-29T10:50:00.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "BOs\\MyDbContext.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\MyDbContext.cs",
+              "RelativeToolTip": "BOs\\MyDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T13:45:59.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IRoomService.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BLL\\IRoomService.cs",
+              "RelativeDocumentMoniker": "BLL\\IRoomService.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BLL\\IRoomService.cs",
+              "RelativeToolTip": "BLL\\IRoomService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T11:25:52.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SlotDAO.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\DAL\\SlotDAO.cs",
+              "RelativeDocumentMoniker": "DAL\\SlotDAO.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\DAL\\SlotDAO.cs",
+              "RelativeToolTip": "DAL\\SlotDAO.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwEYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T10:49:23.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RoomDAO.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\DAL\\RoomDAO.cs",
+              "RelativeDocumentMoniker": "DAL\\RoomDAO.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\DAL\\RoomDAO.cs",
+              "RelativeToolTip": "DAL\\RoomDAO.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAIwFUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T11:03:23.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IRoomRepository.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\DAL\\IRoomRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\IRoomRepository.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\DAL\\IRoomRepository.cs",
+              "RelativeToolTip": "DAL\\IRoomRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T11:09:00.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RoomService.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BLL\\RoomService.cs",
+              "RelativeDocumentMoniker": "BLL\\RoomService.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BLL\\RoomService.cs",
+              "RelativeToolTip": "BLL\\RoomService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T11:25:25.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SlotService.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BLL\\SlotService.cs",
+              "RelativeDocumentMoniker": "BLL\\SlotService.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BLL\\SlotService.cs",
+              "RelativeToolTip": "BLL\\SlotService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T11:23:42.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CourseDAO.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\DAL\\CourseDAO.cs",
+              "RelativeDocumentMoniker": "DAL\\CourseDAO.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\DAL\\CourseDAO.cs",
+              "RelativeToolTip": "DAL\\CourseDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T11:40:32.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ICourseRepository.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\DAL\\ICourseRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\ICourseRepository.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\DAL\\ICourseRepository.cs",
+              "RelativeToolTip": "DAL\\ICourseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T11:44:06.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ICourseService.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BLL\\ICourseService.cs",
+              "RelativeDocumentMoniker": "BLL\\ICourseService.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BLL\\ICourseService.cs",
+              "RelativeToolTip": "BLL\\ICourseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T11:45:04.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CourseService.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BLL\\CourseService.cs",
+              "RelativeDocumentMoniker": "BLL\\CourseService.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BLL\\CourseService.cs",
+              "RelativeToolTip": "BLL\\CourseService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wCEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T11:45:23.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ISlotService.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BLL\\ISlotService.cs",
+              "RelativeDocumentMoniker": "BLL\\ISlotService.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BLL\\ISlotService.cs",
+              "RelativeToolTip": "BLL\\ISlotService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T11:23:58.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ISlotRepository.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\DAL\\ISlotRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\ISlotRepository.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\DAL\\ISlotRepository.cs",
+              "RelativeToolTip": "DAL\\ISlotRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T11:02:10.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Slot.cs",
+              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\Slot.cs",
+              "RelativeDocumentMoniker": "BOs\\Slot.cs",
+              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\Slot.cs",
+              "RelativeToolTip": "BOs\\Slot.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T10:48:42.772Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 179,
           "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
@@ -46,7 +47,11 @@ namespace BOs
                 .WithMany(s => s.CourseSemesters)
                 .HasForeignKey(cs => cs.SemesterId);
 
-
+            // Define foreign keys for Schedule referencing CourseSemester
+            optionsBuilder.Entity<Schedule>()
+                .HasOne(s => s.CourseSemester)
+                .WithMany(cs => cs.Schedules)
+                .HasForeignKey(s => new { s.CourseId, s.SemesterId });
 
 
             optionsBuilder.Entity<Account>().HasData(new Account

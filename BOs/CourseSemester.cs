@@ -16,5 +16,8 @@ namespace BOs
         [ForeignKey("Semester")]
         public int SemesterId { get; set; }
         public Semester Semester { get; set; }
+
+
+        public ICollection<Schedule> Schedules { get; set; }
     }
 }

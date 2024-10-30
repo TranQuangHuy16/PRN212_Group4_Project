@@ -1,32 +1,36 @@
 ﻿using BOs;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class SlotDAO : ISlotRepository
+    public class CourseSemesterDAO : ICourseSemesterRepository
     {
-
-        public List<Slot> GetSlots()
+        public List<CourseSemester> GetCourseSemesters()
         {
-            List<Slot> slots = new List<Slot>();
+            List<CourseSemester> courseSemesters = new List<CourseSemester>();
             try
             {
                 using var db = new MyDbContext();
-                slots = db.Slots.Where(s => s.Status == 1).ToList();
-                   
+                courseSemesters = db.CourseSemesters.ToList();
+
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
-            return slots;
+            return courseSemesters;
         }
 
-        public void CreateSlot (Slot slot)
+        public void CreateCourseSemester(CourseSemester courseSemester)
         {
             try
             {
                 using var db = new MyDbContext();
-                db.Slots.Add(slot);
+                db.CourseSemesters.Add(courseSemester);
                 db.SaveChanges();
             }
             catch (Exception ex)
@@ -35,12 +39,12 @@ namespace DAL
             }
         }
 
-        public void UpdateSlot(Slot slot)
+        public void UpdateCourseSemester(CourseSemester courseSemester)
         {
             try
             {
                 using var db = new MyDbContext();
-                db.Entry<Slot>(slot).State
+                db.Entry<CourseSemester>(courseSemester).State
                     = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
             }
@@ -50,22 +54,25 @@ namespace DAL
             }
         }
 
-        public void DeleteSlot(int id)
+        public void DeleteCourseSemester(int courseId, int semesterId)
         {
             try
             {
                 using var db = new MyDbContext();
-                Slot b = db.Slots.SingleOrDefault(s => s.SlotId == id);
-                if (b != null)
+
+                var courseSemester = db.CourseSemesters
+                    .SingleOrDefault(cs => cs.CourseId == courseId && cs.SemesterId == semesterId);
+
+                if (courseSemester != null)
                 {
-                    b.Status = (byte)0;
+                    
+                    db.CourseSemesters.Remove(courseSemester);
+                    db.SaveChanges();
                 }
                 else
                 {
-                    throw new Exception("Slot not found");
+                    throw new Exception("CourseSemester Not Found!");
                 }
-                db.Entry<Slot>(b).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-                db.SaveChanges();
             }
             catch (Exception ex)
             {
@@ -73,19 +80,5 @@ namespace DAL
             }
         }
 
-        public Slot GetSlotById(int id)
-        {
-            Slot slot = new Slot();
-            try
-            {
-                using var db = new MyDbContext();
-                slot = db.Slots.SingleOrDefault(s => s.SlotId == id);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-            return slot;
-        }
     }
 }

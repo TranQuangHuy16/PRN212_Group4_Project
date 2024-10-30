@@ -120,6 +120,7 @@ namespace BOs.Migrations
                     ScheduleId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CourseId = table.Column<int>(type: "int", nullable: false),
+                    SemesterId = table.Column<int>(type: "int", nullable: false),
                     RoomId = table.Column<int>(type: "int", nullable: false),
                     AccountId = table.Column<int>(type: "int", nullable: false),
                     SlotId = table.Column<int>(type: "int", nullable: false),
@@ -136,10 +137,10 @@ namespace BOs.Migrations
                         principalColumn: "AccountId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Schedules_Courses_CourseId",
-                        column: x => x.CourseId,
-                        principalTable: "Courses",
-                        principalColumn: "CourseId",
+                        name: "FK_Schedules_CourseSemesters_CourseId_SemesterId",
+                        columns: x => new { x.CourseId, x.SemesterId },
+                        principalTable: "CourseSemesters",
+                        principalColumns: new[] { "CourseId", "SemesterId" },
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Schedules_Rooms_RoomId",
@@ -171,9 +172,9 @@ namespace BOs.Migrations
                 column: "AccountId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Schedules_CourseId",
+                name: "IX_Schedules_CourseId_SemesterId",
                 table: "Schedules",
-                column: "CourseId");
+                columns: new[] { "CourseId", "SemesterId" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Schedules_RoomId",
@@ -190,25 +191,25 @@ namespace BOs.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "CourseSemesters");
-
-            migrationBuilder.DropTable(
                 name: "Schedules");
-
-            migrationBuilder.DropTable(
-                name: "Semesters");
 
             migrationBuilder.DropTable(
                 name: "Accounts");
 
             migrationBuilder.DropTable(
-                name: "Courses");
+                name: "CourseSemesters");
 
             migrationBuilder.DropTable(
                 name: "Rooms");
 
             migrationBuilder.DropTable(
                 name: "Slots");
+
+            migrationBuilder.DropTable(
+                name: "Courses");
+
+            migrationBuilder.DropTable(
+                name: "Semesters");
         }
     }
 }

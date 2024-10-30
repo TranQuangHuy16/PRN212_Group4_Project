@@ -15,7 +15,7 @@ namespace BOs
         public byte Status { get; set; }
 
         // Relationship: One-to-Many with Schedule
-        public ICollection<Schedule> Schedules { get; set; }
+        //public ICollection<Schedule> Schedules { get; set; }
 
         // Relationship: Many-to-Many with Semester through CourseSemester
         public ICollection<CourseSemester> CourseSemesters { get; set; }
