@@ -24,8 +24,8 @@ namespace BOs
         public Room Room { get; set; }
 
         [ForeignKey("Account")]
-        public int AccountId { get; set; }
-        public Account Account { get; set; }
+        public int ?AccountId { get; set; }
+        public Account ?Account { get; set; }
 
         [ForeignKey("Slot")]
         public int SlotId { get; set; }

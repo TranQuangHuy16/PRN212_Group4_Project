@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BOs.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20241030121957_InitialDB")]
+    [Migration("20241030181146_InitialDB")]
     partial class InitialDB
     {
         /// <inheritdoc />
@@ -141,7 +141,7 @@ namespace BOs.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ScheduleId"));
 
-                    b.Property<int>("AccountId")
+                    b.Property<int?>("AccountId")
                         .HasColumnType("int");
 
                     b.Property<int>("CourseId")
@@ -252,9 +252,7 @@ namespace BOs.Migrations
                 {
                     b.HasOne("BOs.Account", "Account")
                         .WithMany("Schedules")
-                        .HasForeignKey("AccountId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("AccountId");
 
                     b.HasOne("BOs.Room", "Room")
                         .WithMany("Schedules")

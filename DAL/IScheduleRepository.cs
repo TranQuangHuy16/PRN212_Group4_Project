@@ -15,5 +15,6 @@ namespace DAL
         List<Schedule> GetSchedules();
         Schedule GetScheduleByScheduleId(int id);
         List<Schedule> GetSchedulesByAccountId(int id);
+        void RegisterSchedule(int accountId, int scheduleId);
     }
 }

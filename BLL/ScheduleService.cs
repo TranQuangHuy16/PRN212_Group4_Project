@@ -45,5 +45,10 @@ namespace BLL
         {
             return repo.GetSchedulesByAccountId(id);
         }
+
+        public void RegisterSchedule(int accountId, int scheduleId)
+        {
+            repo.RegisterSchedule(accountId, scheduleId);
+        }
     }
 }

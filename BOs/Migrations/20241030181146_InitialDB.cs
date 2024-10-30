@@ -122,7 +122,7 @@ namespace BOs.Migrations
                     CourseId = table.Column<int>(type: "int", nullable: false),
                     SemesterId = table.Column<int>(type: "int", nullable: false),
                     RoomId = table.Column<int>(type: "int", nullable: false),
-                    AccountId = table.Column<int>(type: "int", nullable: false),
+                    AccountId = table.Column<int>(type: "int", nullable: true),
                     SlotId = table.Column<int>(type: "int", nullable: false),
                     ScheduleDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Status = table.Column<byte>(type: "tinyint", nullable: false)
@@ -134,8 +134,7 @@ namespace BOs.Migrations
                         name: "FK_Schedules_Accounts_AccountId",
                         column: x => x.AccountId,
                         principalTable: "Accounts",
-                        principalColumn: "AccountId",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "AccountId");
                     table.ForeignKey(
                         name: "FK_Schedules_CourseSemesters_CourseId_SemesterId",
                         columns: x => new { x.CourseId, x.SemesterId },

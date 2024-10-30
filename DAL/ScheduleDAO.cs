@@ -41,6 +41,25 @@ namespace DAL
 
         }
 
+        public void RegisterSchedule(int accountId, int scheduleId)
+        {
+            try
+            {
+                using var db = new MyDbContext();
+                Schedule schedule = db.Schedules.SingleOrDefault(s => s.ScheduleId == scheduleId);
+                if (schedule == null)
+                {
+                    throw new Exception("Not found Schedule");
+                }
+                schedule.AccountId = accountId;
+                UpdateScheduled(schedule);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public void DeleteScheduled(int id)
         {
             try
