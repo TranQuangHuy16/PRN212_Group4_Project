@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\App.xaml
-16-1680502766
+17754955412
 
-21197602432
+22-1141577627
 2471351543383
-MainWindow.xaml;ManagerAddAccountWindow.xaml;ManagerAddComponentWindow.xaml;ManagerAddExamWindow.xaml;ManagerComponentCourseWindow.xaml;ManagerComponentRoomWindow.xaml;ManagerComponentSemesterWindow.xaml;ManagerComponentSlotWindow.xaml;ManagerManageAccountWindow.xaml;ManagerManageComponentWindow.xaml;ManagerManageExamWindow.xaml;ManagerWindow.xaml;ProfileChangePasswordWindow.xaml;ProfileRegisterWindow.xaml;ProfileUpdateWindow.xaml;ProfileWindow.xaml;
+MainWindow.xaml;ManagerAddAccountWindow.xaml;ManagerAddComponentWindow.xaml;ManagerAddExamWindow.xaml;ManagerComponentCourseSemesterWindow.xaml;ManagerComponentCourseWindow.xaml;ManagerComponentRoomWindow.xaml;ManagerComponentSemesterWindow.xaml;ManagerComponentSlotWindow.xaml;ManagerManageAccountWindow.xaml;ManagerManageComponentWindow.xaml;ManagerManageExamWindow.xaml;ManagerWindow.xaml;ProfileChangePasswordWindow.xaml;ProfileRegisterWindow.xaml;ProfileUpdateWindow.xaml;ProfileWindow.xaml;
 
-False
+True
 
