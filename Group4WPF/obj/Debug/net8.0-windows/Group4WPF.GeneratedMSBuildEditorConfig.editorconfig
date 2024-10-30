@@ -8,6 +8,10 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Group4WPF
+<<<<<<< HEAD
 build_property.ProjectDir = D:\Ky 5\PRN212\Project\PRN212_Group4_Project\Group4WPF\
+=======
+build_property.ProjectDir = D:\FPT_PRN212\src\PRN212_Group4_Project\Group4WPF\
+>>>>>>> a8098af4d700c294507d01d58297f66f120cb042
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
