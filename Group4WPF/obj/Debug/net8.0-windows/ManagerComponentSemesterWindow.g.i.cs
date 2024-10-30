@@ -69,7 +69,7 @@ namespace Group4WPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Group4WPF;component/managercomponentsemesterwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Group4WPF;V1.0.0.0;component/managercomponentsemesterwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ManagerComponentSemesterWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
