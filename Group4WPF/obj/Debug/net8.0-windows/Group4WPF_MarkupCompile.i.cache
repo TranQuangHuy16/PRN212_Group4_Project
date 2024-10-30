@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\FPT_PRN212\src\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\
+C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\
 Group4WPF
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\App.xaml
-11-412681597
+12693472184
 
-16-1095320285
+17944452211
 2471351543383
-MainWindow.xaml;ManagerAddAccountWindow.xaml;ManagerAddComponentWindow.xaml;ManagerAddExamWindow.xaml;ManagerManageAccountWindow.xaml;ManagerManageExamWindow.xaml;ManagerWindow.xaml;ProfileChangePasswordWindow.xaml;ProfileRegisterWindow.xaml;ProfileUpdateWindow.xaml;ProfileWindow.xaml;
+MainWindow.xaml;ManagerAddAccountWindow.xaml;ManagerAddComponentWindow.xaml;ManagerAddExamWindow.xaml;ManagerManageAccountWindow.xaml;ManagerManageComponentWindow.xaml;ManagerManageExamWindow.xaml;ManagerWindow.xaml;ProfileChangePasswordWindow.xaml;ProfileRegisterWindow.xaml;ProfileUpdateWindow.xaml;ProfileWindow.xaml;
 
 True
 

@@ -23,5 +23,11 @@ namespace Group4WPF
         {
             InitializeComponent();
         }
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            PlaceholderTextBlock.Visibility = string.IsNullOrEmpty(CourseNameTextBox.Text)
+                ? Visibility.Visible
+                : Visibility.Collapsed;
+        }
     }
 }
