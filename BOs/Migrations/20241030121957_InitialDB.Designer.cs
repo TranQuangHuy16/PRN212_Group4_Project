@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BOs.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20241027085451_InitialDB")]
+    [Migration("20241030121957_InitialDB")]
     partial class InitialDB
     {
         /// <inheritdoc />
@@ -153,6 +153,9 @@ namespace BOs.Migrations
                     b.Property<DateTime>("ScheduleDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("SemesterId")
+                        .HasColumnType("int");
+
                     b.Property<int>("SlotId")
                         .HasColumnType("int");
 
@@ -163,11 +166,11 @@ namespace BOs.Migrations
 
                     b.HasIndex("AccountId");
 
-                    b.HasIndex("CourseId");
-
                     b.HasIndex("RoomId");
 
                     b.HasIndex("SlotId");
+
+                    b.HasIndex("CourseId", "SemesterId");
 
                     b.ToTable("Schedules");
                 });
@@ -253,12 +256,6 @@ namespace BOs.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BOs.Course", "Course")
-                        .WithMany("Schedules")
-                        .HasForeignKey("CourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("BOs.Room", "Room")
                         .WithMany("Schedules")
                         .HasForeignKey("RoomId")
@@ -271,9 +268,15 @@ namespace BOs.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("BOs.CourseSemester", "CourseSemester")
+                        .WithMany("Schedules")
+                        .HasForeignKey("CourseId", "SemesterId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Account");
 
-                    b.Navigation("Course");
+                    b.Navigation("CourseSemester");
 
                     b.Navigation("Room");
 
@@ -288,7 +291,10 @@ namespace BOs.Migrations
             modelBuilder.Entity("BOs.Course", b =>
                 {
                     b.Navigation("CourseSemesters");
+                });
 
+            modelBuilder.Entity("BOs.CourseSemester", b =>
+                {
                     b.Navigation("Schedules");
                 });
 

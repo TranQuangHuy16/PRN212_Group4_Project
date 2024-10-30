@@ -13,9 +13,11 @@ namespace BOs
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ScheduleId { get; set; }
 
-        [ForeignKey("Course")]
         public int CourseId { get; set; }
-        public Course Course { get; set; }
+        public int SemesterId { get; set; }
+
+        [ForeignKey(nameof(CourseId) + "," + nameof(SemesterId))]
+        public CourseSemester CourseSemester { get; set; }
 
         [ForeignKey("Room")]
         public int RoomId { get; set; }
