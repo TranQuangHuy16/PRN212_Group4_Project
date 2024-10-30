@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\",
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\group4wpf\\managerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\managerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -157,6 +158,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bos\\slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|solutionrelative:bos\\slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|c:\\users\\admin\\source\\repos\\tranquanghuy16\\prn212_group4_project\\group4wpf\\managermanageaccountwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\managermanageaccountwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|c:\\users\\admin\\source\\repos\\tranquanghuy16\\prn212_group4_project\\group4wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|c:\\users\\admin\\source\\repos\\tranquanghuy16\\prn212_group4_project\\group4wpf\\managermanagecomponentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\managermanagecomponentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|c:\\users\\admin\\source\\repos\\tranquanghuy16\\prn212_group4_project\\group4wpf\\manageraddcomponentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\manageraddcomponentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+>>>>>>> 0dfe8730ac3be6f196122878e68c7c6f66ffc6ec
     }
   ],
   "DocumentGroupContainers": [
@@ -166,7 +183,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 6,
+=======
+          "SelectedChildIndex": -1,
+>>>>>>> 0dfe8730ac3be6f196122878e68c7c6f66ffc6ec
           "Children": [
             {
               "$type": "Bookmark",
@@ -638,7 +659,7 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }

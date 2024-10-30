@@ -95,3 +95,9 @@ C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\D
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\Group4WPF.pdb
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\Group4WPF.genruntimeconfig.cache
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ref\Group4WPF.dll
+C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerAddAccountWindow.g.cs
+C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerManageAccountWindow.g.cs
+C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerManageComponentWindow.g.cs
+C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerAddAccountWindow.baml
+C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerManageAccountWindow.baml
+C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerManageComponentWindow.baml

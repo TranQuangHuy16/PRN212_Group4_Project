@@ -69,7 +69,7 @@ namespace WpfApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Group4WPF;V1.0.0.0;component/managermanageexamwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Group4WPF;component/managermanageexamwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ManagerManageExamWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
