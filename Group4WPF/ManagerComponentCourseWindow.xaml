@@ -17,7 +17,7 @@
                 <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" 
                 VerticalContentAlignment="Center" Background="Transparent" 
                 TextChanged="TextBox_TextChanged" x:Name="CourseNameTextBox"/>
-                <TextBlock x:Name="PlaceholderTextBlock" Text="Search Room Number" 
+                <TextBlock x:Name="PlaceholderTextBlock" Text="Search Course" 
                 Foreground="Gray" VerticalAlignment="Center" 
                  Margin="10,0,0,0" IsHitTestVisible="False" FontSize="16"/>
             </Grid>
@@ -31,7 +31,6 @@
         <DataGrid AutoGenerateColumns="False" Margin="36,233,36,0" Height="302" VerticalAlignment="Top">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Course Name" Binding="{Binding CourseName}" Width="*"/>
-                <DataGridTextColumn Header="Semester" Binding="{Binding Semester}" Width="*"/>
                 <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="60"/>
             </DataGrid.Columns>
         </DataGrid>

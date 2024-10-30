@@ -13,6 +13,9 @@
     <Compile Update="ManagerAddComponentWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ManagerComponentCourseSemesterWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ManagerComponentCourseWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -40,6 +43,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ManagerAddComponentWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManagerComponentCourseSemesterWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ManagerComponentCourseWindow.xaml">

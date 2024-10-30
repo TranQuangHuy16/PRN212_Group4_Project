@@ -1,57 +1,16 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "WorkspaceRootPath": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\",
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bos\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|solutionrelative:bos\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|c:\\users\\admin\\source\\repos\\tranquanghuy16\\prn212_group4_project\\group4wpf\\managercomponentroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\managercomponentroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bos\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|solutionrelative:bos\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bos\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|solutionrelative:bos\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bos\\coursesemester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|solutionrelative:bos\\coursesemester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\bos\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4935DC0F-7AA5-4187-922F-377F5E59A8C5}|BOs\\BOs.csproj|solutionrelative:bos\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\group4wpf\\managermanagecomponentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|c:\\users\\admin\\source\\repos\\tranquanghuy16\\prn212_group4_project\\group4wpf\\managermanagecomponentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\managermanagecomponentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\group4wpf\\managermanageaccountwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\managermanageaccountwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\group4wpf\\manageraddexamwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\manageraddexamwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\group4wpf\\manageraddcomponentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\manageraddcomponentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\group4wpf\\manageraddaccountwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\manageraddaccountwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4F5BA5C-AF1D-4265-BA1A-ECF718F6F64C}|DAL\\DAL.csproj|d:\\fpt_prn212\\src\\prn212_group4_project\\dal\\coursedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4F5BA5C-AF1D-4265-BA1A-ECF718F6F64C}|DAL\\DAL.csproj|solutionrelative:dal\\coursedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
-=======
-  "WorkspaceRootPath": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\",
-  "Documents": [],
->>>>>>> f9d272c2af8328bcc1be0ec0a71c835848f96ba6
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -59,166 +18,39 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 4,
-=======
-          "SelectedChildIndex": -1,
->>>>>>> f9d272c2af8328bcc1be0ec0a71c835848f96ba6
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-<<<<<<< HEAD
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Account.cs",
-              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\Account.cs",
-              "RelativeDocumentMoniker": "BOs\\Account.cs",
-              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\Account.cs",
-              "RelativeToolTip": "BOs\\Account.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T15:58:38.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Course.cs",
-              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\Course.cs",
-              "RelativeDocumentMoniker": "BOs\\Course.cs",
-              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\Course.cs",
-              "RelativeToolTip": "BOs\\Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T15:58:36.197Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CourseSemester.cs",
-              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\CourseSemester.cs",
-              "RelativeDocumentMoniker": "BOs\\CourseSemester.cs",
-              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\CourseSemester.cs",
-              "RelativeToolTip": "BOs\\CourseSemester.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T15:58:35.326Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Schedule.cs",
-              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\Schedule.cs",
-              "RelativeDocumentMoniker": "BOs\\Schedule.cs",
-              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\Schedule.cs",
-              "RelativeToolTip": "BOs\\Schedule.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T15:57:12.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MyDbContext.cs",
-              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\MyDbContext.cs",
-              "RelativeDocumentMoniker": "BOs\\MyDbContext.cs",
-              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BOs\\MyDbContext.cs",
-              "RelativeToolTip": "BOs\\MyDbContext.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T15:57:06.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ManagerManageAccountWindow.xaml",
-              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ManagerManageAccountWindow.xaml",
-              "RelativeDocumentMoniker": "Group4WPF\\ManagerManageAccountWindow.xaml",
-              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ManagerManageAccountWindow.xaml",
-              "RelativeToolTip": "Group4WPF\\ManagerManageAccountWindow.xaml",
+              "Title": "ManagerComponentRoomWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ManagerComponentRoomWindow.xaml",
+              "RelativeDocumentMoniker": "Group4WPF\\ManagerComponentRoomWindow.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ManagerComponentRoomWindow.xaml",
+              "RelativeToolTip": "Group4WPF\\ManagerComponentRoomWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-30T15:52:44.837Z",
+              "WhenOpened": "2024-10-30T16:30:48.048Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ManagerAddExamWindow.xaml",
-              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ManagerAddExamWindow.xaml",
-              "RelativeDocumentMoniker": "Group4WPF\\ManagerAddExamWindow.xaml",
-              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ManagerAddExamWindow.xaml",
-              "RelativeToolTip": "Group4WPF\\ManagerAddExamWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-30T15:52:42.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ManagerAddComponentWindow.xaml",
-              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ManagerAddComponentWindow.xaml",
-              "RelativeDocumentMoniker": "Group4WPF\\ManagerAddComponentWindow.xaml",
-              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ManagerAddComponentWindow.xaml",
-              "RelativeToolTip": "Group4WPF\\ManagerAddComponentWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-30T15:52:40.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ManagerAddAccountWindow.xaml",
-              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ManagerAddAccountWindow.xaml",
-              "RelativeDocumentMoniker": "Group4WPF\\ManagerAddAccountWindow.xaml",
-              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ManagerAddAccountWindow.xaml",
-              "RelativeToolTip": "Group4WPF\\ManagerAddAccountWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-30T15:52:39.334Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "ManagerManageComponentWindow.xaml",
-              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ManagerManageComponentWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ManagerManageComponentWindow.xaml",
               "RelativeDocumentMoniker": "Group4WPF\\ManagerManageComponentWindow.xaml",
-              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\Group4WPF\\ManagerManageComponentWindow.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ManagerManageComponentWindow.xaml",
               "RelativeToolTip": "Group4WPF\\ManagerManageComponentWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-30T15:52:26.663Z",
+              "WhenOpened": "2024-10-30T16:30:29.102Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CourseDAO.cs",
-              "DocumentMoniker": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\DAL\\CourseDAO.cs",
-              "RelativeDocumentMoniker": "DAL\\CourseDAO.cs",
-              "ToolTip": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\DAL\\CourseDAO.cs",
-              "RelativeToolTip": "DAL\\CourseDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T15:52:10.395Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 179,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-=======
->>>>>>> f9d272c2af8328bcc1be0ec0a71c835848f96ba6
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }

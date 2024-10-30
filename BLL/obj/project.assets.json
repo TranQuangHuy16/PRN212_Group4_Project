@@ -3086,23 +3086,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Quang Huy\\.nuget\\packages\\": {},
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BLL\\BLL.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\Source\\Repos\\TranQuangHuy16\\PRN212_Group4_Project\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BLL\\BLL.csproj",
-      "packagesPath": "C:\\Users\\Quang Huy\\.nuget\\packages\\",
-      "outputPath": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\BLL\\obj\\",
+      "projectPath": "C:\\Users\\ADMIN\\Source\\Repos\\TranQuangHuy16\\PRN212_Group4_Project\\BLL\\BLL.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ADMIN\\Source\\Repos\\TranQuangHuy16\\PRN212_Group4_Project\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Quang Huy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3118,8 +3118,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\DAL\\DAL.csproj": {
-              "projectPath": "D:\\FPT_PRN212\\src\\PRN212_Group4_Project\\DAL\\DAL.csproj"
+            "C:\\Users\\ADMIN\\Source\\Repos\\TranQuangHuy16\\PRN212_Group4_Project\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\ADMIN\\Source\\Repos\\TranQuangHuy16\\PRN212_Group4_Project\\DAL\\DAL.csproj"
             }
           }
         }
@@ -3154,7 +3154,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
