@@ -63,8 +63,11 @@ C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\bin\D
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\bin\Debug\net8.0-windows\DAL.pdb
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\Group4WPF.csproj.AssemblyReference.cache
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerAddAccountWindow.g.cs
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerAddComponentWindow.g.cs
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerAddExamWindow.g.cs
+C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerManageAccountWindow.g.cs
+C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerManageComponentWindow.g.cs
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerManageExamWindow.g.cs
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerWindow.g.cs
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ProfileChangePasswordWindow.g.cs
@@ -75,8 +78,11 @@ C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\D
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\Group4WPF_MarkupCompile.cache
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\Group4WPF_MarkupCompile.lref
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerAddAccountWindow.baml
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerAddComponentWindow.baml
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerAddExamWindow.baml
+C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerManageAccountWindow.baml
+C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerManageComponentWindow.baml
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerManageExamWindow.baml
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerWindow.baml
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ProfileChangePasswordWindow.baml
@@ -95,9 +101,3 @@ C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\D
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\Group4WPF.pdb
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\Group4WPF.genruntimeconfig.cache
 C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ref\Group4WPF.dll
-C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerAddAccountWindow.g.cs
-C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerManageAccountWindow.g.cs
-C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerManageComponentWindow.g.cs
-C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerAddAccountWindow.baml
-C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerManageAccountWindow.baml
-C:\Users\ADMIN\Source\Repos\TranQuangHuy16\PRN212_Group4_Project\Group4WPF\obj\Debug\net8.0-windows\ManagerManageComponentWindow.baml

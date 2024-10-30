@@ -1,6 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\",
+<<<<<<< HEAD
   "Documents": [
     {
 <<<<<<< HEAD
@@ -176,6 +177,9 @@
 >>>>>>> 0dfe8730ac3be6f196122878e68c7c6f66ffc6ec
     }
   ],
+=======
+  "Documents": [],
+>>>>>>> f9d272c2af8328bcc1be0ec0a71c835848f96ba6
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -183,6 +187,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
 <<<<<<< HEAD
           "SelectedChildIndex": 6,
 =======
@@ -655,10 +660,19 @@
         },
         {
           "DockedWidth": 179,
+=======
+>>>>>>> f9d272c2af8328bcc1be0ec0a71c835848f96ba6
           "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
+<<<<<<< HEAD
+=======
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+>>>>>>> f9d272c2af8328bcc1be0ec0a71c835848f96ba6
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
