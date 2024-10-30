@@ -60,7 +60,14 @@ namespace DAL
             {
                 using var db = new MyDbContext();
                 Semester b = db.Semesters.SingleOrDefault(s => s.SemesterId == id);
-                b.Status = (byte)0;
+                if (b != null)
+                {
+                    b.Status = (byte)0;
+                }
+                else
+                {
+                    throw new Exception("Semester not found");
+                }
                 db.Entry<Semester>(b).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
             }
