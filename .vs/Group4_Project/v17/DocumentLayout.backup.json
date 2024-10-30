@@ -7,12 +7,8 @@
   "WorkspaceRootPath": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|c:\\users\\admin\\source\\repos\\tranquanghuy16\\prn212_group4_project\\group4wpf\\managercomponentroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\managercomponentroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|c:\\users\\admin\\source\\repos\\tranquanghuy16\\prn212_group4_project\\group4wpf\\managermanagecomponentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\managermanagecomponentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|c:\\users\\admin\\source\\repos\\tranquanghuy16\\prn212_group4_project\\group4wpf\\managercomponentcoursesemesterwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\managercomponentcoursesemesterwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
 >>>>>>> a8098af4d700c294507d01d58297f66f120cb042
@@ -22,13 +18,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-<<<<<<< HEAD
           "DockedWidth": 179,
           "SelectedChildIndex": -1,
-=======
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
->>>>>>> a8098af4d700c294507d01d58297f66f120cb042
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,25 +34,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ManagerComponentRoomWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ManagerComponentRoomWindow.xaml",
-              "RelativeDocumentMoniker": "Group4WPF\\ManagerComponentRoomWindow.xaml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ManagerComponentRoomWindow.xaml",
-              "RelativeToolTip": "Group4WPF\\ManagerComponentRoomWindow.xaml",
+              "Title": "ManagerComponentCourseSemesterWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ManagerComponentCourseSemesterWindow.xaml",
+              "RelativeDocumentMoniker": "Group4WPF\\ManagerComponentCourseSemesterWindow.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ManagerComponentCourseSemesterWindow.xaml",
+              "RelativeToolTip": "Group4WPF\\ManagerComponentCourseSemesterWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-30T16:30:48.048Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ManagerManageComponentWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ManagerManageComponentWindow.xaml",
-              "RelativeDocumentMoniker": "Group4WPF\\ManagerManageComponentWindow.xaml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ManagerManageComponentWindow.xaml",
-              "RelativeToolTip": "Group4WPF\\ManagerManageComponentWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-30T16:30:29.102Z",
+              "WhenOpened": "2024-10-30T17:10:57.271Z",
               "EditorCaption": ""
 >>>>>>> a8098af4d700c294507d01d58297f66f120cb042
             }
