@@ -85,6 +85,10 @@ namespace DAL
                     .Include(s => s.Room)
                     .Include(s => s.Account)
                     .Include(s => s.Slot)
+                    .Include(s => s.CourseSemester)
+                    .ThenInclude(cs => cs.Course)
+                    .Include(s => s.CourseSemester)
+                    .ThenInclude(cs => cs.Semester)
                     .ToList();
             }
             catch (Exception ex)
@@ -104,6 +108,10 @@ namespace DAL
                     .Include(s => s.Room)
                     .Include(s => s.Account)
                     .Include(s => s.Slot)
+                    .Include(s => s.CourseSemester)
+                    .ThenInclude(cs => cs.Course)
+                    .Include(s => s.CourseSemester)
+                    .ThenInclude(cs => cs.Semester)
                     .SingleOrDefault(s => s.ScheduleId == id);
             }
             catch (Exception ex)
