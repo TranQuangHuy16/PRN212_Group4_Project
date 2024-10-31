@@ -27,7 +27,7 @@ namespace BOs
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // Using IConfiguration to get information from json file.
-            optionsBuilder.UseSqlServer("Server= QUANGHUY\\PIEDTEAM;Database= Group4Project; Uid=sa; Pwd=1234567890;TrustServerCertificate=true");
+            optionsBuilder.UseSqlServer("Server=(local);Database=Group4Project; Uid=sa; Pwd=12345;TrustServerCertificate=true");
         }
 
         

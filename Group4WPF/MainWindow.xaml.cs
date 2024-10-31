@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using BLL;
+using BOs;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,9 +18,36 @@ namespace WpfApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        AccountService service;
+
         public MainWindow()
         {
             InitializeComponent();
+            service = new AccountService();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var email = TextEmail.Text;
+            var password = TextPassword.Password;
+            Account account = service.GetAccountByEmail(email);
+            if (account != null && account.Password.Equals(password))
+            {
+                this.Hide();
+                ManagerWindow window = new();
+                window.Show();
+            }
+            else
+            {
+                SendInvalidLogin();
+            }
+        }
+
+        private static void SendInvalidLogin() => MessageBox.Show("Email or Password is incorrect");
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

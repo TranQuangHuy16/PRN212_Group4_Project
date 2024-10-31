@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Group4WPF;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,5 +24,37 @@ namespace WpfApp
         {
             InitializeComponent();
         }
+
+        private void AddComponent_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            ManagerAddComponentWindow window = new();
+            window.Show();
+        }
+        
+        private void ManageComponent_Click(object sender, RoutedEventArgs e){
+            this.Close();
+            ManagerManageComponentWindow window = new();
+            window.Show();
+        }
+        private void AddExamSchedule_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            ManagerAddExamWindow window = new();
+            window.Show();
+        }
+        private void ManageExam_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            ManagerManageExamWindow window = new();
+            window.Show();
+        }
+        private void ManageAccount_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            ManagerManageAccountWindow window = new();
+            window.Show();
+        }
+
     }
 }

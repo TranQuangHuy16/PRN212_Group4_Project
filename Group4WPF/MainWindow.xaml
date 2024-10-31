@@ -15,20 +15,20 @@
         <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
         HorizontalAlignment="Left" VerticalAlignment="Top" 
         Width="316" Height="46" Background="White" Margin="148,118,0,0">
-            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" 
+            <TextBox x:Name="TextEmail" Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" 
              VerticalContentAlignment="Center" Background="Transparent"/>
         </Border>
         <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
         HorizontalAlignment="Left" VerticalAlignment="Top" 
         Width="316" Height="46" Background="White" Margin="148,192,0,0">
-            <PasswordBox Padding="10,0,10,0" BorderThickness="0" FontSize="16" 
+            <PasswordBox x:Name="TextPassword" Padding="10,0,10,0" BorderThickness="0" FontSize="16" 
                  VerticalContentAlignment="Center" Background="Transparent"/>
         </Border>
         <Button BorderBrush="Transparent" BorderThickness="0" Content="Login" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
         Margin="107,280,0,0" VerticalAlignment="Top" 
-        FontWeight="Bold" />
+        FontWeight="Bold" Click="Button_Click" />
         <Button BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
             Margin="275,280,0,0" VerticalAlignment="Top" 
-            FontWeight="Bold" />
+            FontWeight="Bold" Click="Button_Click_1"/>
     </Grid>
 </Window>
