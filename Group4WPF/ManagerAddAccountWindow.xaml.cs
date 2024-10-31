@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using BOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +21,55 @@ namespace Group4WPF
     /// </summary>
     public partial class ManagerAddAccountWindow : Window
     {
-        public ManagerAddAccountWindow()
+        private readonly Window _window;
+        private readonly AccountService service;
+
+        public ManagerAddAccountWindow(Window prev)
         {
+            _window = prev;
+            service = new AccountService();
             InitializeComponent();
+        }
+
+        private void ButtonCreate_Click(object sender, RoutedEventArgs e)
+        {
+            if (!TextPassword.Password.Equals(TextPasswordConfirm.Password))
+            {
+                MessageBox.Show("Password and Confirm Password does not match...");
+                return;
+            }
+            try
+            {
+                service.CreateAccount(GetAccount());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Could not create account...\n" + ex.Message);
+            }
+            HandleClose();
+        }
+
+        private Account GetAccount()
+        {
+            Account account = new()
+            {
+                Name = TextName.Text,
+                Email = TextEmail.Text,
+                Telephone = TextTele.Text,
+                Password = TextPassword.Password,
+            };
+            return account;
+        }
+
+        private void ButtonCancel_Click(object sender, RoutedEventArgs e)
+        {
+            HandleClose();
+        }
+
+        private void HandleClose()
+        {
+            this.Close();
+            _window.Show();
         }
     }
 }

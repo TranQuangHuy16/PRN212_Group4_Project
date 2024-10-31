@@ -20,8 +20,10 @@ namespace WpfApp
     /// </summary>
     public partial class ManagerWindow : Window
     {
-        public ManagerWindow()
+        private Window prev;
+        public ManagerWindow(Window window)
         {
+            this.prev = window;
             InitializeComponent();
         }
 
@@ -56,5 +58,10 @@ namespace WpfApp
             window.Show();
         }
 
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            prev.Show();
+        }
     }
 }

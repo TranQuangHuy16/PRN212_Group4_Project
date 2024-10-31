@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|c:\\users\\administrator\\source\\repos\\tranquanghuy16\\prn212_group4_project\\group4wpf\\managerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\managerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|c:\\users\\administrator\\source\\repos\\tranquanghuy16\\prn212_group4_project\\group4wpf\\manageraddaccountwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\manageraddaccountwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|c:\\users\\administrator\\source\\repos\\tranquanghuy16\\prn212_group4_project\\group4wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|c:\\users\\administrator\\source\\repos\\tranquanghuy16\\prn212_group4_project\\group4wpf\\managerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|solutionrelative:group4wpf\\managerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4616A68-089E-490A-A5FB-1C8AF5A574DC}|Group4WPF\\Group4WPF.csproj|c:\\users\\administrator\\source\\repos\\tranquanghuy16\\prn212_group4_project\\group4wpf\\managerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -75,6 +79,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ManagerAddAccountWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ManagerAddAccountWindow.xaml",
+              "RelativeDocumentMoniker": "Group4WPF\\ManagerAddAccountWindow.xaml",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ManagerAddAccountWindow.xaml",
+              "RelativeToolTip": "Group4WPF\\ManagerAddAccountWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-31T10:08:48.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ManagerWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ManagerWindow.xaml.cs",
               "RelativeDocumentMoniker": "Group4WPF\\ManagerWindow.xaml.cs",
@@ -87,20 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "Group4WPF\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\AssemblyInfo.cs",
-              "RelativeToolTip": "Group4WPF\\AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T04:04:45.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ManagerManageComponentWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ManagerManageComponentWindow.xaml",
               "RelativeDocumentMoniker": "Group4WPF\\ManagerManageComponentWindow.xaml",
@@ -112,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ManagerManageExamWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ManagerManageExamWindow.xaml",
               "RelativeDocumentMoniker": "Group4WPF\\ManagerManageExamWindow.xaml",
@@ -124,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ManagerWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ManagerWindow.xaml",
               "RelativeDocumentMoniker": "Group4WPF\\ManagerWindow.xaml",
@@ -142,14 +145,27 @@
               "RelativeDocumentMoniker": "Group4WPF\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\MainWindow.xaml.cs",
               "RelativeToolTip": "Group4WPF\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAACMAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAgwDEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T03:59:14.297Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Group4WPF\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\AssemblyInfo.cs",
+              "RelativeToolTip": "Group4WPF\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T04:04:45.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AccountService.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\BLL\\AccountService.cs",
               "RelativeDocumentMoniker": "BLL\\AccountService.cs",
@@ -162,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Group4WPF\\MainWindow.xaml",
@@ -174,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ProfileChangePasswordWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ProfileChangePasswordWindow.xaml",
               "RelativeDocumentMoniker": "Group4WPF\\ProfileChangePasswordWindow.xaml",
@@ -186,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ProfileRegisterWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ProfileRegisterWindow.xaml",
               "RelativeDocumentMoniker": "Group4WPF\\ProfileRegisterWindow.xaml",
@@ -198,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ProfileUpdateWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ProfileUpdateWindow.xaml",
               "RelativeDocumentMoniker": "Group4WPF\\ProfileUpdateWindow.xaml",
@@ -210,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ProfileWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\ProfileWindow.xaml",
               "RelativeDocumentMoniker": "Group4WPF\\ProfileWindow.xaml",
@@ -222,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TranQuangHuy16\\PRN212_Group4_Project\\Group4WPF\\App.xaml",
               "RelativeDocumentMoniker": "Group4WPF\\App.xaml",

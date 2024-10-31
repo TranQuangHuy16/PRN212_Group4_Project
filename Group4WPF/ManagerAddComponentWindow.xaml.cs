@@ -41,5 +41,40 @@ namespace Group4WPF
             StartTimeComboBox.ItemsSource = timeOptions;
             EndTimeComboBox.ItemsSource = timeOptions;
         }
+
+        private void ButtonCreateCourseSemester_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonCancel_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonDone_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonCreateRoom_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonCreate_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonCreateCourse_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonCreateSlot_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

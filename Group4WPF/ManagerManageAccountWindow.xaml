@@ -30,16 +30,16 @@
                 <DataGridTextColumn Header="Status" Binding="{Binding status}" Width="70"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Create Account" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+        <Button x:Name="ButtonCreate" BorderBrush="Transparent" BorderThickness="0" Content="Create Account" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
             Margin="100,830,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Update Account" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+        <Button x:Name="ButtonUpdate" BorderBrush="Transparent" BorderThickness="0" Content="Update Account" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
             Margin="280,830,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Delete Account" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+        <Button x:Name="ButtonDelete" BorderBrush="Transparent" BorderThickness="0" Content="Delete Account" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
             Margin="460,830,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+        <Button x:Name="ButtonCancel" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
             Margin="640,830,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
         <Label Content="Name" HorizontalAlignment="Left" Height="46" Margin="40,170,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>

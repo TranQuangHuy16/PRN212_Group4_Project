@@ -10,42 +10,42 @@
         Title="ManagerAddAccountWindow" Height="750" Width="800">
     <Grid>
         <Label Content="ADD SUPERVISOR ACCOUNT" HorizontalAlignment="Center" Height="53" Margin="0,33,0,0" VerticalAlignment="Top" Width="428" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Create" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
+        <Button x:Name="ButtonCreate" Click="ButtonCreate_Click"  BorderBrush="Transparent" BorderThickness="0" Content="Create" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
             Margin="225,620,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
+        <Button x:Name="ButtonCancel" Click="ButtonCancel_Click" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
             Margin="500,620,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
         <Label Content="Name" HorizontalAlignment="Left" Height="46" Margin="36,118,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
+        <Border  BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
         HorizontalAlignment="Left" VerticalAlignment="Top" 
         Width="546" Height="46" Background="White" Margin="200,118,0,0">
-            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+            <TextBox x:Name="TextName" Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
         </Border>
         <Label Content="Email" HorizontalAlignment="Left" Height="46" Margin="36,218,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
+        <Border  BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
         HorizontalAlignment="Left" VerticalAlignment="Top" 
         Width="546" Height="46" Background="White" Margin="200,218,0,0">
-            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+            <TextBox x:Name="TextEmail" Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
         </Border>
         <Label Content="Telephone" HorizontalAlignment="Left" Height="46" Margin="36,318,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
+        <Border  BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
         HorizontalAlignment="Left" VerticalAlignment="Top" 
         Width="546" Height="46" Background="White" Margin="200,318,0,0">
-            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+            <TextBox x:Name="TextTele" Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
         </Border>
         <Label Content="Password" HorizontalAlignment="Left" Height="46" Margin="36,418,0,0" VerticalAlignment="Top" Width="151" FontSize="18" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
         HorizontalAlignment="Left" VerticalAlignment="Top" 
         Width="550" Height="46" Background="White" Margin="200,418,0,0">
-            <PasswordBox Padding="10,0,10,0" BorderThickness="0" FontSize="16" 
+            <PasswordBox x:Name="TextPassword" Padding="10,0,10,0" BorderThickness="0" FontSize="16" 
  VerticalContentAlignment="Center" Background="Transparent"/>
         </Border>
         <Label Content="Confirm Password" HorizontalAlignment="Left" Height="46" Margin="20,518,0,0" VerticalAlignment="Top" Width="167" FontSize="18" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
         HorizontalAlignment="Left" VerticalAlignment="Top" 
         Width="550" Height="46" Background="White" Margin="200,518,0,0">
-            <PasswordBox Padding="10,0,10,0" BorderThickness="0" FontSize="16" 
+            <PasswordBox x:Name="TextPasswordConfirm" Padding="10,0,10,0" BorderThickness="0" FontSize="16" 
         VerticalContentAlignment="Center" Background="Transparent"/>
         </Border>
     </Grid>

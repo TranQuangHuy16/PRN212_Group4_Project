@@ -35,16 +35,16 @@
     Width="430" Height="46" Background="White" Margin="150, 160,0,0">
             <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
         </Border>
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Create" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
+        <Button x:Name="ButtonCreate" BorderBrush="Transparent" BorderThickness="0" Content="Create" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
     Margin="120,555,0,0" VerticalAlignment="Top" 
     FontWeight="Bold" />
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Update" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
+        <Button x:Name="ButtonUpdate" BorderBrush="Transparent" BorderThickness="0" Content="Update" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
             Margin="280,555,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Delete" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
+        <Button x:Name="ButtonDelete" BorderBrush="Transparent" BorderThickness="0" Content="Delete" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
             Margin="440,555,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
+        <Button x:Name="ButtonCancel" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
             Margin="600,555,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
     </Grid>

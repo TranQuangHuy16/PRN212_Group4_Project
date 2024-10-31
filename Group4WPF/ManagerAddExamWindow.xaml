@@ -14,8 +14,8 @@
         <Label Content="RoomNo" HorizontalAlignment="Left" Height="46" Margin="36,158,0,0" VerticalAlignment="Top" Width="163" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Label Content="Slot" HorizontalAlignment="Left" Height="46" Margin="36,208,0,0" VerticalAlignment="Top" Width="163" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Label Content="Schedule Date" HorizontalAlignment="Left" Height="46" Margin="36,258,0,0" VerticalAlignment="Top" Width="163" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <ComboBox HorizontalAlignment="Left" Margin="200,108,0,0" VerticalAlignment="Top" Width="548" Height="46" VerticalContentAlignment="Center" FontSize="16"/>
-        <ComboBox HorizontalAlignment="Left" Margin="200,158,0,0" VerticalAlignment="Top" Width="548" Height="46" VerticalContentAlignment="Center" FontSize="16"/>
+        <ComboBox x:Name="CourseComboBox" HorizontalAlignment="Left" Margin="200,108,0,0" VerticalAlignment="Top" Width="548" Height="46" VerticalContentAlignment="Center" FontSize="16"/>
+        <ComboBox x:Name="RoomComboBox" HorizontalAlignment="Left" Margin="200,158,0,0" VerticalAlignment="Top" Width="548" Height="46" VerticalContentAlignment="Center" FontSize="16"/>
 
         <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
                 HorizontalAlignment="Left" VerticalAlignment="Top" 
@@ -23,14 +23,14 @@
             <TextBox x:Name="txtScheduleDate" Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent" IsReadOnly="True"/>
         </Border>
         <DatePicker x:Name="ScheduleDatepicker" HorizontalAlignment="Left" Height="38" Margin="715,259,0,0" VerticalAlignment="Top" Width="31" FontSize="16" SelectedDateChanged="DatePicker_SelectedDateChanged"/>
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Create" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
+        <Button x:Name="ButtonCreate" BorderBrush="Transparent" BorderThickness="0" Content="Create" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
      Margin="225,420,0,0" VerticalAlignment="Top" 
      FontWeight="Bold" />
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
+        <Button x:Name="ButtonCancel" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
             Margin="500,420,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <ComboBox HorizontalAlignment="Left" Margin="200,209,0,0" VerticalAlignment="Top" Width="548" Height="46" VerticalContentAlignment="Center" FontSize="16"/>
+        <ComboBox x:Name="SlotComboBox" HorizontalAlignment="Left" Margin="200,209,0,0" VerticalAlignment="Top" Width="548" Height="46" VerticalContentAlignment="Center" FontSize="16"/>
         <Label Content="Semester" HorizontalAlignment="Left" Height="46" Margin="36,309,0,0" VerticalAlignment="Top" Width="163" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <ComboBox HorizontalAlignment="Left" Margin="200,309,0,0" VerticalAlignment="Top" Width="548" Height="46" VerticalContentAlignment="Center" FontSize="16"/>
+        <ComboBox x:Name="SemesterComboBox"  HorizontalAlignment="Left" Margin="200,309,0,0" VerticalAlignment="Top" Width="548" Height="46" VerticalContentAlignment="Center" FontSize="16"/>
     </Grid>
 </Window>

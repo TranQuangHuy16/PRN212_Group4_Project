@@ -38,16 +38,16 @@
                 <DataGridTextColumn Header="End Time" Binding="{Binding EndTime}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Update Profile" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+        <Button x:Name="ButtonUpdate" BorderBrush="Transparent" BorderThickness="0" Content="Update Profile" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
             Margin="100,784,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Change Password" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+        <Button x:Name="ButtonChangePassword" BorderBrush="Transparent" BorderThickness="0" Content="Change Password" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
             Margin="250,784,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Register" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+        <Button x:Name="ButtonRegister" BorderBrush="Transparent" BorderThickness="0" Content="Register" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
             Margin="400,784,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+        <Button x:Name="ButtonCancel" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
             Margin="550,784,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
 

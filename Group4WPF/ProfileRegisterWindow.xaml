@@ -32,10 +32,10 @@
                    Margin="10,0,0,0" IsHitTestVisible="False" FontSize="16"/>
             </Grid>
         </Border>
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Register" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
+        <Button x:Name="ButtonRegister" BorderBrush="Transparent" BorderThickness="0" Content="Register" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
             Margin="250,458,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
+        <Button x:Name="ButtonCancel" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
             Margin="450,458,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
     </Grid>

@@ -30,16 +30,16 @@
                 <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="60"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Create" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
+        <Button x:Name="ButtonCreate" BorderBrush="Transparent" BorderThickness="0" Content="Create" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
             Margin="120,685,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Update" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
+        <Button x:Name="ButtonUpdate" BorderBrush="Transparent" BorderThickness="0" Content="Update" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
             Margin="280,685,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Delete" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
+        <Button x:Name="ButtonDelete" BorderBrush="Transparent" BorderThickness="0" Content="Delete" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
             Margin="440,685,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
+        <Button x:Name="ButtonCancel" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
             Margin="600,685,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
         <Label Content="Semester" HorizontalAlignment="Left" Height="46" Margin="36,170,0,0" VerticalAlignment="Top" Width="109" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>

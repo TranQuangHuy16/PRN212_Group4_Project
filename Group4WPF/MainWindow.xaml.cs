@@ -34,7 +34,7 @@ namespace WpfApp
             if (account != null && account.Password.Equals(password))
             {
                 this.Hide();
-                ManagerWindow window = new();
+                ManagerWindow window = new(this);
                 window.Show();
             }
             else
@@ -47,7 +47,7 @@ namespace WpfApp
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
         }
     }
 }

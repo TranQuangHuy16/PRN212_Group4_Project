@@ -29,5 +29,10 @@ namespace Group4WPF
                 ? Visibility.Visible
                 : Visibility.Collapsed;
         }
+
+        private void TextSearch_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
