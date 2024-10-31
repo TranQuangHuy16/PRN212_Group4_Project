@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using BOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,8 +21,19 @@ namespace Group4WPF
     /// </summary>
     public partial class ManagerAddComponentWindow : Window
     {
+        private readonly SlotService slotService;
+        private readonly CourseService courseService;
+        private readonly SemesterService semesterService;
+        private readonly RoomService roomService;
+        private readonly CourseSemesterService courseSemesterService;
+
         public ManagerAddComponentWindow()
         {
+            slotService = new SlotService();
+            courseService = new CourseService();
+            semesterService = new SemesterService();
+            roomService = new RoomService();
+            courseSemesterService = new CourseSemesterService();
             InitializeComponent();
             LoadTimeOptions();
         }
@@ -42,9 +55,22 @@ namespace Group4WPF
             EndTimeComboBox.ItemsSource = timeOptions;
         }
 
+        private void LoadSelections()
+        {
+            SemesterComboBox.ItemsSource = semesterService.GetSemesters();
+            CourseComboBox.ItemsSource = courseService.GetCourses();
+        }
+
         private void ButtonCreateCourseSemester_Click(object sender, RoutedEventArgs e)
         {
-
+            TryCreate(() => {
+                courseSemesterService.CreateCourseSemester(new CourseSemester { 
+                    Course = (Course)CourseComboBox.SelectedItem,
+                    CourseId = ((Course)CourseComboBox.SelectedItem).CourseId,
+                    Semester = (Semester)SemesterComboBox.SelectedItem,
+                    SemesterId = ((Semester)SemesterComboBox.SelectedItem).SemesterId,
+                });
+            });   
         }
 
         private void ButtonCancel_Click(object sender, RoutedEventArgs e)
@@ -59,22 +85,57 @@ namespace Group4WPF
 
         private void ButtonCreateRoom_Click(object sender, RoutedEventArgs e)
         {
-
+            TryCreate(() =>
+            {
+                roomService.CreateRoom(new Room
+                {
+                    RoomName = TextRoom.Text,
+                });
+            });
         }
 
-        private void ButtonCreate_Click(object sender, RoutedEventArgs e)
+        private void ButtonCreateSemester_Click(object sender, RoutedEventArgs e)
         {
-
+            TryCreate(() => {
+                semesterService.CreateSemester(new Semester { 
+                    SemesterName = TextSemester.Text,
+                    StartDate = StartDatePicker.SelectedDate.Value,
+                    EndDate = EndDatePicker.SelectedDate.Value,
+                });
+            });
         }
 
         private void ButtonCreateCourse_Click(object sender, RoutedEventArgs e)
         {
+            TryCreate(() => {
+                courseService.CreateCourse(new Course
+                {
+                    CourseName = TextCourse.Text,
+                });
+            });
 
         }
 
         private void ButtonCreateSlot_Click(object sender, RoutedEventArgs e)
         {
+            TryCreate(() => {
+                slotService.CreateSlot(new Slot
+                {
+                    SlotName = TextSlot.Text,
+                    StartTime = TimeSpan.Parse(StartTimeComboBox.Text),
+                    EndTime = TimeSpan.Parse(EndTimeComboBox.Text),
+                });
+            });
+        }
 
+        private static void TryCreate(Action action)
+        {
+            try
+            {
+                action.Invoke();
+            } catch (Exception ex) {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

@@ -40,14 +40,14 @@
              Width="430" Height="46" Background="White" Margin="150, 350,0,0">
             <TextBox x:Name="TextSemester" Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
         </Border>
-        <Button x:Name="ButtonCreate" Click="ButtonCreate_Click" BorderBrush="Transparent" BorderThickness="0" Content="Create" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
+        <Button x:Name="ButtonCreateSemester" Click="ButtonCreateSemester_Click" BorderBrush="Transparent" BorderThickness="0" Content="Create" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
             Margin="640,375,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
         <Label Content="Room" HorizontalAlignment="Left" Height="46" Margin="36,500,0,0" VerticalAlignment="Top" Width="109" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
             HorizontalAlignment="Left" VerticalAlignment="Top" 
             Width="430" Height="46" Background="White" Margin="150, 500,0,0">
-            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+            <TextBox x:Name="TextRoom" Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
         </Border>
         <Button x:Name="ButtonCreateRoom" Click="ButtonCreateRoom_Click"  BorderBrush="Transparent" BorderThickness="0" Content="Create" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
             Margin="640,500,0,0" VerticalAlignment="Top" 
@@ -58,8 +58,8 @@
         <Button x:Name="ButtonCancel" Click="ButtonCancel_Click" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
             Margin="450,700,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <DatePicker HorizontalAlignment="Left" Height="46" Margin="150,400,0,0" VerticalAlignment="Top" Width="149" FontSize="16" VerticalContentAlignment="Center"/>
-        <DatePicker HorizontalAlignment="Left" Height="46" Margin="435,400,0,0" VerticalAlignment="Top" Width="149" FontSize="16" VerticalContentAlignment="Center"/>
+        <DatePicker x:Name="StartDatePicker" HorizontalAlignment="Left" Height="46" Margin="150,400,0,0" VerticalAlignment="Top" Width="149" FontSize="16" VerticalContentAlignment="Center"/>
+        <DatePicker x:Name="EndDatePicker" HorizontalAlignment="Left" Height="46" Margin="435,400,0,0" VerticalAlignment="Top" Width="149" FontSize="16" VerticalContentAlignment="Center"/>
         <Label Content="Course" HorizontalAlignment="Left" Height="46" Margin="36,600,0,0" VerticalAlignment="Top" Width="109" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Label Content="Semester" HorizontalAlignment="Left" Height="46" Margin="325,600,0,0" VerticalAlignment="Top" Width="110" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <ComboBox x:Name="CourseComboBox" HorizontalAlignment="Left" Margin="150,600,0,0" VerticalAlignment="Top" Width="150" Height="46" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16"/>
