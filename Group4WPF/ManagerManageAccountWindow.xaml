@@ -22,7 +22,7 @@
            Margin="10,0,0,0" IsHitTestVisible="False" FontSize="16"/>
             </Grid>
         </Border>
-        <DataGrid AutoGenerateColumns="False" Margin="36,370,36,0" Height="423" VerticalAlignment="Top">
+        <DataGrid x:Name="AccountData" AutoGenerateColumns="False" Margin="36,370,36,0" Height="423" VerticalAlignment="Top">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Supervisor Name" Binding="{Binding name}" Width="*"/>
                 <DataGridTextColumn Header="Email" Binding="{Binding email}" Width="*"/>
@@ -30,35 +30,35 @@
                 <DataGridTextColumn Header="Status" Binding="{Binding status}" Width="70"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="ButtonCreate" BorderBrush="Transparent" BorderThickness="0" Content="Create Account" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+        <Button x:Name="ButtonCreate" Click="ButtonCreate_Click" BorderBrush="Transparent" BorderThickness="0" Content="Create Account" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
             Margin="100,830,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button x:Name="ButtonUpdate" BorderBrush="Transparent" BorderThickness="0" Content="Update Account" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+        <Button x:Name="ButtonUpdate" Click="ButtonUpdate_Click" BorderBrush="Transparent" BorderThickness="0" Content="Update Account" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
             Margin="280,830,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button x:Name="ButtonDelete" BorderBrush="Transparent" BorderThickness="0" Content="Delete Account" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+        <Button x:Name="ButtonDelete" Click="ButtonDelete_Click" BorderBrush="Transparent" BorderThickness="0" Content="Delete Account" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
             Margin="460,830,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button x:Name="ButtonCancel" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+        <Button x:Name="ButtonCancel" Click="ButtonCancel_Click" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
             Margin="640,830,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
         <Label Content="Name" HorizontalAlignment="Left" Height="46" Margin="40,170,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
             HorizontalAlignment="Left" VerticalAlignment="Top" 
             Width="546" Height="46" Background="White" Margin="200,170,0,0">
-            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+            <TextBox x:Name="TextName" Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
         </Border>
         <Label Content="Email" HorizontalAlignment="Left" Height="46" Margin="40,230,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
             HorizontalAlignment="Left" VerticalAlignment="Top" 
             Width="546" Height="46" Background="White" Margin="200,230,0,0">
-            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+            <TextBox x:Name="TextEmail" Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
         </Border>
         <Label Content="Telephone" HorizontalAlignment="Left" Height="46" Margin="40,290,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
             HorizontalAlignment="Left" VerticalAlignment="Top" 
             Width="546" Height="46" Background="White" Margin="200,290,0,0">
-            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+            <TextBox x:Name="TextPhone" Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
         </Border>
     </Grid>
 </Window>
