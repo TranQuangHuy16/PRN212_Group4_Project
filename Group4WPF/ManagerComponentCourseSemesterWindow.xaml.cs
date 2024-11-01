@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BLL;
+using BOs;
+using Microsoft.IdentityModel.Tokens;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,20 +22,62 @@ namespace Group4WPF
     /// </summary>
     public partial class ManagerComponentCourseSemesterWindow : Window
     {
+        private readonly CourseService courseService;
+        private readonly SemesterService semesterService;
+        private readonly CourseSemesterService courseSemesterService;
+
         public ManagerComponentCourseSemesterWindow()
         {
+            courseService = new CourseService();
+            semesterService = new SemesterService();
+            courseSemesterService = new CourseSemesterService();
             InitializeComponent();
         }
+
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             PlaceholderTextBlock.Visibility = string.IsNullOrEmpty(CourseNameTextBox.Text)
                 ? Visibility.Visible
                 : Visibility.Collapsed;
+            UpdateSearchResult();
         }
 
-        private void TextSearch_TextChanged(object sender, TextChangedEventArgs e)
+        private void UpdateSearchResult()
+        {
+            string search = CourseNameTextBox.Text;
+            CourseSemesterData.ItemsSource = courseSemesterService.GetCourseSemesters()
+                .Select((cs) => cs.Semester.SemesterName.Contains(search) || cs.Course.CourseName.Contains(search));
+        }
+
+        private void LoadSelections()
+        {
+            SemesterComboBox.ItemsSource = semesterService.GetSemesters();
+            CourseComboBox.ItemsSource = courseService.GetCourses();
+        }
+
+        private void ButtonCreate_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void ButtonUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            //TODO: Create update window
+        }
+
+        private void ButtonDelete_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void ButtonCancel_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            LoadSelections();
         }
     }
 }
