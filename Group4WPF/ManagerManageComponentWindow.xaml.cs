@@ -19,9 +19,42 @@ namespace Group4WPF
     /// </summary>
     public partial class ManagerManageComponentWindow : Window
     {
-        public ManagerManageComponentWindow()
+        private readonly Window _window;
+        public ManagerManageComponentWindow(Window window)
         {
             InitializeComponent();
+            _window = window;
+        }
+
+        private void ButtonRoom_Click(object sender, RoutedEventArgs e)
+        {
+            HideAndOpenWindow(new ManagerComponentRoomWindow(this));            
+        }
+
+        private void ButtonSlot_Click(object sender, RoutedEventArgs e)
+        {
+            HideAndOpenWindow(new ManagerComponentSlotWindow(this));
+        }
+
+        private void Semester_Click(object sender, RoutedEventArgs e)
+        {
+            HideAndOpenWindow(new ManagerComponentSemesterWindow(this));
+        }
+
+        private void Course_Click(object sender, RoutedEventArgs e)
+        {
+            HideAndOpenWindow(new ManagerComponentCourseWindow(this));
+        }
+
+        private void ButtonCancel_Click(object sender, RoutedEventArgs e)
+        {
+            HideAndOpenWindow(_window);
+        }
+
+        private void HideAndOpenWindow(Window window)
+        {
+            Hide();
+            window.Show();
         }
     }
 }
