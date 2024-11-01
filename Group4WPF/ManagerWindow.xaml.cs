@@ -20,7 +20,7 @@ namespace WpfApp
     /// </summary>
     public partial class ManagerWindow : Window
     {
-        private Window prev;
+        private readonly Window prev;
         public ManagerWindow(Window window)
         {
             this.prev = window;
@@ -29,14 +29,14 @@ namespace WpfApp
 
         private void AddComponent_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
-            ManagerAddComponentWindow window = new();
+            this.Hide();
+            ManagerAddComponentWindow window = new(this);
             window.Show();
         }
         
         private void ManageComponent_Click(object sender, RoutedEventArgs e){
             this.Close();
-            ManagerManageComponentWindow window = new();
+            ManagerManageComponentWindow window = new(this);
             window.Show();
         }
         private void AddExamSchedule_Click(object sender, RoutedEventArgs e)
@@ -48,13 +48,13 @@ namespace WpfApp
         private void ManageExam_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
-            ManagerManageExamWindow window = new();
+            ManagerManageExamWindow window = new(this);
             window.Show();
         }
         private void ManageAccount_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
-            ManagerManageAccountWindow window = new();
+            ManagerManageAccountWindow window = new(this);
             window.Show();
         }
 

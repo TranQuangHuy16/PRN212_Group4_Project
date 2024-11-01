@@ -26,8 +26,9 @@ namespace Group4WPF
         private readonly SemesterService semesterService;
         private readonly RoomService roomService;
         private readonly CourseSemesterService courseSemesterService;
+        private readonly Window _window;
 
-        public ManagerAddComponentWindow()
+        public ManagerAddComponentWindow(Window window)
         {
             slotService = new SlotService();
             courseService = new CourseService();
@@ -36,6 +37,7 @@ namespace Group4WPF
             courseSemesterService = new CourseSemesterService();
             InitializeComponent();
             LoadTimeOptions();
+            _window = window;
         }
 
         private void LoadTimeOptions()
@@ -77,12 +79,13 @@ namespace Group4WPF
 
         private void ButtonCancel_Click(object sender, RoutedEventArgs e)
         {
-
+            Close();
+            _window.Show();
         }
 
         private void ButtonDone_Click(object sender, RoutedEventArgs e)
         {
-
+            ButtonCancel_Click(sender, e); // Yes the done button is cancel button
         }
 
         private void ButtonCreateRoom_Click(object sender, RoutedEventArgs e)
