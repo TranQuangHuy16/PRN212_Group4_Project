@@ -1,4 +1,5 @@
-﻿using Group4WPF;
+﻿using BLL;
+using Group4WPF;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,10 +22,12 @@ namespace WpfApp
     public partial class ManagerWindow : Window
     {
         private readonly Window prev;
+        private readonly CourseService courseService;
         public ManagerWindow(Window window)
         {
             this.prev = window;
             InitializeComponent();
+            courseService = new CourseService();
         }
 
         private void AddComponent_Click(object sender, RoutedEventArgs e)
@@ -35,25 +38,25 @@ namespace WpfApp
         }
         
         private void ManageComponent_Click(object sender, RoutedEventArgs e){
-            this.Close();
+            this.Hide();
             ManagerManageComponentWindow window = new(this);
             window.Show();
         }
         private void AddExamSchedule_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            this.Hide();
             ManagerAddExamWindow window = new();
             window.Show();
         }
         private void ManageExam_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            this.Hide();
             ManagerManageExamWindow window = new(this);
             window.Show();
         }
         private void ManageAccount_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            this.Hide();
             ManagerManageAccountWindow window = new(this);
             window.Show();
         }
@@ -62,6 +65,11 @@ namespace WpfApp
         {
             this.Close();
             prev.Show();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            CourseData.ItemsSource = courseService.GetCourses();
         }
     }
 }
