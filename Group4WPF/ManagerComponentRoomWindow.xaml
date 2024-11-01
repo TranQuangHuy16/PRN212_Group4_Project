@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Group4WPF"
+        Loaded="Window_Loaded"
         mc:Ignorable="d"
         Background="#F5F5F5"
         WindowStartupLocation="CenterScreen"
@@ -16,13 +17,13 @@
             <Grid>
                 <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" 
          VerticalContentAlignment="Center" Background="Transparent" 
-         TextChanged="TextBox_TextChanged" x:Name="CourseNameTextBox"/>
+         TextChanged="TextBox_TextChanged" x:Name="RoomNameTextBox"/>
                 <TextBlock x:Name="PlaceholderTextBlock" Text="Search Room Number" 
            Foreground="Gray" VerticalAlignment="Center" 
            Margin="10,0,0,0" IsHitTestVisible="False" FontSize="16"/>
             </Grid>
         </Border>
-        <DataGrid AutoGenerateColumns="False" Margin="36,233,36,0" Height="302" VerticalAlignment="Top">
+        <DataGrid x:Name="RoomData" AutoGenerateColumns="False" Margin="36,233,36,0" Height="302" VerticalAlignment="Top">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="RoomNo" Binding="{Binding RoomName}" Width="*"/>
                 <DataGridTextColumn Header="Exam" Binding="{Binding Exam}" Width="*"/>
@@ -33,18 +34,18 @@
         <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
     HorizontalAlignment="Left" VerticalAlignment="Top" 
     Width="430" Height="46" Background="White" Margin="150, 160,0,0">
-            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+            <TextBox x:Name="TextRoom" Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
         </Border>
-        <Button x:Name="ButtonCreate" BorderBrush="Transparent" BorderThickness="0" Content="Create" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
+        <Button x:Name="ButtonCreate" Click="ButtonCreate_Click" BorderBrush="Transparent" BorderThickness="0" Content="Create" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
     Margin="120,555,0,0" VerticalAlignment="Top" 
     FontWeight="Bold" />
-        <Button x:Name="ButtonUpdate" BorderBrush="Transparent" BorderThickness="0" Content="Update" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
+        <Button x:Name="ButtonUpdate" Click="ButtonUpdate_Click" BorderBrush="Transparent" BorderThickness="0" Content="Update" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
             Margin="280,555,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button x:Name="ButtonDelete" BorderBrush="Transparent" BorderThickness="0" Content="Delete" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
+        <Button x:Name="ButtonDelete" Click="ButtonDelete_Click" BorderBrush="Transparent" BorderThickness="0" Content="Delete" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
             Margin="440,555,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button x:Name="ButtonCancel" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
+        <Button x:Name="ButtonCancel" Click="ButtonCancel_Click" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
             Margin="600,555,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
     </Grid>
