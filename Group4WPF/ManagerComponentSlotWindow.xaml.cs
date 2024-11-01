@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using BOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,15 +21,85 @@ namespace Group4WPF
     /// </summary>
     public partial class ManagerComponentSlotWindow : Window
     {
-        public ManagerComponentSlotWindow()
-        {
+        private readonly Window window;
+        private readonly SlotService slotService;
+
+        public ManagerComponentSlotWindow(Window window)
+        {this.window = window;
+            slotService = new SlotService();
+
             InitializeComponent();
+            LoadTimeOptions();
         }
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+
+        private void LoadTimeOptions()
         {
-            PlaceholderTextBlock.Visibility = string.IsNullOrEmpty(CourseNameTextBox.Text)
+            List<string> timeOptions = [];
+
+            for (int hour = 7; hour <= 23; hour++)
+            {
+                for (int minute = 0; minute < 60; minute += 30)
+                {
+                    string time = $"{hour:D2}:{minute:D2}";
+                    timeOptions.Add(time);
+                }
+            }
+
+            StartTimeComboBox.ItemsSource = timeOptions;
+            EndTimeComboBox.ItemsSource = timeOptions;
+        }
+
+
+         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            PlaceholderTextBlock.Visibility = string.IsNullOrEmpty(TextSlot.Text)
                 ? Visibility.Visible
                 : Visibility.Collapsed;
+        }
+
+        private void ButtonCreate_Click(object sender, RoutedEventArgs e)
+        {
+            Util.TryCreate(() =>
+            {
+                slotService.CreateSlot(new BOs.Slot
+                {
+                    SlotName = TextSlot.Text,
+                    StartTime = TimeSpan.Parse((string)StartTimeComboBox.SelectedItem),
+                    EndTime = TimeSpan.Parse((string)EndTimeComboBox.SelectedItem),
+                });
+                System.Windows.MessageBox.Show("Successfully created slot " + TextSlot.Text);
+                LoadData();
+            });
+        }
+
+        private void ButtonUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            //TODO: Add update
+        }
+
+        private void ButtonDelete_Click(object sender, RoutedEventArgs e)
+        {
+            Util.TryDelete(() => {
+                slotService.DeleteSlot(((Slot)SlotData.SelectedItem).SlotId);
+                MessageBox.Show("Deleted slot " + ((Slot)SlotData.SelectedItem).SlotName);
+            });
+        }
+
+        private void ButtonCancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            window.Show();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            LoadData();
+        }
+
+        private void LoadData()
+        {
+            var search = PlaceholderTextBlock.Text;
+            SlotData.ItemsSource = slotService.GetSlots().Select((c) => c.SlotName.Contains(search));
         }
     }
 }

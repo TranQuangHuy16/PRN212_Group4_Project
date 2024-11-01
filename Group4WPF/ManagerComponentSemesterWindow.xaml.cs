@@ -24,7 +24,7 @@ namespace Group4WPF
         private readonly Window window;
         private readonly SemesterService semesterService;
 
-        public ManagerComponentSemesterWindow()
+        public ManagerComponentSemesterWindow(Window window)
         {   
             this.window = window;
             semesterService = new SemesterService();
@@ -60,7 +60,7 @@ namespace Group4WPF
         {
             Util.TryDelete(() => {
                 semesterService.DeleteSemester(((Semester)SemesterData.SelectedItem).SemesterId);
-                System.Windows.MessageBox.Show("Deleted semester " + ((Semester)SemesterData.SelectedItem).SemesterName);
+                MessageBox.Show("Deleted semester " + ((Semester)SemesterData.SelectedItem).SemesterName);
             });
         }
 

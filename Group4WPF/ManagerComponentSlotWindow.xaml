@@ -22,7 +22,7 @@
             Margin="10,0,0,0" IsHitTestVisible="False" FontSize="16"/>
             </Grid>
         </Border>
-        <DataGrid AutoGenerateColumns="False" Margin="36,333,36,0" Height="302" VerticalAlignment="Top">
+        <DataGrid x:Name="SlotData" AutoGenerateColumns="False" Margin="36,333,36,0" Height="302" VerticalAlignment="Top">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Slot" Binding="{Binding Slot}" Width="*"/>
                 <DataGridTextColumn Header="Start Time" Binding="{Binding StartTime}" Width="*"/>
@@ -30,27 +30,27 @@
                 <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="60"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="ButtonCreate" BorderBrush="Transparent" BorderThickness="0" Content="Create" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
+        <Button x:Name="ButtonCreate" Click="ButtonCreate_Click" BorderBrush="Transparent" BorderThickness="0" Content="Create" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
         Margin="120,685,0,0" VerticalAlignment="Top" 
         FontWeight="Bold" />
-        <Button x:Name="ButtonUpdate" BorderBrush="Transparent" BorderThickness="0" Content="Update" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
+        <Button x:Name="ButtonUpdate" Click="ButtonUpdate_Click" BorderBrush="Transparent" BorderThickness="0" Content="Update" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
         Margin="280,685,0,0" VerticalAlignment="Top" 
         FontWeight="Bold" />
-        <Button x:Name="ButtonDelete" BorderBrush="Transparent" BorderThickness="0" Content="Delete" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
+        <Button x:Name="ButtonDelete" Click="ButtonDelete_Click" BorderBrush="Transparent" BorderThickness="0" Content="Delete" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
         Margin="440,685,0,0" VerticalAlignment="Top" 
         FontWeight="Bold" />
-        <Button x:Name="ButtonCancel" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
+        <Button x:Name="ButtonCancel" Click="ButtonCancel_Click" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"
         Margin="600,685,0,0" VerticalAlignment="Top" 
         FontWeight="Bold" />
         <Label Content="Slot" HorizontalAlignment="Left" Height="46" Margin="36,170,0,0" VerticalAlignment="Top" Width="109" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
  HorizontalAlignment="Left" VerticalAlignment="Top" 
  Width="430" Height="46" Background="White" Margin="150, 170,0,0">
-            <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+            <TextBox x:Name="TextSlot" Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
         </Border>
         <Label Content="Start Time" HorizontalAlignment="Left" Height="46" Margin="36,240,0,0" VerticalAlignment="Top" Width="110" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Label Content="End Time" HorizontalAlignment="Left" Height="46" Margin="325,240,0,0" VerticalAlignment="Top" Width="110" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <ComboBox x:Name="StartTimeComboBox" HorizontalAlignment="Left" Margin="150,240,0,0" VerticalAlignment="Top" Width="150" Height="46" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16"/>
-        <ComboBox x:Name="StartTimeComboBox_Copy" HorizontalAlignment="Left" Margin="440,240,0,0" VerticalAlignment="Top" Width="150" Height="46" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16"/>
+        <ComboBox x:Name="EndTimeComboBox" HorizontalAlignment="Left" Margin="440,240,0,0" VerticalAlignment="Top" Width="150" Height="46" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16"/>
     </Grid>
 </Window>
