@@ -30,5 +30,18 @@ namespace Group4WPF
                 MessageBox.Show("Error during deletion:\n" + ex.Message);
             }
         }
+
+        public static void HideAndOpenWindow(Window current, Window window)
+        {
+            current.Hide();
+            window.Show();
+        }
+
+        public static void CloseAndOpenWindow(Window current, Window window)
+        {
+            current.Close();
+            window.Show();
+        }
+
     }
 }

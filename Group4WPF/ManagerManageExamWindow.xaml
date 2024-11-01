@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
+        Loaded="Window_Loaded"
         Background="#F5F5F5"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
@@ -14,13 +15,13 @@
         <ComboBox x:Name="SemesterComboBox" HorizontalAlignment="Left" Margin="200,108,0,0" VerticalAlignment="Top" Width="548" Height="46" VerticalContentAlignment="Center" FontSize="16"/>
         <Label Content="Status" HorizontalAlignment="Left" Height="46" Margin="37,170,0,0" VerticalAlignment="Top" Width="163" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <ComboBox x:Name="StatusComboBox" HorizontalAlignment="Left" Margin="200,168,0,0" VerticalAlignment="Top" Width="548" Height="46" VerticalContentAlignment="Center" FontSize="16"/>
-        <Button x:Name="ButtonSave" BorderBrush="Transparent" BorderThickness="0" Content="Save" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
+        <Button x:Name="ButtonSave" Click="ButtonSave_Click" BorderBrush="Transparent" BorderThickness="0" Content="Save" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
             Margin="160,510,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button x:Name="ButtonDelete" BorderBrush="Transparent" BorderThickness="0" Content="Delete" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
+        <Button x:Name="ButtonDelete" Click="ButtonDelete_Click" BorderBrush="Transparent" BorderThickness="0" Content="Delete" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
             Margin="330,510,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button x:Name="ButtonCancel" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
+        <Button x:Name="ButtonCancel" Click="ButtonCancel_Click" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
             Margin="500,510,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
         <Label Content="Course Name" HorizontalAlignment="Left" Height="46" Margin="32,228,0,0" VerticalAlignment="Top" Width="163" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>

@@ -28,33 +28,28 @@ namespace Group4WPF
 
         private void ButtonRoom_Click(object sender, RoutedEventArgs e)
         {
-            HideAndOpenWindow(new ManagerComponentRoomWindow(this));            
+            Util.HideAndOpenWindow(this, new ManagerComponentRoomWindow(this));            
         }
 
         private void ButtonSlot_Click(object sender, RoutedEventArgs e)
         {
-            HideAndOpenWindow(new ManagerComponentSlotWindow(this));
+            Util.HideAndOpenWindow(this, new ManagerComponentSlotWindow(this));
         }
 
         private void Semester_Click(object sender, RoutedEventArgs e)
         {
-            HideAndOpenWindow(new ManagerComponentSemesterWindow(this));
+            Util.HideAndOpenWindow(this, new ManagerComponentSemesterWindow(this));
         }
 
         private void Course_Click(object sender, RoutedEventArgs e)
         {
-            HideAndOpenWindow(new ManagerComponentCourseWindow(this));
+            Util.HideAndOpenWindow(this, new ManagerComponentCourseWindow(this));
         }
 
         private void ButtonCancel_Click(object sender, RoutedEventArgs e)
         {
-            HideAndOpenWindow(_window);
+            Util.CloseAndOpenWindow(this, _window);
         }
 
-        private void HideAndOpenWindow(Window window)
-        {
-            Hide();
-            window.Show();
-        }
     }
 }
