@@ -63,7 +63,7 @@ namespace Group4WPF
 
         private void ButtonCreateCourseSemester_Click(object sender, RoutedEventArgs e)
         {
-            TryCreate(() => {
+            Util.TryCreate(() => {
                 courseSemesterService.CreateCourseSemester(new CourseSemester
                 {
                     Course = (Course)CourseComboBox.SelectedItem,
@@ -87,7 +87,7 @@ namespace Group4WPF
 
         private void ButtonCreateRoom_Click(object sender, RoutedEventArgs e)
         {
-            TryCreate(() =>
+            Util.TryCreate(() =>
             {
                 roomService.CreateRoom(new Room
                 {
@@ -98,7 +98,7 @@ namespace Group4WPF
 
         private void ButtonCreateSemester_Click(object sender, RoutedEventArgs e)
         {
-            TryCreate(() => {
+            Util.TryCreate(() => {
                 semesterService.CreateSemester(new Semester { 
                     SemesterName = TextSemester.Text,
                     StartDate = StartDatePicker.SelectedDate.Value,
@@ -110,7 +110,7 @@ namespace Group4WPF
 
         private void ButtonCreateCourse_Click(object sender, RoutedEventArgs e)
         {
-            TryCreate(() => {
+           Util.TryCreate(() => {
                 courseService.CreateCourse(new Course
                 {
                     CourseName = TextCourse.Text,
@@ -121,7 +121,7 @@ namespace Group4WPF
 
         private void ButtonCreateSlot_Click(object sender, RoutedEventArgs e)
         {
-            TryCreate(() => {
+            Util.TryCreate(() => {
                 slotService.CreateSlot(new Slot
                 {
                     SlotName = TextSlot.Text,
@@ -132,14 +132,5 @@ namespace Group4WPF
             });
         }
 
-        private static void TryCreate(Action action)
-        {
-            try
-            {
-                action.Invoke();
-            } catch (Exception ex) {
-                MessageBox.Show(ex.Message);
-            }
-        }
     }
 }

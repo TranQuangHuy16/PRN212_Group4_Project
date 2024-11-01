@@ -1,5 +1,6 @@
 ﻿using BLL;
 using BOs;
+using Group4WPF;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -57,8 +58,7 @@ namespace WpfApp
 
         private void ButtonCreate_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
+            Util.TryCreate(() => {
                 scheduleService.CreateScheduled(new BOs.Schedule
                 {
                     SemesterId = ((BOs.Semester)SemesterComboBox.SelectedItem).SemesterId,
@@ -67,11 +67,7 @@ namespace WpfApp
                     Slot = (Slot)SlotComboBox.SelectedItem,
                     ScheduleDate = ScheduleDatepicker.SelectedDate.Value,
                 });
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            });
         }
 
         private void ButtonCancel_Click(object sender, RoutedEventArgs e)

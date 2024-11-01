@@ -57,7 +57,20 @@ namespace Group4WPF
 
         private void ButtonCreate_Click(object sender, RoutedEventArgs e)
         {
-            
+            Util.TryCreate(() => {
+                if (CourseComboBox.SelectedItem is Course course && SemesterComboBox.SelectedItem is Semester semester)
+                {
+                    courseSemesterService.CreateCourseSemester(new CourseSemester { 
+                        Course = course,
+                        Semester = semester,
+                    });
+                }
+                else
+                {
+                    MessageBox.Show("Course or Semester is not selected");
+                }
+                UpdateSearchResult();
+            });    
         }
 
         private void ButtonUpdate_Click(object sender, RoutedEventArgs e)
@@ -67,7 +80,15 @@ namespace Group4WPF
 
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CourseComboBox.SelectedItem is Course course && SemesterComboBox.SelectedItem is Semester semester)
+            {
+                courseSemesterService.DeleteCourseSemester(course.CourseId, semester.SemesterId);
+            }
+            else
+            {
+                MessageBox.Show("Course or Semester is not selected");
+            }
+            UpdateSearchResult();
         }
 
         private void ButtonCancel_Click(object sender, RoutedEventArgs e)
