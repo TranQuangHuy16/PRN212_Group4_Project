@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using BOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,6 +9,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -19,8 +22,13 @@ namespace Group4WPF
     /// </summary>
     public partial class ManagerComponentCourseWindow : Window
     {
-        public ManagerComponentCourseWindow()
+        private readonly CourseService courseService;
+        private readonly Window _window;
+
+        public ManagerComponentCourseWindow(Window _window)
         {
+            this._window = _window;
+            courseService = new CourseService();
             InitializeComponent();
         }
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -28,6 +36,48 @@ namespace Group4WPF
             PlaceholderTextBlock.Visibility = string.IsNullOrEmpty(CourseNameTextBox.Text)
                 ? Visibility.Visible
                 : Visibility.Collapsed;
+        }
+
+        private void ButtonCreate_Click(object sender, RoutedEventArgs e)
+        {
+            Util.TryCreate(() =>
+            {
+                courseService.CreateCourse(new BOs.Course { 
+                    CourseName = TextCourse.Text,
+                });
+                System.Windows.MessageBox.Show("Successfully created course " + TextCourse.Text);
+                LoadData();
+            });
+        }
+
+        private void ButtonUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            //TODO: Add update
+        }
+
+        private void ButtonDelete_Click(object sender, RoutedEventArgs e)
+        {
+            Util.TryDelete(() => {
+                courseService.DeleteCourse(((Course)CourseData.SelectedItem).CourseId);
+                System.Windows.MessageBox.Show("Deleted course " + ((Course)CourseData.SelectedItem).CourseName);
+            });
+        }
+
+        private void ButtonCancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            _window.Show();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            LoadData();
+        }
+
+        private void LoadData()
+        {
+            var search = PlaceholderTextBlock.Text;
+            CourseData.ItemsSource = courseService.GetCourses().Select((c) => c.CourseName.Contains(search));
         }
     }
 }
