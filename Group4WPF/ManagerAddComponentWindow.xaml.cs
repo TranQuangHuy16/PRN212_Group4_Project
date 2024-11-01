@@ -64,12 +64,14 @@ namespace Group4WPF
         private void ButtonCreateCourseSemester_Click(object sender, RoutedEventArgs e)
         {
             TryCreate(() => {
-                courseSemesterService.CreateCourseSemester(new CourseSemester { 
+                courseSemesterService.CreateCourseSemester(new CourseSemester
+                {
                     Course = (Course)CourseComboBox.SelectedItem,
                     CourseId = ((Course)CourseComboBox.SelectedItem).CourseId,
                     Semester = (Semester)SemesterComboBox.SelectedItem,
                     SemesterId = ((Semester)SemesterComboBox.SelectedItem).SemesterId,
                 });
+                LoadSelections();
             });   
         }
 
@@ -102,6 +104,7 @@ namespace Group4WPF
                     StartDate = StartDatePicker.SelectedDate.Value,
                     EndDate = EndDatePicker.SelectedDate.Value,
                 });
+                LoadSelections();
             });
         }
 
@@ -125,6 +128,7 @@ namespace Group4WPF
                     StartTime = TimeSpan.Parse(StartTimeComboBox.Text),
                     EndTime = TimeSpan.Parse(EndTimeComboBox.Text),
                 });
+                LoadSelections();
             });
         }
 
