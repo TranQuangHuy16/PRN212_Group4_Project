@@ -22,12 +22,12 @@ namespace WpfApp
     public partial class ManagerWindow : Window
     {
         private readonly Window prev;
-        private readonly CourseService courseService;
+        private readonly ScheduleService scheduleService;
         public ManagerWindow(Window window)
         {
             this.prev = window;
             InitializeComponent();
-            courseService = new CourseService();
+            scheduleService = new ScheduleService();
         }
 
         private void AddComponent_Click(object sender, RoutedEventArgs e)
@@ -69,7 +69,7 @@ namespace WpfApp
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            CourseData.ItemsSource = courseService.GetCourses();
+            ScheduleData.ItemsSource = scheduleService.GetSchedules();
         }
     }
 }

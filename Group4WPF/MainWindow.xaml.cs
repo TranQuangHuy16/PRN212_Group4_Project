@@ -28,18 +28,25 @@ namespace WpfApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var email = TextEmail.Text;
-            var password = TextPassword.Password;
-            Account account = service.GetAccountByEmail(email);
-            if (account != null && account.Password.Equals(password))
+            try
             {
-                this.Hide();
-                ManagerWindow window = new(this);
-                window.Show();
+                var email = TextEmail.Text;
+                var password = TextPassword.Password;
+                Account account = service.GetAccountByEmail(email);
+                if (account != null && account.Password.Equals(password))
+                {
+                    this.Hide();
+                    ManagerWindow window = new(this);
+                    window.Show();
+                }
+                else
+                {
+                    SendInvalidLogin();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                SendInvalidLogin();
+                MessageBox.Show(ex.Message);
             }
         }
 
