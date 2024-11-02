@@ -31,5 +31,10 @@ namespace BOs
 
         // Relationship: One-to-Many with Schedule
         public ICollection<Schedule> Schedules { get; set; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

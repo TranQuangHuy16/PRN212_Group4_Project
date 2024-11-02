@@ -34,5 +34,10 @@ namespace BOs
         public DateTime ScheduleDate { get; set; }
 
         public byte Status { get; set; }
+
+        public override string ToString()
+        {
+            return CourseSemester + " - " + Room + " - " + Slot + " - " + Account + " - " + ScheduleDate;
+        }
     }
 }

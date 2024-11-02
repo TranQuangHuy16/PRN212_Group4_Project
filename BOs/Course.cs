@@ -19,5 +19,10 @@ namespace BOs
 
         // Relationship: Many-to-Many with Semester through CourseSemester
         public ICollection<CourseSemester> CourseSemesters { get; set; }
+
+        public override string ToString()
+        {
+            return CourseName;
+        }
     }
 }
