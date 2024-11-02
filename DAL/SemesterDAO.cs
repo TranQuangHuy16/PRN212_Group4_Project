@@ -15,7 +15,7 @@ namespace DAL
             try
             {
                 using var db = new MyDbContext();
-                semesters = db.Semesters.Where(s => s.Status == 1).ToList();
+                semesters = db.Semesters.Where(s => s.Status == 0).ToList();
 
             }
             catch (Exception ex)
@@ -62,7 +62,7 @@ namespace DAL
                 Semester b = db.Semesters.SingleOrDefault(s => s.SemesterId == id);
                 if (b != null)
                 {
-                    b.Status = (byte)0;
+                    b.Status = (byte)1;
                 }
                 else
                 {
@@ -83,7 +83,7 @@ namespace DAL
             try
             {
                 using var db = new MyDbContext();
-                semester = db.Semesters.SingleOrDefault(s => s.SemesterId == id);
+                semester = db.Semesters.Where(s => s.Status == 0).SingleOrDefault(s => s.SemesterId == id);
             }
             catch (Exception ex)
             {
@@ -104,7 +104,7 @@ namespace DAL
                     .Select(cs => cs.SemesterId)
                     .ToList();
                 semesters = db.Semesters
-                  .Where(s => semesterIds.Contains(s.SemesterId))
+                  .Where(s => semesterIds.Contains(s.SemesterId) && s.Status == 0)
                   .ToList();
 
             }

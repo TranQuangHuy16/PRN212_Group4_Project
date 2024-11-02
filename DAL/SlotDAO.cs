@@ -11,7 +11,7 @@ namespace DAL
             try
             {
                 using var db = new MyDbContext();
-                slots = db.Slots.Where(s => s.Status == 1).ToList();
+                slots = db.Slots.Where(s => s.Status == 0).ToList();
                    
             }
             catch (Exception ex)
@@ -58,7 +58,7 @@ namespace DAL
                 Slot b = db.Slots.SingleOrDefault(s => s.SlotId == id);
                 if (b != null)
                 {
-                    b.Status = (byte)0;
+                    b.Status = (byte)1;
                 }
                 else
                 {
@@ -79,7 +79,7 @@ namespace DAL
             try
             {
                 using var db = new MyDbContext();
-                slot = db.Slots.SingleOrDefault(s => s.SlotId == id);
+                slot = db.Slots.Where(s => s.Status == 0).SingleOrDefault(s => s.SlotId == id);
             }
             catch (Exception ex)
             {

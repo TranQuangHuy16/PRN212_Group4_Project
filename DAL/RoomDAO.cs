@@ -15,7 +15,7 @@ namespace DAL
             try
             {
                 using var db = new MyDbContext();
-                rooms = db.Rooms.Where(s => s.Status == 1).ToList();
+                rooms = db.Rooms.Where(s => s.Status == 0).ToList();
 
             }
             catch (Exception ex)
@@ -62,7 +62,7 @@ namespace DAL
                 Room b = db.Rooms.SingleOrDefault(s => s.RoomId == id);
                 if (b != null)
                 {
-                    b.Status = (byte)0;
+                    b.Status = (byte)1;
                 }
                 else
                 {
@@ -83,7 +83,7 @@ namespace DAL
             try
             {
                 using var db = new MyDbContext();
-                room = db.Rooms.SingleOrDefault(s => s.RoomId == id);
+                room = db.Rooms.Where(s => s.Status == 0).SingleOrDefault(s => s.RoomId == id);
             }
             catch (Exception ex)
             {

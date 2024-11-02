@@ -66,7 +66,7 @@ namespace DAL
             {
                 using var db = new MyDbContext();
                 Schedule schedule = db.Schedules.SingleOrDefault(s => s.ScheduleId == id);
-                schedule.Status = (byte)0;
+                schedule.Status = (byte)1;
                 UpdateScheduled(schedule);
             }
             catch (Exception ex)
@@ -89,6 +89,7 @@ namespace DAL
                     .ThenInclude(cs => cs.Course)
                     .Include(s => s.CourseSemester)
                     .ThenInclude(cs => cs.Semester)
+                    .Where(s => s.Status == 0)
                     .ToList();
             }
             catch (Exception ex)
@@ -105,6 +106,7 @@ namespace DAL
             {
                 using var db = new MyDbContext();
                 schedule = db.Schedules
+                    .Where(s => s.Status == 0)
                     .Include(s => s.Room)
                     .Include(s => s.Account)
                     .Include(s => s.Slot)
@@ -113,6 +115,7 @@ namespace DAL
                     .Include(s => s.CourseSemester)
                     .ThenInclude(cs => cs.Semester)
                     .SingleOrDefault(s => s.ScheduleId == id);
+
             }
             catch (Exception ex)
             {
@@ -129,7 +132,7 @@ namespace DAL
             {
                 using var db = new MyDbContext();
                 schedules = db.Schedules
-                    .Where(s => s.AccountId == id && s.Status == 1)
+                    .Where(s => s.AccountId == id && s.Status == 0)
                     .Include(s => s.Room)
                     .Include(s => s.Account)
                     .Include(s => s.Slot)

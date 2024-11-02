@@ -49,7 +49,7 @@ namespace DAL
                 Account account = db.Accounts.SingleOrDefault(a => a.AccountId == id);
                 if (account != null)
                 {
-                    account.Status = (byte)0;
+                    account.Status = (byte)1;
                     UpdateAccount(account);
                 }
 
@@ -68,8 +68,9 @@ namespace DAL
             {
                 using var db = new MyDbContext();
                 accounts = db.Accounts
-                             .Include(a => a.Schedules)
-                             .ToList();
+                    .Where(a => a.Status == 0)
+                    .Include(a => a.Schedules)
+                    .ToList();
             }
             catch (Exception ex)
             {
@@ -87,7 +88,7 @@ namespace DAL
                 using var db = new MyDbContext();
 
                 account = db.Accounts
-                    .Where(a => a.Status == 1)
+                    .Where(a => a.Status == 0)
                     .Include(a => a.Schedules)
                     .SingleOrDefault(a => a.AccountId == id);
 
@@ -112,7 +113,7 @@ namespace DAL
             {
                 using var db = new MyDbContext();
                 account = db.Accounts
-                    .Where(a => a.Status == 1)
+                    .Where(a => a.Status == 0)
                     .Include(a => a.Schedules)
                     .SingleOrDefault(a => a.Email == email);
 

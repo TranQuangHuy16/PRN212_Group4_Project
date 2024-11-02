@@ -15,7 +15,7 @@ namespace DAL
             try
             {
                 using var db = new MyDbContext();
-                courses = db.Courses.Where(s => s.Status == 1).ToList();
+                courses = db.Courses.Where(s => s.Status == 0).ToList();
 
             }
             catch (Exception ex)
@@ -62,7 +62,7 @@ namespace DAL
                 Course b = db.Courses.SingleOrDefault(s => s.CourseId == id);
                 if (b != null)
                 {
-                    b.Status = (byte)0;
+                    b.Status = (byte)1;
                 } else
                 {
                     throw new Exception("Course not found");
@@ -83,7 +83,7 @@ namespace DAL
             try
             {
                 using var db = new MyDbContext();
-                course = db.Courses.SingleOrDefault(s => s.CourseId == id);
+                course = db.Courses.Where(s => s.Status == 0).SingleOrDefault(s => s.CourseId == id);
             }
             catch (Exception ex)
             {
