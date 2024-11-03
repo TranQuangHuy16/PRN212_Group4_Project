@@ -19,9 +19,9 @@ namespace DAL
                 db.Schedules.Add(schedule);
                 db.SaveChanges();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
         }
 
@@ -34,9 +34,9 @@ namespace DAL
                     = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
 
         }
@@ -54,9 +54,9 @@ namespace DAL
                 schedule.AccountId = accountId;
                 UpdateScheduled(schedule);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
         }
 
@@ -69,9 +69,9 @@ namespace DAL
                 schedule.Status = (byte)1;
                 UpdateScheduled(schedule);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
         }
 
@@ -92,9 +92,9 @@ namespace DAL
                     .Where(s => s.Status == 0)
                     .ToList();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
             return schedules;
         }
@@ -117,9 +117,9 @@ namespace DAL
                     .SingleOrDefault(s => s.ScheduleId == id);
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
             return schedule;
             
@@ -138,9 +138,9 @@ namespace DAL
                     .Include(s => s.Slot)
                     .ToList();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
             return schedules;
         }

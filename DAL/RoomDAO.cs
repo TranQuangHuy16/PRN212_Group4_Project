@@ -18,9 +18,9 @@ namespace DAL
                 rooms = db.Rooms.Where(s => s.Status == 0).ToList();
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
             return rooms;
         }
@@ -33,9 +33,9 @@ namespace DAL
                 db.Rooms.Add(room);
                 db.SaveChanges();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
         }
 
@@ -48,9 +48,9 @@ namespace DAL
                     = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
         }
 
@@ -71,9 +71,9 @@ namespace DAL
                 db.Entry<Room>(b).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
         }
 
@@ -85,9 +85,9 @@ namespace DAL
                 using var db = new MyDbContext();
                 room = db.Rooms.Where(s => s.Status == 0).SingleOrDefault(s => s.RoomId == id);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
             return room;
         }

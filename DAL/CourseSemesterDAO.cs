@@ -18,9 +18,9 @@ namespace DAL
                 courseSemesters = db.CourseSemesters.ToList();
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
             return courseSemesters;
         }
@@ -33,9 +33,9 @@ namespace DAL
                 db.CourseSemesters.Add(courseSemester);
                 db.SaveChanges();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
         }
 
@@ -48,9 +48,9 @@ namespace DAL
                     = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
         }
 
@@ -74,9 +74,9 @@ namespace DAL
                     throw new Exception("CourseSemester Not Found!");
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
         }
 

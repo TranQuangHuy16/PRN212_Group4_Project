@@ -14,8 +14,15 @@ namespace Group4WPF
             try
             {
                 action.Invoke();
+                MessageBox.Show("Create successful");
             } catch (Exception ex) {
-                MessageBox.Show("Error during deletion:\n" + ex.Message);
+                string msg = "Error during creation:\n" + ex.Message + "\n";
+                while (ex.InnerException != null)
+                {
+                    msg += ex.InnerException.Message + "\n";
+                    ex = ex.InnerException;
+                }
+                MessageBox.Show(msg);
             }
         }
 
@@ -24,10 +31,17 @@ namespace Group4WPF
             try
             {
                 action.Invoke();
+                MessageBox.Show("Delete successfull");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error during deletion:\n" + ex.Message);
+                string msg = "Error during deletion:\n" + ex.Message + "\n";
+                while (ex.InnerException != null)
+                {
+                    msg += ex.InnerException.Message + "\n";
+                    ex = ex.InnerException;
+                }
+                MessageBox.Show(msg);
             }
         }
 

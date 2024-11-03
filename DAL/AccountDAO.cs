@@ -19,9 +19,9 @@ namespace DAL
                 db.Accounts.Add(account);
                 db.SaveChanges();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception (ex.Message);
+                throw ;
             }
 
         }
@@ -35,9 +35,9 @@ namespace DAL
                     = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw ;
             }
         }
 
@@ -54,9 +54,9 @@ namespace DAL
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw ;
             }
         }
 
@@ -72,9 +72,9 @@ namespace DAL
                     .Include(a => a.Schedules)
                     .ToList();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw ;
             }
             return accounts;
         }
@@ -99,9 +99,9 @@ namespace DAL
                 List<Schedule> schedules = db.Schedules.Where(s => s.AccountId == id).ToList();
                 account.Schedules = schedules;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw ;
             }
             return account;
         }
@@ -122,9 +122,9 @@ namespace DAL
                     throw new Exception("Not found Account");
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw ;
             }
             return account;
         }

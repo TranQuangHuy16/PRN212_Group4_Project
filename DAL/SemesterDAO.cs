@@ -18,9 +18,9 @@ namespace DAL
                 semesters = db.Semesters.Where(s => s.Status == 0).ToList();
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
             return semesters;
         }
@@ -33,9 +33,9 @@ namespace DAL
                 db.Semesters.Add(semester);
                 db.SaveChanges();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
         }
 
@@ -48,9 +48,9 @@ namespace DAL
                     = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
         }
 
@@ -71,9 +71,9 @@ namespace DAL
                 db.Entry<Semester>(b).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
         }
 
@@ -85,9 +85,9 @@ namespace DAL
                 using var db = new MyDbContext();
                 semester = db.Semesters.Where(s => s.Status == 0).SingleOrDefault(s => s.SemesterId == id);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
             return semester;
         }
@@ -108,9 +108,9 @@ namespace DAL
                   .ToList();
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
             return semesters;
         }

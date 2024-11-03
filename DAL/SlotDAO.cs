@@ -14,9 +14,9 @@ namespace DAL
                 slots = db.Slots.Where(s => s.Status == 0).ToList();
                    
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
             return slots;
         }
@@ -29,9 +29,9 @@ namespace DAL
                 db.Slots.Add(slot);
                 db.SaveChanges();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
         }
 
@@ -44,9 +44,9 @@ namespace DAL
                     = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
         }
 
@@ -67,9 +67,9 @@ namespace DAL
                 db.Entry<Slot>(b).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
         }
 
@@ -81,9 +81,9 @@ namespace DAL
                 using var db = new MyDbContext();
                 slot = db.Slots.Where(s => s.Status == 0).SingleOrDefault(s => s.SlotId == id);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
             return slot;
         }
