@@ -1,5 +1,6 @@
 ﻿using BLL;
 using BOs;
+using Group4WPF;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -35,9 +36,7 @@ namespace WpfApp
                 Account account = service.GetAccountByEmail(email);
                 if (account != null && account.Password.Equals(password))
                 {
-                    this.Hide();
-                    ManagerWindow window = new(this);
-                    window.Show();
+                    Util.CloseAndOpenWindow(this, new ManagerWindow(this));
                 }
                 else
                 {

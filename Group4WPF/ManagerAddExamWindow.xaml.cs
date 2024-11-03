@@ -27,8 +27,9 @@ namespace WpfApp
         private SlotService slotService;
         private SemesterService semesterService;
         private ScheduleService scheduleService;
+        private readonly Window _window;
 
-        public ManagerAddExamWindow()
+        public ManagerAddExamWindow(Window window)
         {
             courseService = new CourseService();
             roomService = new RoomService();
@@ -36,6 +37,7 @@ namespace WpfApp
             semesterService = new SemesterService();
             scheduleService = new ScheduleService();
             InitializeComponent();
+            _window = window;
         }
 
         private void DatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
@@ -72,7 +74,7 @@ namespace WpfApp
 
         private void ButtonCancel_Click(object sender, RoutedEventArgs e)
         {
-
+            Util.CloseAndOpenWindow(this, _window);           
         }
     }
 }

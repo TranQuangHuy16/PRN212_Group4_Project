@@ -45,7 +45,7 @@ namespace WpfApp
         private void AddExamSchedule_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            ManagerAddExamWindow window = new();
+            ManagerAddExamWindow window = new(this);
             window.Show();
         }
         private void ManageExam_Click(object sender, RoutedEventArgs e)
