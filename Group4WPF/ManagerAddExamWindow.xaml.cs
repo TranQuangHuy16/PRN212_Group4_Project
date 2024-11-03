@@ -1,5 +1,6 @@
 ﻿using BLL;
 using BOs;
+using DAL;
 using Group4WPF;
 using System;
 using System.Collections.Generic;
@@ -22,14 +23,15 @@ namespace WpfApp
     /// </summary>
     public partial class ManagerAddExamWindow : Window
     {
-        private CourseService courseService;
-        private RoomService roomService;
-        private SlotService slotService;
-        private SemesterService semesterService;
-        private ScheduleService scheduleService;
+        private readonly CourseService courseService;
+        private readonly RoomService roomService;
+        private readonly SlotService slotService;
+        private readonly SemesterService semesterService;
+        private readonly ScheduleService scheduleService;
         private readonly Window _window;
+        private readonly Account _account;
 
-        public ManagerAddExamWindow(Window window)
+        public ManagerAddExamWindow(Window window, Account account)
         {
             courseService = new CourseService();
             roomService = new RoomService();
@@ -38,6 +40,7 @@ namespace WpfApp
             scheduleService = new ScheduleService();
             InitializeComponent();
             _window = window;
+            _account = account;
         }
 
         private void DatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
@@ -55,7 +58,7 @@ namespace WpfApp
             CourseComboBox.ItemsSource = courseService.GetCourses();
             RoomComboBox.ItemsSource = roomService.GetRooms();
             SlotComboBox.ItemsSource = slotService.GetSlots();
-            SemesterComboBox.ItemsSource = semesterService.GetSemesters();
+            //SemesterComboBox.ItemsSource = semesterService.GetSemesters();
         }
 
         private void ButtonCreate_Click(object sender, RoutedEventArgs e)
@@ -63,11 +66,18 @@ namespace WpfApp
             Util.TryCreate(() => {
                 scheduleService.CreateScheduled(new BOs.Schedule
                 {
+                    /*CourseSemester = courseSemesterService.GetCourseSemesters()
+                        .First((cs) => 
+                            cs.SemesterId == ((BOs.Semester)SemesterComboBox.SelectedItem).SemesterId &&
+                            cs.CourseId == ((BOs.Course)CourseComboBox.SelectedItem).CourseId 
+                            ),*/
                     SemesterId = ((BOs.Semester)SemesterComboBox.SelectedItem).SemesterId,
                     CourseId = ((BOs.Course)CourseComboBox.SelectedItem).CourseId,
-                    Room = (Room)RoomComboBox.SelectedItem,
-                    Slot = (Slot)SlotComboBox.SelectedItem,
+                    RoomId = ((Room)RoomComboBox.SelectedItem).RoomId,
+                    SlotId = ((Slot)SlotComboBox.SelectedItem).SlotId,
+                    AccountId = _account.AccountId,
                     ScheduleDate = ScheduleDatepicker.SelectedDate.Value,
+                    Status = 0,
                 });
             });
         }
@@ -75,6 +85,11 @@ namespace WpfApp
         private void ButtonCancel_Click(object sender, RoutedEventArgs e)
         {
             Util.CloseAndOpenWindow(this, _window);           
+        }
+
+        private void CourseComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            SemesterComboBox.ItemsSource = semesterService.GetSemesterByCourseId(((Course)CourseComboBox.SelectedItem).CourseId);
         }
     }
 }

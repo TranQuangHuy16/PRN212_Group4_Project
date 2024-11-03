@@ -15,7 +15,7 @@
         <Label Content="RoomNo" HorizontalAlignment="Left" Height="46" Margin="36,158,0,0" VerticalAlignment="Top" Width="163" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Label Content="Slot" HorizontalAlignment="Left" Height="46" Margin="36,208,0,0" VerticalAlignment="Top" Width="163" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Label Content="Schedule Date" HorizontalAlignment="Left" Height="46" Margin="36,258,0,0" VerticalAlignment="Top" Width="163" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <ComboBox x:Name="CourseComboBox" HorizontalAlignment="Left" Margin="200,108,0,0" VerticalAlignment="Top" Width="548" Height="46" VerticalContentAlignment="Center" FontSize="16"/>
+        <ComboBox x:Name="CourseComboBox" SelectionChanged="CourseComboBox_SelectionChanged" HorizontalAlignment="Left" Margin="200,108,0,0" VerticalAlignment="Top" Width="548" Height="46" VerticalContentAlignment="Center" FontSize="16"/>
         <ComboBox x:Name="RoomComboBox" HorizontalAlignment="Left" Margin="200,158,0,0" VerticalAlignment="Top" Width="548" Height="46" VerticalContentAlignment="Center" FontSize="16"/>
 
         <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
