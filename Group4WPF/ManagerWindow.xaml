@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         Loaded="Window_Loaded"
+        ContentRendered="Window_ContentRendered"
         mc:Ignorable="d"
         Background="#F5F5F5"
         WindowStartupLocation="CenterScreen"
@@ -19,17 +20,17 @@
         FontSize="18" Margin="470,750,0,0" VerticalAlignment="Top" FontWeight="Bold" Click="ManageExam_Click">
             <TextBlock TextWrapping="Wrap" Text="Manage exam" TextAlignment="Center" Width="104"/>
         </Button>
-        <Button x:Name="ButtonCancel" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
+        <Button x:Name="ButtonCancel" Click="Logout_Click" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
     Margin="610,825,0,0" VerticalAlignment="Top" 
     FontWeight="Bold" />
-        <DataGrid x:Name="ScheduleData" AutoGenerateColumns="False" Margin="36,278,36,0" Height="446" VerticalAlignment="Top">
+        <DataGrid x:Name="ScheduleData" SelectionChanged="ScheduleData_SelectionChanged" AutoGenerateColumns="False" Margin="36,278,36,0" Height="446" VerticalAlignment="Top">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Course Name" Binding="{Binding CourseName}" Width="*"/>
-                <DataGridTextColumn Header="RoomNo" Binding="{Binding RoomName}" Width="*"/>
-                <DataGridTextColumn Header="Slot" Binding="{Binding SlotName}" Width="*"/>
+                <DataGridTextColumn Header="Course Name" Binding="{Binding CourseSemester.Course.CourseName}" Width="*"/>
+                <DataGridTextColumn Header="RoomNo" Binding="{Binding Room.RoomName}" Width="*"/>
+                <DataGridTextColumn Header="Slot" Binding="{Binding Slot.SlotName}" Width="*"/>
                 <DataGridTextColumn Header="Schedule Date" Binding="{Binding ScheduleDate}" Width="*"/>
-                <DataGridTextColumn Header="Start Time" Binding="{Binding StartTime}" Width="*"/>
-                <DataGridTextColumn Header="End Time" Binding="{Binding EndTime}" Width="*"/>
+                <DataGridTextColumn Header="Start Time" Binding="{Binding Slot.StartTime}" Width="*"/>
+                <DataGridTextColumn Header="End Time" Binding="{Binding Slot.EndTime}" Width="*"/>
                 <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>

@@ -1,4 +1,5 @@
 ﻿using BLL;
+using BOs;
 using Group4WPF;
 using System;
 using System.Collections.Generic;
@@ -23,11 +24,14 @@ namespace WpfApp
     {
         private readonly Window prev;
         private readonly ScheduleService scheduleService;
-        public ManagerWindow(Window window)
+        private readonly Account _account;
+
+        public ManagerWindow(Window window, Account account)
         {
             this.prev = window;
             InitializeComponent();
             scheduleService = new ScheduleService();
+            _account = account;
         }
 
         private void AddComponent_Click(object sender, RoutedEventArgs e)
@@ -45,7 +49,7 @@ namespace WpfApp
         private void AddExamSchedule_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            ManagerAddExamWindow window = new(this);
+            ManagerAddExamWindow window = new(this, _account);
             window.Show();
         }
         private void ManageExam_Click(object sender, RoutedEventArgs e)
@@ -69,7 +73,30 @@ namespace WpfApp
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            LoadData();
+        }
+
+        private void Window_ContentRendered(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        private void LoadData()
+        {
             ScheduleData.ItemsSource = scheduleService.GetSchedules();
+        }
+
+        private void ScheduleData_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ScheduleData.SelectedItem is not Schedule schedule || 
+                schedule.Account is not Account account)
+            {
+                TextName.Text = string.Empty;
+                TextEmail.Text = string.Empty;
+                return;
+            }
+            TextName.Text = account.Name;
+            TextEmail.Text = account.Email;
         }
     }
 }
