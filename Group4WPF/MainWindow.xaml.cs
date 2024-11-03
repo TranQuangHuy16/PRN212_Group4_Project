@@ -36,7 +36,7 @@ namespace WpfApp
                 Account account = service.GetAccountByEmail(email);
                 if (account != null && account.Password.Equals(password))
                 {
-                    Util.CloseAndOpenWindow(this, new ManagerWindow(this));
+                    Util.HideAndOpenWindow(this, new ManagerWindow(this, account));
                 }
                 else
                 {
@@ -54,6 +54,14 @@ namespace WpfApp
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void TextPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Button_Click(sender, e);
+            }
         }
     }
 }
