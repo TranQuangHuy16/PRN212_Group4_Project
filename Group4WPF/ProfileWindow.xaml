@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
+        Loaded="Window_Loaded"
         Background="#F5F5F5"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
@@ -28,26 +29,27 @@
         <Label Content="Name" HorizontalAlignment="Left" Height="46" Margin="36,118,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Label Content="Email" HorizontalAlignment="Left" Height="46" Margin="36,218,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Label Content="Telephone" HorizontalAlignment="Left" Height="46" Margin="36,318,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <DataGrid AutoGenerateColumns="False" Margin="36,403,36,0" Height="350" VerticalAlignment="Top">
+        <DataGrid x:Name="ScheduleData" AutoGenerateColumns="False" Margin="36,403,36,0" Height="350" VerticalAlignment="Top">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Course Name" Binding="{Binding CourseName}" Width="*"/>
-                <DataGridTextColumn Header="RoomNo" Binding="{Binding RoomName}" Width="*"/>
-                <DataGridTextColumn Header="Slot" Binding="{Binding SlotName}" Width="*"/>
+                <DataGridTextColumn Header="Course Name" Binding="{Binding CourseSemester.Course.CourseName}" Width="*"/>
+                <DataGridTextColumn Header="RoomNo" Binding="{Binding Room.RoomName}" Width="*"/>
+                <DataGridTextColumn Header="Slot" Binding="{Binding Slot.SlotName}" Width="*"/>
                 <DataGridTextColumn Header="Schedule Date" Binding="{Binding ScheduleDate}" Width="*"/>
-                <DataGridTextColumn Header="Start Time" Binding="{Binding StartTime}" Width="*"/>
-                <DataGridTextColumn Header="End Time" Binding="{Binding EndTime}" Width="*"/>
+                <DataGridTextColumn Header="Start Time" Binding="{Binding Slot.StartTime}" Width="*"/>
+                <DataGridTextColumn Header="End Time" Binding="{Binding Slot.EndTime}" Width="*"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="ButtonUpdate" BorderBrush="Transparent" BorderThickness="0" Content="Update Profile" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+        <Button x:Name="ButtonUpdate" Click="ButtonUpdate_Click" BorderBrush="Transparent" BorderThickness="0" Content="Update Profile" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
             Margin="100,784,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button x:Name="ButtonChangePassword" BorderBrush="Transparent" BorderThickness="0" Content="Change Password" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+        <Button x:Name="ButtonChangePassword" Click="ButtonChangePassword_Click" BorderBrush="Transparent" BorderThickness="0" Content="Change Password" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
             Margin="250,784,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button x:Name="ButtonRegister" BorderBrush="Transparent" BorderThickness="0" Content="Register" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+        <Button x:Name="ButtonRegister" Click="ButtonRegister_Click" BorderBrush="Transparent" BorderThickness="0" Content="Register" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
             Margin="400,784,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button x:Name="ButtonCancel" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
+        <Button x:Name="ButtonCancel" Click="ButtonCancel_Click" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
             Margin="550,784,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
 
