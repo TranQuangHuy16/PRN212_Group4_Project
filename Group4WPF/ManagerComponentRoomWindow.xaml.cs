@@ -43,6 +43,7 @@ namespace Group4WPF
             {
                 roomService.CreateRoom(new BOs.Room { 
                     RoomName = TextRoom.Text,
+                    Status = 0,
                 });
                 System.Windows.MessageBox.Show("Successfully created room " + TextRoom.Text);
                 LoadData();

@@ -61,8 +61,8 @@ namespace Group4WPF
                 if (CourseComboBox.SelectedItem is Course course && SemesterComboBox.SelectedItem is Semester semester)
                 {
                     courseSemesterService.CreateCourseSemester(new CourseSemester { 
-                        Course = course,
-                        Semester = semester,
+                        CourseId = course.CourseId,
+                        SemesterId = semester.SemesterId,
                     });
                 }
                 else

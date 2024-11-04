@@ -44,6 +44,7 @@ namespace Group4WPF
             {
                 courseService.CreateCourse(new BOs.Course { 
                     CourseName = TextCourse.Text,
+                    Status = 0,
                 });
                 System.Windows.MessageBox.Show("Successfully created course " + TextCourse.Text);
                 LoadData();

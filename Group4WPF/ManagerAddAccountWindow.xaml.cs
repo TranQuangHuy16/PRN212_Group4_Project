@@ -57,6 +57,8 @@ namespace Group4WPF
                 Email = TextEmail.Text,
                 Telephone = TextTele.Text,
                 Password = TextPassword.Password,
+                Status = 0,
+                Role = 0,
             };
             return account;
         }

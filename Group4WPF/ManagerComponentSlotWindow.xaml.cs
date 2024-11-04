@@ -66,6 +66,7 @@ namespace Group4WPF
                     SlotName = TextSlot.Text,
                     StartTime = TimeSpan.Parse((string)StartTimeComboBox.SelectedItem),
                     EndTime = TimeSpan.Parse((string)EndTimeComboBox.SelectedItem),
+                    Status = 0,
                 });
                 System.Windows.MessageBox.Show("Successfully created slot " + TextSlot.Text);
                 LoadData();

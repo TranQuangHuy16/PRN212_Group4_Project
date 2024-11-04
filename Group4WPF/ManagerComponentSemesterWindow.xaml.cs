@@ -45,6 +45,7 @@ namespace Group4WPF
                     SemesterName = TextSemester.Text,
                     StartDate = StartDatePicker.SelectedDate.Value,
                     EndDate = EndDatePicker.SelectedDate.Value,
+                    Status = 0,
                 });
                 System.Windows.MessageBox.Show("Successfully created semester " + TextSemester.Text);
                 LoadData();
