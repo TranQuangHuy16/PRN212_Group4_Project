@@ -26,12 +26,13 @@ namespace Group4WPF
             }
         }
 
-        public static void TryDelete(Action action)
+        public static bool TryDelete(Action action)
         {
             try
             {
                 action.Invoke();
                 MessageBox.Show("Delete successfull");
+                return true;
             }
             catch (Exception ex)
             {
@@ -42,6 +43,7 @@ namespace Group4WPF
                     ex = ex.InnerException;
                 }
                 MessageBox.Show(msg);
+                return false;
             }
         }
 

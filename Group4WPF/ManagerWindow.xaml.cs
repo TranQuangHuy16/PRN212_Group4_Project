@@ -54,9 +54,12 @@ namespace WpfApp
         }
         private void ManageExam_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
-            ManagerManageExamWindow window = new(this);
-            window.Show();
+            if (ScheduleData.SelectedItem is not Schedule schedule)
+            {
+                MessageBox.Show("No schedule selected");
+                return;
+            }
+            Util.HideAndOpenWindow(this, new ManagerManageExamWindow(this, schedule));
         }
         private void ManageAccount_Click(object sender, RoutedEventArgs e)
         {
@@ -72,11 +75,6 @@ namespace WpfApp
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            LoadData();
-        }
-
-        private void Window_ContentRendered(object sender, EventArgs e)
         {
             LoadData();
         }
@@ -97,6 +95,11 @@ namespace WpfApp
             }
             TextName.Text = account.Name;
             TextEmail.Text = account.Email;
+        }
+
+        private void Window_Activated(object sender, EventArgs e)
+        {
+            LoadData();
         }
     }
 }
