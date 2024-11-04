@@ -12,7 +12,7 @@
     <Grid>
         <Label Content="MANAGE EXAM SCHEDULE" HorizontalAlignment="Center" Height="53" Margin="0,30,0,0" VerticalAlignment="Top" Width="428" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         <Label Content="Supervisor Name" HorizontalAlignment="Left" Height="46" Margin="36,108,0,0" VerticalAlignment="Top" Width="163" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <ComboBox x:Name="SemesterComboBox" HorizontalAlignment="Left" Margin="200,108,0,0" VerticalAlignment="Top" Width="548" Height="46" VerticalContentAlignment="Center" FontSize="16"/>
+        <ComboBox x:Name="AccountComboBox" HorizontalAlignment="Left" Margin="200,108,0,0" VerticalAlignment="Top" Width="548" Height="46" VerticalContentAlignment="Center" FontSize="16"/>
         <Label Content="Status" HorizontalAlignment="Left" Height="46" Margin="37,170,0,0" VerticalAlignment="Top" Width="163" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <ComboBox x:Name="StatusComboBox" HorizontalAlignment="Left" Margin="200,168,0,0" VerticalAlignment="Top" Width="548" Height="46" VerticalContentAlignment="Center" FontSize="16"/>
         <Button x:Name="ButtonSave" Click="ButtonSave_Click" BorderBrush="Transparent" BorderThickness="0" Content="Save" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
