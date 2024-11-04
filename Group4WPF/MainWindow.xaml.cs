@@ -36,7 +36,13 @@ namespace WpfApp
                 Account account = service.GetAccountByEmail(email);
                 if (account != null && account.Password.Equals(password))
                 {
-                    Util.HideAndOpenWindow(this, new ManagerWindow(this, account));
+                    if (account.Role == 0)
+                    {
+                        Util.HideAndOpenWindow(this, new ManagerWindow(this, account));
+                    } else
+                    {
+                        Util.HideAndOpenWindow(this, new ProfileWindow());
+                    }
                 }
                 else
                 {
