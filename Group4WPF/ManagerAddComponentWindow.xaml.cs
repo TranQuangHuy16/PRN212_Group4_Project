@@ -68,9 +68,7 @@ namespace Group4WPF
             Util.TryCreate(() => {
                 courseSemesterService.CreateCourseSemester(new CourseSemester
                 {
-                    Course = (Course)CourseComboBox.SelectedItem,
                     CourseId = ((Course)CourseComboBox.SelectedItem).CourseId,
-                    Semester = (Semester)SemesterComboBox.SelectedItem,
                     SemesterId = ((Semester)SemesterComboBox.SelectedItem).SemesterId,
                 });
                 LoadSelections();
