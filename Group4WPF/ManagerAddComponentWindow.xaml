@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Group4WPF"
+        Loaded="Window_Loaded"
         Background="#F5F5F5"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"

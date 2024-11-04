@@ -136,5 +136,9 @@ namespace Group4WPF
             });
         }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            LoadSelections();
+        }
     }
 }
