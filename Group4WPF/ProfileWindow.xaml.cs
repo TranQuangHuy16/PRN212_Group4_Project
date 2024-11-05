@@ -38,6 +38,9 @@ namespace WpfApp
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            TextName.Text = _account.Name;
+            TextEmail.Text = _account.Email;
+            TextTele.Text = _account.Telephone;
             ScheduleData.ItemsSource = scheduleService.GetSchedulesByAccountId(_account.AccountId); 
         }
 
@@ -59,6 +62,11 @@ namespace WpfApp
         private void ButtonCancel_Click(object sender, RoutedEventArgs e)
         {
             Util.CloseAndOpenWindow(this, prev);
+        }
+
+        private void ScheduleData_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
