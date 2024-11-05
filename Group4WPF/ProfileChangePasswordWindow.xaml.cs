@@ -40,6 +40,7 @@ namespace WpfApp
                 if (TextPasswordNew.Password.Equals(TextPasswordConfirm.Password))
                 {
                     _account.Password = TextPasswordNew.Password;
+                    accountService.UpdateAccount(_account);
                     MessageBox.Show("Password updated");
                 }
                 else

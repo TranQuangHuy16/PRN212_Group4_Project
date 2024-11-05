@@ -43,7 +43,7 @@ namespace WpfApp
 
         private void ButtonUpdate_Click(object sender, RoutedEventArgs e)
         {
-            Util.HideAndOpenWindow(this, new ProfileUpdateWindow());
+            Util.HideAndOpenWindow(this, new ProfileUpdateWindow(this, _account));
         }
 
         private void ButtonChangePassword_Click(object sender, RoutedEventArgs e)
@@ -53,7 +53,7 @@ namespace WpfApp
 
         private void ButtonRegister_Click(object sender, RoutedEventArgs e)
         {
-            Util.HideAndOpenWindow(this, new ProfileRegisterWindow());
+            Util.HideAndOpenWindow(this, new ProfileRegisterWindow(this, _account));
         }
 
         private void ButtonCancel_Click(object sender, RoutedEventArgs e)

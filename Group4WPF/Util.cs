@@ -26,6 +26,24 @@ namespace Group4WPF
             }
         }
 
+        public static void TryUpdate(Action action)
+        {
+            try
+            {
+                action.Invoke();
+                MessageBox.Show("Update successful");
+            } catch (Exception ex) {
+                string msg = "Error during update:\n" + ex.Message + "\n";
+                while (ex.InnerException != null)
+                {
+                    msg += ex.InnerException.Message + "\n";
+                    ex = ex.InnerException;
+                }
+                MessageBox.Show(msg);
+            }
+
+        }
+
         public static bool TryDelete(Action action)
         {
             try

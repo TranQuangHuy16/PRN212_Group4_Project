@@ -4,12 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
+        Loaded="Window_Loaded"
         mc:Ignorable="d"
         Background="#F5F5F5"
         WindowStartupLocation="CenterScreen"
         Title="ProfileRegisterWindow" Height="580" Width="800">
     <Grid>
-        <DataGrid AutoGenerateColumns="False" Margin="36,140,36,0" Height="302" VerticalAlignment="Top">
+        <DataGrid x:Name="ScheduleData" AutoGenerateColumns="False" Margin="36,140,36,0" Height="302" VerticalAlignment="Top">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Course Name" Binding="{Binding CourseName}" Width="*"/>
                 <DataGridTextColumn Header="RoomNo" Binding="{Binding RoomName}" Width="*"/>
@@ -32,10 +33,10 @@
                    Margin="10,0,0,0" IsHitTestVisible="False" FontSize="16"/>
             </Grid>
         </Border>
-        <Button x:Name="ButtonRegister" BorderBrush="Transparent" BorderThickness="0" Content="Register" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
+        <Button x:Name="ButtonRegister" Click="ButtonRegister_Click" BorderBrush="Transparent" BorderThickness="0" Content="Register" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
             Margin="250,458,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button x:Name="ButtonCancel" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
+        <Button x:Name="ButtonCancel" Click="ButtonCancel_Click" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
             Margin="450,458,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
     </Grid>

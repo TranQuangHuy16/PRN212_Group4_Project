@@ -41,7 +41,7 @@ namespace WpfApp
                         Util.HideAndOpenWindow(this, new ManagerWindow(this, account));
                     } else
                     {
-                        Util.HideAndOpenWindow(this, new ProfileWindow());
+                        Util.HideAndOpenWindow(this, new ProfileWindow(this, account));
                     }
                 }
                 else

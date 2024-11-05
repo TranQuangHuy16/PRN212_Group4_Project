@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
+        Loaded="Window_Loaded"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Background="#F5F5F5"
@@ -28,10 +29,10 @@
         <Label Content="Name" HorizontalAlignment="Left" Height="46" Margin="36,78,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Label Content="Email" HorizontalAlignment="Left" Height="46" Margin="36,178,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Label Content="Telephone" HorizontalAlignment="Left" Height="46" Margin="36,278,0,0" VerticalAlignment="Top" Width="128" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <Button x:Name="ButtonUpdate" BorderBrush="Transparent" BorderThickness="0" Content="Update" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
+        <Button x:Name="ButtonUpdate" Click="ButtonUpdate_Click" BorderBrush="Transparent" BorderThickness="0" Content="Update" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
             Margin="200,350,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button x:Name="ButtonCancel" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
+        <Button x:Name="ButtonCancel" Click="ButtonCancel_Click" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
             Margin="500,350,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
     </Grid>
