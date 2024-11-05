@@ -38,6 +38,11 @@ namespace WpfApp
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            LoadData();
+        }
+
+        private void LoadData()
+        {
             TextName.Text = _account.Name;
             TextEmail.Text = _account.Email;
             TextTele.Text = _account.Telephone;
@@ -64,9 +69,9 @@ namespace WpfApp
             Util.CloseAndOpenWindow(this, prev);
         }
 
-        private void ScheduleData_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Window_Activated(object sender, EventArgs e)
         {
-
+            LoadData();
         }
     }
 }
