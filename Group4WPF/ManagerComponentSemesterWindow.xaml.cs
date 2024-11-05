@@ -78,8 +78,8 @@ namespace Group4WPF
 
         private void LoadData()
         {
-            var search = PlaceholderTextBlock.Text;
-            SemesterData.ItemsSource = semesterService.GetSemesters().Select((c) => c.SemesterName.Contains(search));
+            var search = SemesterNameTextBox.Text;
+            SemesterData.ItemsSource = semesterService.GetSemesters().Where((c) => c.SemesterName.Contains(search));
         }
 
 

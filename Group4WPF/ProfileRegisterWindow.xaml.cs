@@ -45,7 +45,7 @@ namespace WpfApp
         private void LoadData()
         {
             string search = PlaceholderTextBlock.Text ?? "";
-            ScheduleData.ItemsSource = _service.GetSchedules().Select((schedule) => schedule.CourseSemester.Course.CourseName.Equals(search));
+            ScheduleData.ItemsSource = _service.GetSchedules().Where((schedule) => schedule.CourseSemester.Course.CourseName.Equals(search));
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)

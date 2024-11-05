@@ -16,7 +16,7 @@
             <Grid>
                 <TextBox Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" 
         VerticalContentAlignment="Center" Background="Transparent" 
-        TextChanged="TextBox_TextChanged" x:Name="CourseNameTextBox"/>
+        TextChanged="TextBox_TextChanged" x:Name="SlotNameTextBox"/>
                 <TextBlock x:Name="PlaceholderTextBlock" Text="Search Room Number" 
          Foreground="Gray" VerticalAlignment="Center" 
             Margin="10,0,0,0" IsHitTestVisible="False" FontSize="16"/>

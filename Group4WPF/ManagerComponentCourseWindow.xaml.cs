@@ -60,7 +60,6 @@ namespace Group4WPF
         {
             Util.TryDelete(() => {
                 courseService.DeleteCourse(((Course)CourseData.SelectedItem).CourseId);
-                System.Windows.MessageBox.Show("Deleted course " + ((Course)CourseData.SelectedItem).CourseName);
             });
         }
 
@@ -77,8 +76,8 @@ namespace Group4WPF
 
         private void LoadData()
         {
-            var search = PlaceholderTextBlock.Text;
-            CourseData.ItemsSource = courseService.GetCourses().Select((c) => c.CourseName.Contains(search));
+            var search = CourseNameTextBox.Text ?? "";
+            CourseData.ItemsSource = courseService.GetCourses().Where((c) => c.CourseName.Contains(search));
         }
     }
 }

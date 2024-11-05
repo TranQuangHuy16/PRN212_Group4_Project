@@ -46,7 +46,7 @@ namespace Group4WPF
         {
             string search = CourseNameTextBox.Text;
             CourseSemesterData.ItemsSource = courseSemesterService.GetCourseSemesters()
-                .Select((cs) => cs.Semester.SemesterName.Contains(search) || cs.Course.CourseName.Contains(search));
+                .Where((cs) => cs.Semester.SemesterName.Contains(search) || cs.Course.CourseName.Contains(search));
         }
 
         private void LoadSelections()

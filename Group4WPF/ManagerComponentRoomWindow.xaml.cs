@@ -26,9 +26,9 @@ namespace Group4WPF
 
         public ManagerComponentRoomWindow(Window window)
         {
+            InitializeComponent();
             this.window = window;
             roomService = new RoomService();
-            InitializeComponent();
         }
          private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -76,8 +76,8 @@ namespace Group4WPF
 
         private void LoadData()
         {
-            var search = PlaceholderTextBlock.Text;
-            RoomData.ItemsSource = roomService.GetRooms().Select((c) => c.RoomName.Contains(search));
+            var search = RoomNameTextBox.Text;
+            RoomData.ItemsSource = roomService.GetRooms().Where((c) => c.RoomName.Contains(search));
         }
 
     }

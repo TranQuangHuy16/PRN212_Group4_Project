@@ -33,7 +33,7 @@ namespace Group4WPF
         }
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            PlaceholderTextBlock.Visibility = string.IsNullOrEmpty(CourseNameTextBox.Text)
+            PlaceholderTextBlock.Visibility = string.IsNullOrEmpty(AccountNameTextBox.Text)
                 ? Visibility.Visible
                 : Visibility.Collapsed;
         }
@@ -80,8 +80,8 @@ namespace Group4WPF
 
         private void LoadData()
         {
-            var search = PlaceholderTextBlock.Text;
-            AccountData.ItemsSource = accountService.GetAccounts().Select((c) => c.Name.Contains(search));
+            var search = AccountNameTextBox.Text;
+            AccountData.ItemsSource = accountService.GetAccounts().Where((c) => c.Name.Contains(search));
         }
     }
 }

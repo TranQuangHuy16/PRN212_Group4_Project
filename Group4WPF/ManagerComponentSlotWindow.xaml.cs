@@ -99,8 +99,8 @@ namespace Group4WPF
 
         private void LoadData()
         {
-            var search = PlaceholderTextBlock.Text;
-            SlotData.ItemsSource = slotService.GetSlots().Select((c) => c.SlotName.Contains(search));
+            var search = SlotNameTextBox.Text;
+            SlotData.ItemsSource = slotService.GetSlots().Where((c) => c.SlotName.Contains(search));
         }
     }
 }
