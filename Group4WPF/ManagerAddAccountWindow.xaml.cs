@@ -41,12 +41,13 @@ namespace Group4WPF
             try
             {
                 service.CreateAccount(GetAccount());
+                MessageBox.Show("Account create successfully");
+                HandleClose();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Could not create account...\n" + ex.Message);
             }
-            HandleClose();
         }
 
         private Account GetAccount()

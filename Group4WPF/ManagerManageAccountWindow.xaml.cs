@@ -36,21 +36,12 @@ namespace Group4WPF
             PlaceholderTextBlock.Visibility = string.IsNullOrEmpty(AccountNameTextBox.Text)
                 ? Visibility.Visible
                 : Visibility.Collapsed;
+            LoadData();
         }
 
         private void ButtonCreate_Click(object sender, RoutedEventArgs e)
         {
-            Util.TryCreate(() =>
-            {
-                accountService.CreateAccount(new BOs.Account
-                {
-                    Name = TextName.Text,
-                    Email = TextEmail.Text,
-                    Telephone = TextPhone.Text,
-                });
-                System.Windows.MessageBox.Show("Successfully created account " + TextName.Text);
-                LoadData();
-            });
+            Util.HideAndOpenWindow(this, new ManagerAddAccountWindow(this));    
         }
 
         private void ButtonUpdate_Click(object sender, RoutedEventArgs e)
@@ -80,8 +71,13 @@ namespace Group4WPF
 
         private void LoadData()
         {
-            var search = AccountNameTextBox.Text;
+            var search = AccountNameTextBox.Text ?? "";
             AccountData.ItemsSource = accountService.GetAccounts().Where((c) => c.Name.Contains(search));
+        }
+
+        private void Window_Activated(object sender, EventArgs e)
+        {
+            LoadData();
         }
     }
 }

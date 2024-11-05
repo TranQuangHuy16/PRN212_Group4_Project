@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Group4WPF"
         mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Activated="Window_Activated"
         Background="#F5F5F5"
         WindowStartupLocation="CenterScreen"
         Title="ManagerManageAccountWindow" Height="950" Width="800">
@@ -24,10 +26,10 @@
         </Border>
         <DataGrid x:Name="AccountData" AutoGenerateColumns="False" Margin="36,370,36,0" Height="423" VerticalAlignment="Top">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Supervisor Name" Binding="{Binding name}" Width="*"/>
-                <DataGridTextColumn Header="Email" Binding="{Binding email}" Width="*"/>
-                <DataGridTextColumn Header="Telephone" Binding="{Binding telephone}" Width="*"/>
-                <DataGridTextColumn Header="Status" Binding="{Binding status}" Width="70"/>
+                <DataGridTextColumn Header="Supervisor Name" Binding="{Binding Name}" Width="*"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*"/>
+                <DataGridTextColumn Header="Telephone" Binding="{Binding Telephone}" Width="*"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="70"/>
             </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="ButtonCreate" Click="ButtonCreate_Click" BorderBrush="Transparent" BorderThickness="0" Content="Create Account" HorizontalAlignment="Left" Height="55" Width="114" FontSize="12"
