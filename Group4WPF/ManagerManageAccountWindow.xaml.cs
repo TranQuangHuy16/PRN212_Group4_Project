@@ -52,7 +52,9 @@ namespace Group4WPF
                 return;
             }
             Util.TryUpdate(() => {
-                account.Status ^= 1;
+                account.Name = TextName.Text;
+                account.Email = TextEmail.Text;
+                account.Telephone = TextPhone.Text;
                 accountService.UpdateAccount(account);
                 LoadData();
             });
@@ -63,6 +65,8 @@ namespace Group4WPF
             Util.TryDelete(() =>
             {
                 accountService.DeleteAccount(((Account)AccountData.SelectedItem).AccountId);
+                LoadData();
+                EmptyTextBox();
             });
         }
 
@@ -88,13 +92,19 @@ namespace Group4WPF
             LoadData();
         }
 
+        private void EmptyTextBox()
+        {
+            TextName.Text = string.Empty;
+            TextEmail.Text = string.Empty;
+            TextPhone.Text = string.Empty;
+
+        }
+
         private void AccountData_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (AccountData.SelectedItem is not Account account)
             {
-                TextName.Text = string.Empty;
-                TextEmail.Text = string.Empty;
-                TextPhone.Text = string.Empty;
+                EmptyTextBox();
                 return;
             }
             TextName.Text = account.Name;

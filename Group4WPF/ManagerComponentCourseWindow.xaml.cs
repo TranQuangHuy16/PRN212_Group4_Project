@@ -60,7 +60,7 @@ namespace Group4WPF
             }
             Util.TryUpdate(() =>
             {
-                course.Status ^= 1;
+                course.CourseName = TextCourse.Text;
                 courseService.UpdateCourse(course);
                 LoadData();
             });
@@ -70,6 +70,8 @@ namespace Group4WPF
         {
             Util.TryDelete(() => {
                 courseService.DeleteCourse(((Course)CourseData.SelectedItem).CourseId);
+                LoadData();
+                TextCourse.Text = string.Empty;
             });
         }
 

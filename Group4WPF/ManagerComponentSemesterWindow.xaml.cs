@@ -61,7 +61,7 @@ namespace Group4WPF
             }
             Util.TryUpdate(() =>
             {
-                semester.Status ^= 1;
+                semester.SemesterName = TextSemester.Text;
                 semesterService.UpdateSemester(semester);
                 LoadData();
             });
@@ -71,7 +71,8 @@ namespace Group4WPF
         {
             Util.TryDelete(() => {
                 semesterService.DeleteSemester(((Semester)SemesterData.SelectedItem).SemesterId);
-                MessageBox.Show("Deleted semester " + ((Semester)SemesterData.SelectedItem).SemesterName);
+                LoadData();
+                TextSemester.Text = string.Empty;
             });
         }
 

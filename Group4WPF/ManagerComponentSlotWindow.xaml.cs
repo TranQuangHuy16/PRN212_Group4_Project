@@ -80,7 +80,7 @@ namespace Group4WPF
                 return;
             }
             Util.TryUpdate(() => {
-                slot.Status ^= 1;
+                slot.SlotName = TextSlot.Text;
                 slotService.UpdateSlot(slot);
                 LoadData();
             });
@@ -90,7 +90,8 @@ namespace Group4WPF
         {
             Util.TryDelete(() => {
                 slotService.DeleteSlot(((Slot)SlotData.SelectedItem).SlotId);
-                MessageBox.Show("Deleted slot " + ((Slot)SlotData.SelectedItem).SlotName);
+                LoadData();
+                TextSlot.Text = string.Empty;
             });
         }
 

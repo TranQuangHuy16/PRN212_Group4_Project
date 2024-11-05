@@ -58,7 +58,7 @@ namespace Group4WPF
             }
             Util.TryUpdate(() =>
             {
-                room.Status ^= 1;
+                room.RoomName = TextRoom.Text;
                 roomService.UpdateRoom(room);
                 LoadData();
             });
@@ -68,7 +68,8 @@ namespace Group4WPF
         {
             Util.TryDelete(() => {
                 roomService.DeleteRoom(((Room)RoomData.SelectedItem).RoomId);
-                System.Windows.MessageBox.Show("Deleted room " + ((Room)RoomData.SelectedItem).RoomName);
+                LoadData();
+                TextRoom.Text = string.Empty;
             });
         }
 
