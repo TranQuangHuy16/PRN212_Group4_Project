@@ -24,7 +24,7 @@
            Margin="10,0,0,0" IsHitTestVisible="False" FontSize="16"/>
             </Grid>
         </Border>
-        <DataGrid x:Name="AccountData" AutoGenerateColumns="False" Margin="36,370,36,0" Height="423" VerticalAlignment="Top">
+        <DataGrid x:Name="AccountData" SelectionChanged="AccountData_SelectionChanged" AutoGenerateColumns="False" Margin="36,370,36,0" Height="423" VerticalAlignment="Top">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Supervisor Name" Binding="{Binding Name}" Width="*"/>
                 <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*"/>

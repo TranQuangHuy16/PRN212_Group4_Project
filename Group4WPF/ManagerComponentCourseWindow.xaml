@@ -29,7 +29,7 @@
             Width="430" Height="46" Background="White" Margin="150, 160,0,0">
             <TextBox x:Name="TextCourse" Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
         </Border>
-        <DataGrid x:Name="CourseData" AutoGenerateColumns="False" Margin="36,233,36,0" Height="302" VerticalAlignment="Top">
+        <DataGrid x:Name="CourseData" SelectionChanged="CourseData_SelectionChanged" AutoGenerateColumns="False" Margin="36,233,36,0" Height="302" VerticalAlignment="Top">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Course Name" Binding="{Binding CourseName}" Width="*"/>
                 <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="60"/>

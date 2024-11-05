@@ -35,6 +35,7 @@ namespace Group4WPF
             PlaceholderTextBlock.Visibility = string.IsNullOrEmpty(RoomNameTextBox.Text)
                 ? Visibility.Visible
                 : Visibility.Collapsed;
+            LoadData();
         }
 
         private void ButtonCreate_Click(object sender, RoutedEventArgs e)
@@ -45,7 +46,6 @@ namespace Group4WPF
                     RoomName = TextRoom.Text,
                     Status = 0,
                 });
-                System.Windows.MessageBox.Show("Successfully created room " + TextRoom.Text);
                 LoadData();
             });
         }
@@ -89,5 +89,15 @@ namespace Group4WPF
             RoomData.ItemsSource = roomService.GetRooms().Where((c) => c.RoomName.Contains(search));
         }
 
+        private void RoomData_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (RoomData.SelectedItem is not Room room)
+            {
+                TextRoom.Text = string.Empty;
+                return;
+            }
+            TextRoom.Text = room.RoomName;
+
+        }
     }
 }

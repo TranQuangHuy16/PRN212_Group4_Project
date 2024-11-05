@@ -35,6 +35,7 @@ namespace Group4WPF
             PlaceholderTextBlock.Visibility = string.IsNullOrEmpty(SemesterNameTextBox.Text)
                 ? Visibility.Visible
                 : Visibility.Collapsed;
+            LoadData();
         }
 
         private void ButtonCreate_Click(object sender, RoutedEventArgs e)
@@ -47,7 +48,6 @@ namespace Group4WPF
                     EndDate = EndDatePicker.SelectedDate.Value,
                     Status = 0,
                 });
-                System.Windows.MessageBox.Show("Successfully created semester " + TextSemester.Text);
                 LoadData();
             });
         }
@@ -95,6 +95,17 @@ namespace Group4WPF
         private void Window_Activated(object sender, EventArgs e)
         {
             LoadData();
+        }
+
+        private void SemesterData_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (SemesterData.SelectedItem is not Semester semester)
+            {
+                TextSemester.Text = string.Empty;
+                return;
+            }
+            TextSemester.Text = semester.SemesterName;
+
         }
     }
 }

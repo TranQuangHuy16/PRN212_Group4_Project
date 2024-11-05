@@ -24,7 +24,7 @@
             Margin="10,0,0,0" IsHitTestVisible="False" FontSize="16"/>
             </Grid>
         </Border>
-        <DataGrid x:Name="SlotData" AutoGenerateColumns="False" Margin="36,333,36,0" Height="302" VerticalAlignment="Top">
+        <DataGrid x:Name="SlotData" SelectionChanged="SlotData_SelectionChanged" AutoGenerateColumns="False" Margin="36,333,36,0" Height="302" VerticalAlignment="Top">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Slot" Binding="{Binding SlotName}" Width="*"/>
                 <DataGridTextColumn Header="Start Time" Binding="{Binding StartTime}" Width="*"/>

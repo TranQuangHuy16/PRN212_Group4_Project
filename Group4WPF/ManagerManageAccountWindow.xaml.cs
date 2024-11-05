@@ -63,7 +63,6 @@ namespace Group4WPF
             Util.TryDelete(() =>
             {
                 accountService.DeleteAccount(((Account)AccountData.SelectedItem).AccountId);
-                System.Windows.MessageBox.Show("Deleted account " + ((Account)AccountData.SelectedItem).Name);
             });
         }
 
@@ -87,6 +86,21 @@ namespace Group4WPF
         private void Window_Activated(object sender, EventArgs e)
         {
             LoadData();
+        }
+
+        private void AccountData_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (AccountData.SelectedItem is not Account account)
+            {
+                TextName.Text = string.Empty;
+                TextEmail.Text = string.Empty;
+                TextPhone.Text = string.Empty;
+                return;
+            }
+            TextName.Text = account.Name;
+            TextEmail.Text = account.Email;
+            TextPhone.Text = account.Telephone;
+
         }
     }
 }

@@ -24,7 +24,7 @@
                 Margin="10,0,0,0" IsHitTestVisible="False" FontSize="16"/>
             </Grid>
         </Border>
-        <DataGrid x:Name="SemesterData" AutoGenerateColumns="False" Margin="36,333,36,0" Height="302" VerticalAlignment="Top">
+        <DataGrid x:Name="SemesterData" SelectionChanged="SemesterData_SelectionChanged" AutoGenerateColumns="False" Margin="36,333,36,0" Height="302" VerticalAlignment="Top">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Semester" Binding="{Binding SemesterName}" Width="*"/>
                 <DataGridTextColumn Header="Start Date" Binding="{Binding StartDate}" Width="*"/>

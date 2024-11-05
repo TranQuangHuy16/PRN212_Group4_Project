@@ -23,7 +23,7 @@
            Margin="10,0,0,0" IsHitTestVisible="False" FontSize="16"/>
             </Grid>
         </Border>
-        <DataGrid x:Name="RoomData" AutoGenerateColumns="False" Margin="36,233,36,0" Height="302" VerticalAlignment="Top">
+        <DataGrid x:Name="RoomData" SelectionChanged="RoomData_SelectionChanged" AutoGenerateColumns="False" Margin="36,233,36,0" Height="302" VerticalAlignment="Top">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="RoomNo" Binding="{Binding RoomName}" Width="*"/>
                 <DataGridTextColumn Header="Exam" Binding="{Binding Exam}" Width="*"/>

@@ -68,7 +68,6 @@ namespace Group4WPF
                     EndTime = TimeSpan.Parse((string)EndTimeComboBox.SelectedItem),
                     Status = 0,
                 });
-                System.Windows.MessageBox.Show("Successfully created slot " + TextSlot.Text);
                 LoadData();
             });
         }
@@ -115,6 +114,17 @@ namespace Group4WPF
         private void Window_Activated(object sender, EventArgs e)
         {
             LoadData();
+        }
+
+        private void SlotData_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (SlotData.SelectedItem is not Slot slot)
+            {
+                TextSlot.Text = string.Empty;
+                return;
+            }
+            TextSlot.Text = slot.SlotName;
+
         }
     }
 }

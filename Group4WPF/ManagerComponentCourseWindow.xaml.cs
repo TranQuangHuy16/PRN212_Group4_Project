@@ -36,6 +36,7 @@ namespace Group4WPF
             PlaceholderTextBlock.Visibility = string.IsNullOrEmpty(CourseNameTextBox.Text)
                 ? Visibility.Visible
                 : Visibility.Collapsed;
+            LoadData();
         }
 
         private void ButtonCreate_Click(object sender, RoutedEventArgs e)
@@ -46,7 +47,6 @@ namespace Group4WPF
                     CourseName = TextCourse.Text,
                     Status = 0,
                 });
-                System.Windows.MessageBox.Show("Successfully created course " + TextCourse.Text);
                 LoadData();
             });
         }
@@ -88,6 +88,17 @@ namespace Group4WPF
         {
             var search = CourseNameTextBox.Text ?? "";
             CourseData.ItemsSource = courseService.GetCourses().Where((c) => c.CourseName.Contains(search));
+        }
+
+        private void CourseData_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (CourseData.SelectedItem is not Course course)
+            {
+                TextCourse.Text = string.Empty;
+                return;
+            }
+            TextCourse.Text = course.CourseName;
+
         }
     }
 }
