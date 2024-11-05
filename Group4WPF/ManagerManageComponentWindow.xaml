@@ -10,26 +10,29 @@
         Title="ManagerManageComponentWindow" Height="450" Width="800">
     <Grid>
         <Label Content="MANAGE COMPONENTS" HorizontalAlignment="Center" Height="53" Margin="0,33,0,0" VerticalAlignment="Top" Width="428" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <Button x:Name="ButtonRoom" Click="ButtonRoom_Click" BorderBrush="Transparent" BorderThickness="0" HorizontalAlignment="Left" Height="100" Width="200" 
-            FontSize="18" Margin="110,110,0,0" VerticalAlignment="Top" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+        <Button x:Name="ButtonRoom" Click="ButtonRoom_Click" BorderBrush="Transparent" BorderThickness="0" HorizontalAlignment="Left" Height="70" Width="130" 
+            FontSize="18" Margin="220,140,0,0" VerticalAlignment="Top" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
             <TextBlock TextWrapping="Wrap" Text="Room" TextAlignment="Center" Width="190" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Button>
-        <Button x:Name="ButtonSlot" Click="ButtonSlot_Click"  BorderBrush="Transparent" BorderThickness="0" HorizontalAlignment="Left" Height="100" Width="200" 
-            FontSize="18" Margin="110,240,0,0" VerticalAlignment="Top" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+        <Button x:Name="ButtonSlot" Click="ButtonSlot_Click"  BorderBrush="Transparent" BorderThickness="0" HorizontalAlignment="Left" Height="70" Width="130" 
+            FontSize="18" Margin="220,247,0,0" VerticalAlignment="Top" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
             <TextBlock TextWrapping="Wrap" Text="Slot" TextAlignment="Center" Width="190" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Button>
-        <Button x:Name="Semester" Click="Semester_Click" BorderBrush="Transparent" BorderThickness="0" HorizontalAlignment="Left" Height="100" Width="200" 
-            FontSize="18" Margin="460,240,0,0" VerticalAlignment="Top" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+        <Button x:Name="Semester" Click="Semester_Click" BorderBrush="Transparent" BorderThickness="0" HorizontalAlignment="Left" Height="70" Width="130" 
+            FontSize="18" Margin="430,247,0,0" VerticalAlignment="Top" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
             <TextBlock TextWrapping="Wrap" Text="Semester" TextAlignment="Center" Width="190" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Button>
-        <Button x:Name="Course" Click="Course_Click" BorderBrush="Transparent" BorderThickness="0" HorizontalAlignment="Left" Height="100" Width="200" 
-            FontSize="18" Margin="460,110,0,0" VerticalAlignment="Top" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+        <Button x:Name="Course" Click="Course_Click" BorderBrush="Transparent" BorderThickness="0" HorizontalAlignment="Left" Height="70" Width="130" 
+            FontSize="18" Margin="430,140,0,0" VerticalAlignment="Top" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
             <TextBlock TextWrapping="Wrap" Text="Course" TextAlignment="Center" Width="190" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Button>
-        <Button x:Name="ButtonCancel" Click="ButtonCancel_Click" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="55" Width="114" FontSize="18"
-            Margin="660,350,0,0" VerticalAlignment="Top" 
+        <Button x:Name="ButtonCancel" Click="ButtonCancel_Click" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="50" Width="130" FontSize="18"
+            Margin="660,355,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-
+        <Button BorderBrush="Transparent" BorderThickness="0" HorizontalAlignment="Center" Height="70" Width="170" 
+            FontSize="18" Margin="0,346,0,0" VerticalAlignment="Top" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <TextBlock TextWrapping="Wrap" Text="Course Semester" TextAlignment="Center" Width="190" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Button>
 
     </Grid>
 </Window>
