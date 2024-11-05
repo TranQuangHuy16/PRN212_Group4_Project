@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BOs.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20241030181146_InitialDB")]
+    [Migration("20241105103433_InitialDB")]
     partial class InitialDB
     {
         /// <inheritdoc />
@@ -71,7 +71,7 @@ namespace BOs.Migrations
                             Name = "Admin User",
                             Password = "123456789",
                             Role = 0,
-                            Status = (byte)1,
+                            Status = (byte)0,
                             Telephone = "0123456789"
                         });
                 });

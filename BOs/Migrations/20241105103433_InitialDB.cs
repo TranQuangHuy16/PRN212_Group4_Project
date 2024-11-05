@@ -158,7 +158,7 @@ namespace BOs.Migrations
             migrationBuilder.InsertData(
                 table: "Accounts",
                 columns: new[] { "AccountId", "Email", "Name", "Password", "Role", "Status", "Telephone" },
-                values: new object[] { 1, "admin@example.com", "Admin User", "123456789", 0, (byte)1, "0123456789" });
+                values: new object[] { 1, "admin@example.com", "Admin User", "123456789", 0, (byte)0, "0123456789" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_CourseSemesters_SemesterId",
