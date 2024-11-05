@@ -59,7 +59,7 @@ namespace Group4WPF
                 Telephone = TextTele.Text,
                 Password = TextPassword.Password,
                 Status = 0,
-                Role = 0,
+                Role = 1,
             };
             return account;
         }

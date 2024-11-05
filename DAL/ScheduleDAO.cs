@@ -127,15 +127,19 @@ namespace DAL
 
         public List<Schedule> GetSchedulesByAccountId(int id)
         {
-            List<Schedule> schedules = new List<Schedule> ();
+            List<Schedule> schedules = new List<Schedule>();
             try
             {
                 using var db = new MyDbContext();
                 schedules = db.Schedules
-                    .Where(s => s.AccountId == id && s.Status == 0)
                     .Include(s => s.Room)
                     .Include(s => s.Account)
                     .Include(s => s.Slot)
+                    .Include(s => s.CourseSemester)
+                    .ThenInclude(cs => cs.Course)
+                    .Include(s => s.CourseSemester)
+                    .ThenInclude(cs => cs.Semester)
+                    .Where(s => s.Status == 0 && s.AccountId == id)
                     .ToList();
             }
             catch (Exception)

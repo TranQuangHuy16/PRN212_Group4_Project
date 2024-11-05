@@ -75,7 +75,7 @@ namespace WpfApp
                     CourseId = ((BOs.Course)CourseComboBox.SelectedItem).CourseId,
                     RoomId = ((Room)RoomComboBox.SelectedItem).RoomId,
                     SlotId = ((Slot)SlotComboBox.SelectedItem).SlotId,
-                    AccountId = _account.AccountId,
+                    //AccountId = _account.AccountId,
                     ScheduleDate = ScheduleDatepicker.SelectedDate.Value,
                     Status = 0,
                 });

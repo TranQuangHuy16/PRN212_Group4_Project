@@ -68,7 +68,7 @@ namespace BOs.Migrations
                             Name = "Admin User",
                             Password = "123456789",
                             Role = 0,
-                            Status = (byte)1,
+                            Status = (byte)0,
                             Telephone = "0123456789"
                         });
                 });
