@@ -102,5 +102,10 @@ namespace Group4WPF
             var search = SlotNameTextBox.Text;
             SlotData.ItemsSource = slotService.GetSlots().Where((c) => c.SlotName.Contains(search));
         }
+
+        private void Window_Activated(object sender, EventArgs e)
+        {
+            LoadData();
+        }
     }
 }

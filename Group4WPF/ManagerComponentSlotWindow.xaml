@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Group4WPF"
+        Loaded="Window_Loaded"
+        Activated="Window_Activated"
         mc:Ignorable="d"
         Background="#F5F5F5"
         WindowStartupLocation="CenterScreen"
@@ -24,7 +26,7 @@
         </Border>
         <DataGrid x:Name="SlotData" AutoGenerateColumns="False" Margin="36,333,36,0" Height="302" VerticalAlignment="Top">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Slot" Binding="{Binding Slot}" Width="*"/>
+                <DataGridTextColumn Header="Slot" Binding="{Binding SlotName}" Width="*"/>
                 <DataGridTextColumn Header="Start Time" Binding="{Binding StartTime}" Width="*"/>
                 <DataGridTextColumn Header="End Time" Binding="{Binding EndTime}" Width="*"/>
                 <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="60"/>

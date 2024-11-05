@@ -82,6 +82,9 @@ namespace Group4WPF
             SemesterData.ItemsSource = semesterService.GetSemesters().Where((c) => c.SemesterName.Contains(search));
         }
 
-
+        private void Window_Activated(object sender, EventArgs e)
+        {
+            LoadData();
+        }
     }
 }

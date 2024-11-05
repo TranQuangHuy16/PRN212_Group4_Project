@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Group4WPF"
+        Loaded="Window_Loaded"
+        Activated="Window_Activated"
         mc:Ignorable="d"
         Background="#F5F5F5"
         WindowStartupLocation="CenterScreen"
@@ -24,7 +26,7 @@
         </Border>
         <DataGrid x:Name="SemesterData" AutoGenerateColumns="False" Margin="36,333,36,0" Height="302" VerticalAlignment="Top">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Semester" Binding="{Binding Semester}" Width="*"/>
+                <DataGridTextColumn Header="Semester" Binding="{Binding SemesterName}" Width="*"/>
                 <DataGridTextColumn Header="Start Date" Binding="{Binding StartDate}" Width="*"/>
                 <DataGridTextColumn Header="End Date" Binding="{Binding EndDate}" Width="*"/>
                 <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="60"/>
