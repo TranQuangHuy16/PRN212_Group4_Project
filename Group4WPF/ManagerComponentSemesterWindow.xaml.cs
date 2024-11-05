@@ -54,7 +54,17 @@ namespace Group4WPF
 
         private void ButtonUpdate_Click(object sender, RoutedEventArgs e)
         {
-            //TODO: Add update
+            if (SemesterData.SelectedItem is not Semester semester)
+            {
+                MessageBox.Show("No semester selected");
+                return;
+            }
+            Util.TryUpdate(() =>
+            {
+                semester.Status ^= 1;
+                semesterService.UpdateSemester(semester);
+                LoadData();
+            });
         }
 
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)

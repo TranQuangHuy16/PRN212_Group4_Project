@@ -52,7 +52,16 @@ namespace Group4WPF
 
         private void ButtonUpdate_Click(object sender, RoutedEventArgs e)
         {
-            //TODO: Add update
+            if (RoomData.SelectedItem is not Room room) {
+                MessageBox.Show("No room selected");
+                return; 
+            }
+            Util.TryUpdate(() =>
+            {
+                room.Status ^= 1;
+                roomService.UpdateRoom(room);
+                LoadData();
+            });
         }
 
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)

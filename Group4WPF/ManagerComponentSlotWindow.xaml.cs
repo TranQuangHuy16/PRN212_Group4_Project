@@ -75,7 +75,16 @@ namespace Group4WPF
 
         private void ButtonUpdate_Click(object sender, RoutedEventArgs e)
         {
-            //TODO: Add update
+            if (SlotData.SelectedItem is not Slot slot)
+            {
+                MessageBox.Show("No slot selected");
+                return;
+            }
+            Util.TryUpdate(() => {
+                slot.Status ^= 1;
+                slotService.UpdateSlot(slot);
+                LoadData();
+            });
         }
 
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)

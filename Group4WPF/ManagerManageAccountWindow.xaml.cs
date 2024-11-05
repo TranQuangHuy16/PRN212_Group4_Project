@@ -46,7 +46,16 @@ namespace Group4WPF
 
         private void ButtonUpdate_Click(object sender, RoutedEventArgs e)
         {
-            //TODO: Add update
+            if (AccountData.SelectedItem is not Account account)
+            {
+                MessageBox.Show("No account selected");
+                return;
+            }
+            Util.TryUpdate(() => {
+                account.Status ^= 1;
+                accountService.UpdateAccount(account);
+                LoadData();
+            });
         }
 
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)

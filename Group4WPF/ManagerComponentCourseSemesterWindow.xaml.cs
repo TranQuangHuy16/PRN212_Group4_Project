@@ -53,6 +53,7 @@ namespace Group4WPF
         {
             SemesterComboBox.ItemsSource = semesterService.GetSemesters();
             CourseComboBox.ItemsSource = courseService.GetCourses();
+            CourseSemesterData.ItemsSource = courseSemesterService.GetCourseSemesters();
         }
 
         private void ButtonCreate_Click(object sender, RoutedEventArgs e)
@@ -75,7 +76,15 @@ namespace Group4WPF
 
         private void ButtonUpdate_Click(object sender, RoutedEventArgs e)
         {
-            //TODO: Create update window
+            if (CourseSemesterData.SelectedItem is not CourseSemester cs)
+            {
+                MessageBox.Show("No course semester selected");
+                return;
+            }
+            Util.TryUpdate(() =>
+            {
+                //TODO: Add status to course semester
+            });
         }
 
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)

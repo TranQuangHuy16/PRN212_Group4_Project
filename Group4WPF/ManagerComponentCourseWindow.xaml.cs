@@ -53,7 +53,17 @@ namespace Group4WPF
 
         private void ButtonUpdate_Click(object sender, RoutedEventArgs e)
         {
-            //TODO: Add update
+            if (CourseData.SelectedItem is not Course course)
+            {
+                System.Windows.MessageBox.Show("No course selected");
+                return;
+            }
+            Util.TryUpdate(() =>
+            {
+                course.Status ^= 1;
+                courseService.UpdateCourse(course);
+                LoadData();
+            });
         }
 
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)
