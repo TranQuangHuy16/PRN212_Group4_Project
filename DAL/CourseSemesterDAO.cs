@@ -1,4 +1,5 @@
 ﻿using BOs;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace DAL
             {
 
                 using var db = new MyDbContext();
-                courseSemesters = db.CourseSemesters.ToList();
+                courseSemesters = [.. db.CourseSemesters.Include(s => s.Semester).Include(s => s.Course)];
 
             }
             catch (Exception)

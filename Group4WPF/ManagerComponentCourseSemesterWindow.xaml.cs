@@ -70,7 +70,7 @@ namespace Group4WPF
                 }
                 else
                 {
-                    MessageBox.Show("Course or Semester is not selected");
+                    throw new Exception("Course or Semester is not selected");
                 }
                 UpdateSearchResult();
             });    
@@ -85,7 +85,9 @@ namespace Group4WPF
             }
             Util.TryUpdate(() =>
             {
-                //TODO: Add status to course semester
+                cs.CourseId = ((Course)CourseComboBox.SelectedItem).CourseId;
+                cs.SemesterId = ((Semester)SemesterComboBox.SelectedItem).SemesterId;
+                courseSemesterService.UpdateCourseSemester(cs);
             });
         }
 
@@ -93,7 +95,9 @@ namespace Group4WPF
         {
             if (CourseComboBox.SelectedItem is Course course && SemesterComboBox.SelectedItem is Semester semester)
             {
-                courseSemesterService.DeleteCourseSemester(course.CourseId, semester.SemesterId);
+                Util.TryDelete(() => {
+                    courseSemesterService.DeleteCourseSemester(course.CourseId, semester.SemesterId); 
+                });
             }
             else
             {
@@ -104,12 +108,20 @@ namespace Group4WPF
 
         private void ButtonCancel_Click(object sender, RoutedEventArgs e)
         {
-
+            Util.CloseAndOpenWindow(this, window);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             LoadSelections();
+        }
+
+        private void CourseSemesterData_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (CourseSemesterData.SelectedItem is not CourseSemester cs) return;
+            //Very dirty trick, since cs Course and Semester data isnt identical...
+            CourseComboBox.SelectedIndex =  ((List<Course>)CourseComboBox.ItemsSource).FindIndex((c) => c.CourseId.Equals(cs.CourseId));
+            SemesterComboBox.SelectedIndex = ((List<Semester>)SemesterComboBox.ItemsSource).FindIndex((c) => c.SemesterId.Equals(cs.SemesterId));
         }
     }
 }

@@ -25,9 +25,9 @@ Width="546" Height="46" Background="White" Margin="50,90,0,0">
         </Border>
         <Label Content="Course" HorizontalAlignment="Left" Height="46" Margin="50,160,0,0" VerticalAlignment="Top" Width="109" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Label Content="Semester" HorizontalAlignment="Left" Height="46" Margin="365,160,0,0" VerticalAlignment="Top" Width="109" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <DataGrid x:Name="CourseSemesterData" AutoGenerateColumns="False" Margin="36,233,36,0" Height="302" VerticalAlignment="Top">
+        <DataGrid x:Name="CourseSemesterData" SelectionChanged="CourseSemesterData_SelectionChanged" AutoGenerateColumns="False" Margin="36,233,36,0" Height="302" VerticalAlignment="Top">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Course Name" Binding="{Binding CourseName}" Width="*"/>
+                <DataGridTextColumn Header="Course Name" Binding="{Binding Course}" Width="*"/>
                 <DataGridTextColumn Header="Semester" Binding="{Binding Semester}" Width="*"/>
                 <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="60"/>
             </DataGrid.Columns>
