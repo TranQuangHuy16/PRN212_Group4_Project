@@ -51,7 +51,7 @@ namespace WpfApp
         {
             List<Account> accounts = accountService.GetAccounts();
             AccountComboBox.ItemsSource = accounts;
-            AccountComboBox.SelectedIndex = accounts.FindIndex(0, 1, (account) => account.AccountId == _schedule.AccountId);
+            AccountComboBox.SelectedIndex = accounts.FindIndex((account) => account.AccountId == _schedule.AccountId);
 
             List<string> status = ["Enabled", "Disabled"];
             StatusComboBox.ItemsSource = status;
@@ -59,15 +59,15 @@ namespace WpfApp
 
             List<Course> courses = courseService.GetCourses();
             CourseComboBox.ItemsSource = courses;
-            CourseComboBox.SelectedIndex = courses.FindIndex(0, 1, (course) => course.CourseId == _schedule.CourseId);
+            CourseComboBox.SelectedIndex = courses.FindIndex((course) => course.CourseId == _schedule.CourseId);
 
             List<Room> rooms = roomService.GetRooms();
             RoomComboBox.ItemsSource = rooms;
-            RoomComboBox.SelectedIndex = rooms.FindIndex(0, 1, (room) => room.RoomId == _schedule.RoomId);
+            RoomComboBox.SelectedIndex = rooms.FindIndex((room) => room.RoomId == _schedule.RoomId);
 
             List<Slot> slots = slotService.GetSlots();
             SlotComboBox.ItemsSource = slots;
-            SlotComboBox.SelectedItem = slots.FindIndex(0, 1, (slot) => slot.SlotId == _schedule.SlotId);
+            SlotComboBox.SelectedItem = slots.FindIndex((slot) => slot.SlotId == _schedule.SlotId);
 
             ScheduleDatepicker.SelectedDate = _schedule.ScheduleDate;
         }
