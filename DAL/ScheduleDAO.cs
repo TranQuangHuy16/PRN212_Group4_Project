@@ -69,6 +69,18 @@ namespace DAL
                 {
                     throw new Exception("Not found Schedule");
                 }
+
+                int totalSlot = db.Schedules.Count(s => s.AccountId == accountId && s.ScheduleDate > DateTime.Now);
+                if (totalSlot >= 5)
+                {
+                    throw new ArgumentException("Only 5 exam monitoring slots can be registered.");
+                }
+                Schedule schedule1 = db.Schedules.SingleOrDefault(s => s.ScheduleId == scheduleId);
+
+                if(db.Schedules.Any(s => s.AccountId == accountId && s.ScheduleDate == schedule1.ScheduleDate && s.SlotId == schedule1.SlotId))
+                {
+                    throw new ArgumentException("Account already has a schedule in the same slot on the same day.");
+                }
                 schedule.AccountId = accountId;
                 db.Entry<Schedule>(schedule).State
                     = Microsoft.EntityFrameworkCore.EntityState.Modified;
