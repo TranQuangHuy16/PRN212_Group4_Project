@@ -25,9 +25,11 @@ namespace Group4WPF
         private readonly CourseService courseService;
         private readonly SemesterService semesterService;
         private readonly CourseSemesterService courseSemesterService;
+        private readonly Window window;
 
-        public ManagerComponentCourseSemesterWindow()
+        public ManagerComponentCourseSemesterWindow(Window window)
         {
+            this.window = window;
             courseService = new CourseService();
             semesterService = new SemesterService();
             courseSemesterService = new CourseSemesterService();

@@ -46,6 +46,11 @@ namespace Group4WPF
             Util.HideAndOpenWindow(this, new ManagerComponentCourseWindow(this));
         }
 
+        private void CourseSemester_Click(object sender, RoutedEventArgs e)
+        {
+            Util.HideAndOpenWindow(this, new ManagerComponentCourseSemesterWindow(this));
+        }
+
         private void ButtonCancel_Click(object sender, RoutedEventArgs e)
         {
             Util.CloseAndOpenWindow(this, _window);

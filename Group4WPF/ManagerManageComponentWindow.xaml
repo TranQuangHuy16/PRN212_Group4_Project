@@ -29,7 +29,7 @@
         <Button x:Name="ButtonCancel" Click="ButtonCancel_Click" BorderBrush="Transparent" BorderThickness="0" Content="Cancel" HorizontalAlignment="Left" Height="50" Width="130" FontSize="18"
             Margin="660,355,0,0" VerticalAlignment="Top" 
             FontWeight="Bold" />
-        <Button BorderBrush="Transparent" BorderThickness="0" HorizontalAlignment="Center" Height="70" Width="170" 
+        <Button BorderBrush="Transparent" Click="CourseSemester_Click" BorderThickness="0" HorizontalAlignment="Center" Height="70" Width="170" 
             FontSize="18" Margin="0,346,0,0" VerticalAlignment="Top" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
             <TextBlock TextWrapping="Wrap" Text="Course Semester" TextAlignment="Center" Width="190" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Button>
