@@ -29,7 +29,12 @@ namespace DAL
         {
             try
             {
+                isValidationRoom(room);
                 using var db = new MyDbContext();
+                if(db.Rooms.Any(r => r.RoomName == room.RoomName && r.Status == 0))
+                {
+                    throw new ArgumentException("Duplicate Room Name");
+                }
                 db.Rooms.Add(room);
                 db.SaveChanges();
             }
@@ -43,7 +48,12 @@ namespace DAL
         {
             try
             {
+                isValidationRoom(room);
                 using var db = new MyDbContext();
+                if (db.Rooms.Any(r => r.RoomName == room.RoomName && r.Status == 0))
+                {
+                    throw new ArgumentException("Duplicate Room Name");
+                }
                 db.Entry<Room>(room).State
                     = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
@@ -90,6 +100,13 @@ namespace DAL
                 throw;
             }
             return room;
+        }
+
+        private void isValidationRoom(Room room)
+        {
+            if (string.IsNullOrWhiteSpace(room.RoomName)){
+                throw new ArgumentException("Room Name is required");
+            }
         }
     }
 }

@@ -56,9 +56,8 @@ namespace WpfApp
         private void ButtonRegister_Click(object sender, RoutedEventArgs e)
         {
             if (ScheduleData.SelectedItem is not Schedule schedule) return;
-            Util.TryUpdate(() => {
-                schedule.AccountId = _account.AccountId;
-                _service.UpdateScheduled(schedule);
+            Util.RegisterSuccess(() => {
+                _service.RegisterSchedule(_account.AccountId, schedule.ScheduleId);
             });
         }
 

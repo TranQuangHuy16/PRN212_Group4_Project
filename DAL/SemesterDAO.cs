@@ -29,7 +29,12 @@ namespace DAL
         {
             try
             {
+                ValidateSemester(semester);
                 using var db = new MyDbContext();
+                if(db.Semesters.Any(s => s.SemesterName == semester.SemesterName && s.Status == 0))
+                {
+                    throw new ArgumentException("Duplicate Semeter Name");
+                }
                 db.Semesters.Add(semester);
                 db.SaveChanges();
             }
@@ -43,7 +48,12 @@ namespace DAL
         {
             try
             {
+                ValidateSemester(semester);
                 using var db = new MyDbContext();
+                if (db.Semesters.Any(s => s.SemesterName == semester.SemesterName && s.Status == 0))
+                {
+                    throw new ArgumentException("Duplicate Semeter Name");
+                }
                 db.Entry<Semester>(semester).State
                     = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
@@ -114,5 +124,24 @@ namespace DAL
             }
             return semesters;
         }
+
+        private void ValidateSemester(Semester semester)
+        {
+            if (string.IsNullOrWhiteSpace(semester.SemesterName))
+            {
+                throw new ArgumentException("Semester Name is required");
+            }
+
+            if (semester.StartDate < DateTime.Now.Date)
+            {
+                throw new ArgumentException("Start date not selected in the past.");
+            }
+
+            if (semester.EndDate <= semester.StartDate)
+            {
+                throw new ArgumentException("The end date must be after the start date.");
+            }
+        }
+
     }
 }

@@ -25,7 +25,12 @@ namespace DAL
         {
             try
             {
+                ValidateSlot(slot);
                 using var db = new MyDbContext();
+                if (db.Slots.Any(s => s.SlotName == slot.SlotName && s.Status == 0))
+                {
+                    throw new ArgumentException("Duplicate Slot Name");
+                }
                 db.Slots.Add(slot);
                 db.SaveChanges();
             }
@@ -39,7 +44,12 @@ namespace DAL
         {
             try
             {
+                ValidateSlot(slot);
                 using var db = new MyDbContext();
+                if (db.Slots.Any(s => s.SlotName == slot.SlotName && s.Status == 0))
+                {
+                    throw new ArgumentException("Duplicate Slot Name");
+                }
                 db.Entry<Slot>(slot).State
                     = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
@@ -86,6 +96,19 @@ namespace DAL
                 throw;
             }
             return slot;
+        }
+
+        private void ValidateSlot(Slot slot)
+        {
+            if(slot.SlotName == null)
+            {
+                throw new ArgumentException("Slot Name is required");
+            }
+
+            if (slot.EndTime <= slot.StartTime)
+            {
+                throw new ArgumentException("The end time must be after the start time.");
+            }
         }
     }
 }

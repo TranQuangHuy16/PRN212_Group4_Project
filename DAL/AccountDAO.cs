@@ -15,7 +15,12 @@ namespace DAL
         {
             try
             {
+                ValidateAccount(account);
                 using var db = new MyDbContext();
+                if (db.Accounts.Any(a => a.Email == account.Email && a.Status == 0))
+                {
+                    throw new ArgumentException("Email is already in use.");
+                }
                 db.Accounts.Add(account);
                 db.SaveChanges();
             }
@@ -30,6 +35,7 @@ namespace DAL
         {
             try
             {
+                ValidateAccount(account);
                 using var db = new MyDbContext();
                 db.Entry<Account>(account).State
                     = Microsoft.EntityFrameworkCore.EntityState.Modified;
@@ -127,6 +133,41 @@ namespace DAL
                 throw ;
             }
             return account;
+        }
+
+        private void ValidateAccount(Account account)
+        {
+            if (string.IsNullOrWhiteSpace(account.Name) || account.Name.Length < 5)
+            {
+                throw new ArgumentException("Name is required and must be more than 5 characters.");
+            }
+
+            if (string.IsNullOrWhiteSpace(account.Email) || !IsValidEmail(account.Email))
+            {
+                throw new ArgumentException("Invalid Email");
+            }
+
+            if ((account.Password == null) || (account.Password.Length < 2))
+            {
+                throw new ArgumentException("Password is required and must be more than 2 characters.");
+            }
+
+            if (string.IsNullOrEmpty(account.Telephone) || !IsValidPhoneNumber(account.Telephone))
+            {
+                throw new ArgumentException("Invalid Telephone");
+            }
+        }
+
+        private bool IsValidEmail(string email)
+        {
+            var emailRegex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+            return emailRegex.IsMatch(email);
+        }
+
+        private bool IsValidPhoneNumber(string phoneNumber)
+        {
+            var phoneRegex = new Regex(@"(84|0[3|5|7|8|9])+(\d{8})");
+            return phoneRegex.IsMatch(phoneNumber);
         }
 
     }

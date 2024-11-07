@@ -29,7 +29,12 @@ namespace DAL
         {
             try
             {
+                isValidationCourse(course);
                 using var db = new MyDbContext();
+                if(db.Courses.Any(c => c.CourseName == course.CourseName && c.Status == 0))
+                {
+                    throw new ArgumentException("Duplitcate Course Name");
+                }
                 db.Courses.Add(course);
                 db.SaveChanges();
             }
@@ -43,7 +48,12 @@ namespace DAL
         {
             try
             {
+                isValidationCourse(course);
                 using var db = new MyDbContext();
+                if (db.Courses.Any(c => c.CourseName == course.CourseName && c.Status == 0))
+                {
+                    throw new ArgumentException("Duplitcate Course Name");
+                }
                 db.Entry<Course>(course).State
                     = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
@@ -90,6 +100,13 @@ namespace DAL
                 throw ;
             }
             return course;
+        }
+
+        private void isValidationCourse(Course course)
+        {
+            if (string.IsNullOrWhiteSpace(course.CourseName)){
+                throw new ArgumentException("Course Name is required");
+            }
         }
 
 

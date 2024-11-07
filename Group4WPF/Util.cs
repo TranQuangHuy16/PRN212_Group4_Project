@@ -44,6 +44,26 @@ namespace Group4WPF
 
         }
 
+        public static void RegisterSuccess(Action action)
+        {
+            try
+            {
+                action.Invoke();
+                MessageBox.Show("Register successful");
+            }
+            catch (Exception ex)
+            {
+                string msg = "Error during Register:\n" + ex.Message + "\n";
+                while (ex.InnerException != null)
+                {
+                    msg += ex.InnerException.Message + "\n";
+                    ex = ex.InnerException;
+                }
+                MessageBox.Show(msg);
+            }
+
+        }
+
         public static bool TryDelete(Action action)
         {
             try

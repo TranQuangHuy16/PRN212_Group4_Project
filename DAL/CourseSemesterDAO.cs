@@ -14,6 +14,7 @@ namespace DAL
             List<CourseSemester> courseSemesters = new List<CourseSemester>();
             try
             {
+
                 using var db = new MyDbContext();
                 courseSemesters = db.CourseSemesters.ToList();
 
@@ -29,7 +30,12 @@ namespace DAL
         {
             try
             {
+                isValidationCourseSemester(courseSemester);
                 using var db = new MyDbContext();
+                if(db.CourseSemesters.Any(cs => cs.SemesterId ==  courseSemester.SemesterId && cs.CourseId == courseSemester.CourseId))
+                {
+                    throw new ArgumentException("Course have been registered for this semester");
+                }
                 db.CourseSemesters.Add(courseSemester);
                 db.SaveChanges();
             }
@@ -43,7 +49,12 @@ namespace DAL
         {
             try
             {
+                isValidationCourseSemester(courseSemester);
                 using var db = new MyDbContext();
+                if (db.CourseSemesters.Any(cs => cs.SemesterId == courseSemester.SemesterId && cs.CourseId == courseSemester.CourseId))
+                {
+                    throw new ArgumentException("Course have been registered for this semester");
+                }
                 db.Entry<CourseSemester>(courseSemester).State
                     = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
@@ -77,6 +88,18 @@ namespace DAL
             catch (Exception)
             {
                 throw;
+            }
+        }
+
+        private void isValidationCourseSemester(CourseSemester courseSemester)
+        {
+            if (courseSemester.CourseId == null){
+                throw new ArgumentException("Course is required");
+            }
+
+            if (courseSemester.SemesterId == null)
+            {
+                throw new ArgumentException("Semester is required");
             }
         }
 

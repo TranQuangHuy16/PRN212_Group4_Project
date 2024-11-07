@@ -15,7 +15,16 @@ namespace DAL
         {
             try
             {
+                isValidationSchedule(schedule);
                 using var db = new MyDbContext();
+                if (db.Schedules.Any(s => s.SemesterId == schedule.SemesterId &&
+                                  s.RoomId == schedule.RoomId &&
+                                  s.SlotId == schedule.SlotId &&
+                                  s.ScheduleDate == schedule.ScheduleDate &&
+                                  s.Status == 0))
+                {
+                    throw new ArgumentException("A schedule already exists for this room and this slot on the selected date.");
+                }
                 db.Schedules.Add(schedule);
                 db.SaveChanges();
             }
@@ -29,7 +38,16 @@ namespace DAL
         {
             try
             {
+                isValidationSchedule(schedule);
                 using var db = new MyDbContext();
+                if (db.Schedules.Any(s => s.SemesterId == schedule.SemesterId &&
+                                  s.RoomId == schedule.RoomId &&
+                                  s.SlotId == schedule.SlotId &&
+                                  s.ScheduleDate == schedule.ScheduleDate &&
+                                  s.Status == 0))
+                {
+                    throw new ArgumentException("A schedule already exists for this room and this slot on the selected date.");
+                }
                 db.Entry<Schedule>(schedule).State
                     = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
@@ -52,7 +70,9 @@ namespace DAL
                     throw new Exception("Not found Schedule");
                 }
                 schedule.AccountId = accountId;
-                UpdateScheduled(schedule);
+                db.Entry<Schedule>(schedule).State
+                    = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                db.SaveChanges();
             }
             catch (Exception)
             {
@@ -147,6 +167,30 @@ namespace DAL
                 throw;
             }
             return schedules;
+        }
+
+        private void isValidationSchedule(Schedule schedule)
+        {
+            if (schedule.CourseId == null){
+                throw new ArgumentException("Course is required");
+            }
+            
+            if (schedule.SemesterId == null){
+                throw new ArgumentException("Semester is required");
+            }
+            
+            if (schedule.RoomId == null){
+                throw new ArgumentException("Room is required");
+            }
+            
+            if (schedule.SlotId == null){
+                throw new ArgumentException("Slot is required");
+            }
+
+            if (schedule.ScheduleDate.Date < DateTime.Now.Date)
+            {
+                throw new ArgumentException("The Schedule date cannot be a date in the past.");
+            }
         }
 
     }

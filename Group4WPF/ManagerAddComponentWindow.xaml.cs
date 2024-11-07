@@ -72,6 +72,7 @@ namespace Group4WPF
                     SemesterId = ((Semester)SemesterComboBox.SelectedItem).SemesterId,
                 });
                 LoadSelections();
+                resetInput();
             });   
         }
 
@@ -94,6 +95,7 @@ namespace Group4WPF
                 {
                     RoomName = TextRoom.Text,
                 });
+                resetInput();
             });
         }
 
@@ -107,6 +109,7 @@ namespace Group4WPF
                     Status = 0,
                 });
                 LoadSelections();
+                resetInput();
             });
         }
 
@@ -117,7 +120,8 @@ namespace Group4WPF
                 {
                     CourseName = TextCourse.Text,
                 });
-            });
+               resetInput();
+           });
 
         }
 
@@ -131,12 +135,28 @@ namespace Group4WPF
                     EndTime = TimeSpan.Parse(EndTimeComboBox.Text),
                 });
                 LoadSelections();
+                resetInput();
             });
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             LoadSelections();
+        }
+
+        private void resetInput()
+        {
+            TextSlot.Text = string.Empty;
+            StartTimeComboBox.SelectedValue = string.Empty;
+            EndTimeComboBox.SelectedValue = string.Empty;
+            TextCourse.Text = string.Empty;
+            TextSemester.Text = string.Empty;
+            StartDatePicker.SelectedDate = null;
+            EndDatePicker.SelectedDate = null;
+            TextRoom.Text = string.Empty;
+            TextSemester.Text = string.Empty;
+            CourseComboBox.SelectedValue = string.Empty;
+            SemesterComboBox.SelectedValue = string.Empty;
         }
     }
 }
