@@ -39,12 +39,12 @@
         <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
         HorizontalAlignment="Left" VerticalAlignment="Top" 
         Width="546" Height="46" Background="White" Margin="200,118,0,0">
-            <TextBox x:Name="TextName" Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+            <TextBox x:Name="TextName" IsEnabled="False" Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
         </Border>
         <Border BorderBrush="Transparent" BorderThickness="0" CornerRadius="10" 
         HorizontalAlignment="Left" VerticalAlignment="Top" 
         Width="546" Height="46" Background="White" Margin="200,198,0,0">
-            <TextBox x:Name="TextEmail" Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
+            <TextBox x:Name="TextEmail" IsEnabled="False" Padding="10,0,10,0" BorderThickness="0" TextWrapping="Wrap" FontSize="16" VerticalContentAlignment="Center" Background="Transparent"/>
         </Border>
         <Button BorderBrush="Transparent" BorderThickness="0" HorizontalAlignment="Left" Height="55" Width="114" 
             FontSize="18" Margin="50,750,0,0" VerticalAlignment="Top" FontWeight="Bold" Click="AddComponent_Click">

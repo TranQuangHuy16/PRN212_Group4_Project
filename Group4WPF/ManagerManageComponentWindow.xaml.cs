@@ -50,6 +50,5 @@ namespace Group4WPF
         {
             Util.CloseAndOpenWindow(this, _window);
         }
-
     }
 }

@@ -81,6 +81,8 @@ namespace WpfApp
 
         private void LoadData()
         {
+            TextName.Text = _account.Name;
+            TextEmail.Text = _account.Email;
             ScheduleData.ItemsSource = scheduleService.GetSchedules();
         }
 
