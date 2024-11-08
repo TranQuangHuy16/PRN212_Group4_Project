@@ -29,7 +29,6 @@ Width="546" Height="46" Background="White" Margin="50,90,0,0">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Course Name" Binding="{Binding Course}" Width="*"/>
                 <DataGridTextColumn Header="Semester" Binding="{Binding Semester}" Width="*"/>
-                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="60"/>
             </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="ButtonCreate" Click="ButtonCreate_Click" BorderBrush="Transparent" BorderThickness="0" Content="Create" HorizontalAlignment="Left" Height="54" Width="114" FontSize="18"

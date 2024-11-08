@@ -171,7 +171,7 @@ namespace DAL
                     .ThenInclude(cs => cs.Course)
                     .Include(s => s.CourseSemester)
                     .ThenInclude(cs => cs.Semester)
-                    .Where(s => s.Status == 0 && s.AccountId == id)
+                    .Where(s => s.Status == 0 && s.AccountId == id && s.ScheduleDate >= DateTime.Now.Date)
                     .ToList();
             }
             catch (Exception)
