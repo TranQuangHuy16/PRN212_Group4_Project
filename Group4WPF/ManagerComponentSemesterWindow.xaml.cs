@@ -62,6 +62,8 @@ namespace Group4WPF
             Util.TryUpdate(() =>
             {
                 semester.SemesterName = TextSemester.Text;
+                semester.StartDate = StartDatePicker.SelectedDate.Value;
+                semester.EndDate = EndDatePicker.SelectedDate.Value;
                 semesterService.UpdateSemester(semester);
                 LoadData();
             });
@@ -106,7 +108,8 @@ namespace Group4WPF
                 return;
             }
             TextSemester.Text = semester.SemesterName;
-
+            StartDatePicker.SelectedDate = semester.StartDate;
+            EndDatePicker.SelectedDate = semester.EndDate;
         }
     }
 }
