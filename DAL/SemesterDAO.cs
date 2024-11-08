@@ -50,7 +50,7 @@ namespace DAL
             {
                 ValidateSemester(semester);
                 using var db = new MyDbContext();
-                if (db.Semesters.Any(s => s.SemesterName == semester.SemesterName && s.Status == 0))
+                if (db.Semesters.Any(s => s.SemesterId != semester.SemesterId && s.SemesterName == semester.SemesterName && s.Status == 0))
                 {
                     throw new ArgumentException("Duplicate Semeter Name");
                 }

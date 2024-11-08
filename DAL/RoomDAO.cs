@@ -50,7 +50,7 @@ namespace DAL
             {
                 isValidationRoom(room);
                 using var db = new MyDbContext();
-                if (db.Rooms.Any(r => r.RoomName == room.RoomName && r.Status == 0))
+                if (db.Rooms.Any(r => r.RoomId != room.RoomId && r.RoomName == room.RoomName && r.Status == 0))
                 {
                     throw new ArgumentException("Duplicate Room Name");
                 }

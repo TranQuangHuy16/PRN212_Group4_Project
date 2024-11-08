@@ -50,7 +50,7 @@ namespace DAL
             {
                 isValidationCourse(course);
                 using var db = new MyDbContext();
-                if (db.Courses.Any(c => c.CourseName == course.CourseName && c.Status == 0))
+                if (db.Courses.Any(c => c.CourseId != course.CourseId && c.CourseName == course.CourseName && c.Status == 0))
                 {
                     throw new ArgumentException("Duplitcate Course Name");
                 }

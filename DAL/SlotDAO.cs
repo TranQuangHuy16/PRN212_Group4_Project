@@ -46,7 +46,7 @@ namespace DAL
             {
                 ValidateSlot(slot);
                 using var db = new MyDbContext();
-                if (db.Slots.Any(s => s.SlotName == slot.SlotName && s.Status == 0))
+                if (db.Slots.Any(s => s.SlotId != slot.SlotId && s.SlotName == slot.SlotName && s.Status == 0))
                 {
                     throw new ArgumentException("Duplicate Slot Name");
                 }
