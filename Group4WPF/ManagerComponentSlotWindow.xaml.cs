@@ -55,6 +55,7 @@ namespace Group4WPF
             PlaceholderTextBlock.Visibility = string.IsNullOrEmpty(TextSlot.Text)
                 ? Visibility.Visible
                 : Visibility.Collapsed;
+            LoadData();
         }
 
         private void ButtonCreate_Click(object sender, RoutedEventArgs e)
@@ -81,6 +82,8 @@ namespace Group4WPF
             }
             Util.TryUpdate(() => {
                 slot.SlotName = TextSlot.Text;
+                slot.StartTime = TimeSpan.Parse((string)StartTimeComboBox.SelectedItem);
+                slot.EndTime = TimeSpan.Parse((string)EndTimeComboBox.SelectedItem);
                 slotService.UpdateSlot(slot);
                 LoadData();
             });
@@ -125,7 +128,19 @@ namespace Group4WPF
                 return;
             }
             TextSlot.Text = slot.SlotName;
-
+            //TODO: Change Time ComboBoxes ItemsSource to use TimeSpan-related object
+            StartTimeComboBox.SelectedIndex = ((List<string>)StartTimeComboBox.ItemsSource).FindIndex((time) =>
+            {
+                var temp = TimeSpan.Parse(time);
+                return slot.StartTime.Hours.Equals(temp.Hours) &&
+                       slot.StartTime.Minutes.Equals(temp.Minutes);
+            });
+            EndTimeComboBox.SelectedIndex = ((List<string>)EndTimeComboBox.ItemsSource).FindIndex((time) =>
+            {
+                var temp = TimeSpan.Parse(time);
+                return slot.EndTime.Hours.Equals(temp.Hours) &&
+                       slot.EndTime.Minutes.Equals(temp.Minutes);
+            });
         }
     }
 }
