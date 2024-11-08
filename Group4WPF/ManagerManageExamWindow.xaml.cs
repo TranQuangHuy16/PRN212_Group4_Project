@@ -74,12 +74,15 @@ namespace WpfApp
 
         private void ButtonSave_Click(object sender, RoutedEventArgs e)
         {
-            _schedule.AccountId = ((Account)AccountComboBox.SelectedItem).AccountId;
-            _schedule.Status = (byte)StatusComboBox.SelectedIndex;
-            _schedule.CourseId = ((Course)CourseComboBox.SelectedItem).CourseId;
-            _schedule.RoomId = ((Room)RoomComboBox.SelectedItem).RoomId;
-            _schedule.SlotId = ((Slot)SlotComboBox.SelectedItem).SlotId;
-            scheduleService.UpdateScheduled(_schedule);
+            Util.TryUpdate(() =>
+            {
+                _schedule.AccountId = ((Account)AccountComboBox.SelectedItem).AccountId;
+                _schedule.Status = (byte)StatusComboBox.SelectedIndex;
+                _schedule.CourseId = ((Course)CourseComboBox.SelectedItem).CourseId;
+                _schedule.RoomId = ((Room)RoomComboBox.SelectedItem).RoomId;
+                _schedule.SlotId = ((Slot)SlotComboBox.SelectedItem).SlotId;
+                scheduleService.UpdateScheduled(_schedule);
+            });
         }
 
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)
