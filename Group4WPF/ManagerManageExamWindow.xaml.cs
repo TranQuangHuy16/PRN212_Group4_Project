@@ -75,8 +75,9 @@ namespace WpfApp
         private void ButtonSave_Click(object sender, RoutedEventArgs e)
         {
             Util.TryUpdate(() =>
-            {
-                _schedule.AccountId = ((Account)AccountComboBox.SelectedItem).AccountId;
+            {   
+                if (AccountComboBox.SelectedItem is Account account)
+                    _schedule.AccountId = account.AccountId;
                 _schedule.Status = (byte)StatusComboBox.SelectedIndex;
                 _schedule.CourseId = ((Course)CourseComboBox.SelectedItem).CourseId;
                 _schedule.RoomId = ((Room)RoomComboBox.SelectedItem).RoomId;
