@@ -78,6 +78,10 @@ namespace WpfApp
             {   
                 if (AccountComboBox.SelectedItem is Account account)
                     _schedule.AccountId = account.AccountId;
+                else
+                {
+                    _schedule.AccountId = null;
+                }
                 _schedule.Status = (byte)StatusComboBox.SelectedIndex;
                 _schedule.CourseId = ((Course)CourseComboBox.SelectedItem).CourseId;
                 _schedule.RoomId = ((Room)RoomComboBox.SelectedItem).RoomId;
