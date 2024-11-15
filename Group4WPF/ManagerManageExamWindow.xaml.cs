@@ -67,7 +67,7 @@ namespace WpfApp
 
             List<Slot> slots = slotService.GetSlots();
             SlotComboBox.ItemsSource = slots;
-            SlotComboBox.SelectedItem = slots.FindIndex((slot) => slot.SlotId == _schedule.SlotId);
+            SlotComboBox.SelectedIndex = slots.FindIndex((slot) => slot.SlotId == _schedule.SlotId);
 
             ScheduleDatepicker.SelectedDate = _schedule.ScheduleDate;
         }

@@ -1,5 +1,6 @@
 ﻿using BOs;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,14 +18,19 @@ namespace DAL
             {
                 isValidationSchedule(schedule);
                 using var db = new MyDbContext();
-                if (db.Schedules.Any(s => s.SemesterId == schedule.SemesterId &&
-                                  s.RoomId == schedule.RoomId &&
-                                  s.SlotId == schedule.SlotId &&
-                                  s.ScheduleDate == schedule.ScheduleDate &&
-                                  s.Status == 0))
+                bool isScheduleExists = db.Schedules.Any(s =>
+                   s.SemesterId == schedule.SemesterId &&
+                   s.RoomId == schedule.RoomId &&
+                   s.SlotId == schedule.SlotId &&
+                   s.ScheduleDate == schedule.ScheduleDate &&
+                   s.Status == 0
+               );
+
+                if (isScheduleExists)
                 {
-                    throw new ArgumentException("A schedule already exists for this room and this slot on the selected date.");
+                    throw new ArgumentException("A schedule already exists for this room, slot, and date.");
                 }
+
                 db.Schedules.Add(schedule);
                 db.SaveChanges();
             }
@@ -40,13 +46,35 @@ namespace DAL
             {
                 isValidationSchedule(schedule);
                 using var db = new MyDbContext();
-                if (db.Schedules.Any(s => s.SemesterId == schedule.SemesterId &&
-                                  s.RoomId == schedule.RoomId &&
-                                  s.SlotId == schedule.SlotId &&
-                                  s.ScheduleDate == schedule.ScheduleDate &&
-                                  s.Status == 0))
+                int accountId = (int)schedule.AccountId;
+                int totalSlot = db.Schedules.Count(s => s.AccountId == accountId && s.ScheduleDate > DateTime.Now);
+                if (totalSlot >= 5)
                 {
-                    throw new ArgumentException("A schedule already exists for this room and this slot on the selected date.");
+                    throw new ArgumentException("Only 5 exam monitoring slots can be registered.");
+                }
+                bool isScheduleExists = db.Schedules.Any(s =>
+                   s.SemesterId == schedule.SemesterId &&
+                   s.RoomId == schedule.RoomId &&
+                   s.SlotId == schedule.SlotId &&
+                   s.ScheduleDate == schedule.ScheduleDate &&
+                   s.Status == 0
+               );
+
+                if (isScheduleExists)
+                {
+                    throw new ArgumentException("A schedule already exists for this room, slot, and date.");
+                }
+
+                bool isAccountHasSchedule = db.Schedules.Any(s =>
+                    s.AccountId == schedule.AccountId &&
+                    s.SlotId == schedule.SlotId &&
+                    s.ScheduleDate == schedule.ScheduleDate &&
+                    s.Status == 0
+                );
+
+                if (isAccountHasSchedule)
+                {
+                    throw new ArgumentException("Account already has a schedule in the same slot on the same day.");
                 }
                 db.Entry<Schedule>(schedule).State
                     = Microsoft.EntityFrameworkCore.EntityState.Modified;

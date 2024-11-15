@@ -27,6 +27,17 @@ namespace DAL
             {
                 ValidateSlot(slot);
                 using var db = new MyDbContext();
+                bool isOverlapping = db.Slots.Any(s =>
+                       s.Status == 0 &&
+                       s.SlotId != slot.SlotId &&
+                       s.StartTime < slot.EndTime &&
+                       slot.StartTime < s.EndTime
+                   );
+
+                if (isOverlapping)
+                {
+                    throw new ArgumentException("Slot time overlaps with an existing slot.");
+                }
                 if (db.Slots.Any(s => s.SlotName == slot.SlotName && s.Status == 0))
                 {
                     throw new ArgumentException("Duplicate Slot Name");
